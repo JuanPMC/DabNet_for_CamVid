@@ -1,0 +1,3505 @@
+=====> input size:(360, 480)
+Namespace(model='DABNet', dataset='camvid', train_type='trainval', max_epochs=200, input_size='360,480', random_mirror=True, random_scale=True, num_workers=4, lr=0.001, batch_size=32, savedir='./checkpoint/', resume='', classes=11, logFile='log.txt', cuda=True, gpus='0')
+=====> use gpu id: '0'
+=====> set Global Seed:  1234
+=====> building network
+=====> computing network parameters and FLOPs
+the number of parameters: 754571 ==> 0.75 M
+find file:  ./dataset/inform/camvid_inform.pkl
+length of train set:  468
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+length of Validation set:  233
+=====> Dataset statistics
+data['classWeights']:  [4.4286523 3.443227  9.627174  2.9082294 6.9883366 5.2119217 9.490196
+ 9.150478  7.1654587 9.888601  7.5455384]
+mean and std:  [105.65775  103.329834  99.625404] [71.11642  71.676155 67.87634 ]
+single GPU for training
+=====> beginning training
+=====> the number of iterations per epoch:  14
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/usr/local/lib/python3.10/dist-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+=====> epoch[1/200] iter: (1/14) 	cur_lr: 0.000333 loss: 2.745 time:12.83
+=====> epoch[1/200] iter: (2/14) 	cur_lr: 0.000335 loss: 2.358 time:0.60
+=====> epoch[1/200] iter: (3/14) 	cur_lr: 0.000336 loss: 2.175 time:0.64
+=====> epoch[1/200] iter: (4/14) 	cur_lr: 0.000337 loss: 1.947 time:0.71
+=====> epoch[1/200] iter: (5/14) 	cur_lr: 0.000339 loss: 1.824 time:0.71
+=====> epoch[1/200] iter: (6/14) 	cur_lr: 0.000340 loss: 1.768 time:0.73
+=====> epoch[1/200] iter: (7/14) 	cur_lr: 0.000341 loss: 1.675 time:0.67
+=====> epoch[1/200] iter: (8/14) 	cur_lr: 0.000343 loss: 1.634 time:0.63
+=====> epoch[1/200] iter: (9/14) 	cur_lr: 0.000344 loss: 1.613 time:0.60
+=====> epoch[1/200] iter: (10/14) 	cur_lr: 0.000345 loss: 1.563 time:0.60
+=====> epoch[1/200] iter: (11/14) 	cur_lr: 0.000347 loss: 1.510 time:0.59
+=====> epoch[1/200] iter: (12/14) 	cur_lr: 0.000348 loss: 1.555 time:0.59
+=====> epoch[1/200] iter: (13/14) 	cur_lr: 0.000349 loss: 1.370 time:0.59
+=====> epoch[1/200] iter: (14/14) 	cur_lr: 0.000351 loss: 1.406 time:0.59
+Remaining training time = 1 hour 15 minutes 59 seconds
+[1/233]  time: 0.36
+[2/233]  time: 0.01
+[3/233]  time: 0.01
+[4/233]  time: 0.01
+[5/233]  time: 0.02
+[6/233]  time: 0.02
+[7/233]  time: 0.01
+[8/233]  time: 0.01
+[9/233]  time: 0.01
+[10/233]  time: 0.01
+[11/233]  time: 0.01
+[12/233]  time: 0.01
+[13/233]  time: 0.02
+[14/233]  time: 0.01
+[15/233]  time: 0.01
+[16/233]  time: 0.02
+[17/233]  time: 0.01
+[18/233]  time: 0.01
+[19/233]  time: 0.01
+[20/233]  time: 0.01
+[21/233]  time: 0.02
+[22/233]  time: 0.01
+[23/233]  time: 0.01
+[24/233]  time: 0.01
+[25/233]  time: 0.01
+[26/233]  time: 0.01
+[27/233]  time: 0.01
+[28/233]  time: 0.01
+[29/233]  time: 0.01
+[30/233]  time: 0.01
+[31/233]  time: 0.02
+[32/233]  time: 0.02
+[33/233]  time: 0.01
+[34/233]  time: 0.02
+[35/233]  time: 0.02
+[36/233]  time: 0.02
+[37/233]  time: 0.01
+[38/233]  time: 0.01
+[39/233]  time: 0.01
+[40/233]  time: 0.01
+[41/233]  time: 0.01
+[42/233]  time: 0.01
+[43/233]  time: 0.01
+[44/233]  time: 0.01
+[45/233]  time: 0.01
+[46/233]  time: 0.01
+[47/233]  time: 0.01
+[48/233]  time: 0.02
+[49/233]  time: 0.01
+[50/233]  time: 0.01
+[51/233]  time: 0.01
+[52/233]  time: 0.01
+[53/233]  time: 0.01
+[54/233]  time: 0.01
+[55/233]  time: 0.01
+[56/233]  time: 0.01
+[57/233]  time: 0.01
+[58/233]  time: 0.01
+[59/233]  time: 0.01
+[60/233]  time: 0.01
+[61/233]  time: 0.01
+[62/233]  time: 0.01
+[63/233]  time: 0.01
+[64/233]  time: 0.01
+[65/233]  time: 0.02
+[66/233]  time: 0.01
+[67/233]  time: 0.02
+[68/233]  time: 0.01
+[69/233]  time: 0.02
+[70/233]  time: 0.01
+[71/233]  time: 0.01
+[72/233]  time: 0.01
+[73/233]  time: 0.02
+[74/233]  time: 0.01
+[75/233]  time: 0.01
+[76/233]  time: 0.01
+[77/233]  time: 0.01
+[78/233]  time: 0.01
+[79/233]  time: 0.02
+[80/233]  time: 0.02
+[81/233]  time: 0.01
+[82/233]  time: 0.01
+[83/233]  time: 0.01
+[84/233]  time: 0.01
+[85/233]  time: 0.02
+[86/233]  time: 0.01
+[87/233]  time: 0.01
+[88/233]  time: 0.02
+[89/233]  time: 0.02
+[90/233]  time: 0.01
+[91/233]  time: 0.01
+[92/233]  time: 0.02
+[93/233]  time: 0.01
+[94/233]  time: 0.01
+[95/233]  time: 0.02
+[96/233]  time: 0.03
+[97/233]  time: 0.02
+[98/233]  time: 0.01
+[99/233]  time: 0.01
+[100/233]  time: 0.01
+[101/233]  time: 0.02
+[102/233]  time: 0.01
+[103/233]  time: 0.01
+[104/233]  time: 0.02
+[105/233]  time: 0.02
+[106/233]  time: 0.02
+[107/233]  time: 0.02
+[108/233]  time: 0.01
+[109/233]  time: 0.01
+[110/233]  time: 0.01
+[111/233]  time: 0.02
+[112/233]  time: 0.01
+[113/233]  time: 0.01
+[114/233]  time: 0.01
+[115/233]  time: 0.01
+[116/233]  time: 0.01
+[117/233]  time: 0.02
+[118/233]  time: 0.01
+[119/233]  time: 0.01
+[120/233]  time: 0.02
+[121/233]  time: 0.01
+[122/233]  time: 0.01
+[123/233]  time: 0.01
+[124/233]  time: 0.01
+[125/233]  time: 0.01
+[126/233]  time: 0.01
+[127/233]  time: 0.01
+[128/233]  time: 0.01
+[129/233]  time: 0.02
+[130/233]  time: 0.01
+[131/233]  time: 0.01
+[132/233]  time: 0.01
+[133/233]  time: 0.02
+[134/233]  time: 0.01
+[135/233]  time: 0.01
+[136/233]  time: 0.02
+[137/233]  time: 0.02
+[138/233]  time: 0.01
+[139/233]  time: 0.01
+[140/233]  time: 0.01
+[141/233]  time: 0.01
+[142/233]  time: 0.01
+[143/233]  time: 0.01
+[144/233]  time: 0.01
+[145/233]  time: 0.01
+[146/233]  time: 0.01
+[147/233]  time: 0.01
+[148/233]  time: 0.01
+[149/233]  time: 0.02
+[150/233]  time: 0.01
+[151/233]  time: 0.01
+[152/233]  time: 0.02
+[153/233]  time: 0.01
+[154/233]  time: 0.01
+[155/233]  time: 0.02
+[156/233]  time: 0.01
+[157/233]  time: 0.01
+[158/233]  time: 0.02
+[159/233]  time: 0.01
+[160/233]  time: 0.01
+[161/233]  time: 0.02
+[162/233]  time: 0.02
+[163/233]  time: 0.01
+[164/233]  time: 0.01
+[165/233]  time: 0.02
+[166/233]  time: 0.01
+[167/233]  time: 0.01
+[168/233]  time: 0.01
+[169/233]  time: 0.01
+[170/233]  time: 0.01
+[171/233]  time: 0.02
+[172/233]  time: 0.01
+[173/233]  time: 0.01
+[174/233]  time: 0.01
+[175/233]  time: 0.01
+[176/233]  time: 0.02
+[177/233]  time: 0.01
+[178/233]  time: 0.01
+[179/233]  time: 0.02
+[180/233]  time: 0.02
+[181/233]  time: 0.02
+[182/233]  time: 0.02
+[183/233]  time: 0.02
+[184/233]  time: 0.01
+[185/233]  time: 0.02
+[186/233]  time: 0.01
+[187/233]  time: 0.01
+[188/233]  time: 0.01
+[189/233]  time: 0.02
+[190/233]  time: 0.02
+[191/233]  time: 0.02
+[192/233]  time: 0.02
+[193/233]  time: 0.02
+[194/233]  time: 0.02
+[195/233]  time: 0.01
+[196/233]  time: 0.01
+[197/233]  time: 0.01
+[198/233]  time: 0.02
+[199/233]  time: 0.02
+[200/233]  time: 0.01
+[201/233]  time: 0.01
+[202/233]  time: 0.01
+[203/233]  time: 0.01
+[204/233]  time: 0.01
+[205/233]  time: 0.02
+[206/233]  time: 0.01
+[207/233]  time: 0.02
+[208/233]  time: 0.02
+[209/233]  time: 0.02
+[210/233]  time: 0.02
+[211/233]  time: 0.02
+[212/233]  time: 0.02
+[213/233]  time: 0.04
+[214/233]  time: 0.02
+[215/233]  time: 0.03
+[216/233]  time: 0.01
+[217/233]  time: 0.02
+[218/233]  time: 0.03
+[219/233]  time: 0.03
+[220/233]  time: 0.01
+[221/233]  time: 0.01
+[222/233]  time: 0.03
+[223/233]  time: 0.03
+[224/233]  time: 0.02
+[225/233]  time: 0.03
+[226/233]  time: 0.01
+[227/233]  time: 0.01
+[228/233]  time: 0.01
+[229/233]  time: 0.01
+[230/233]  time: 0.02
+[231/233]  time: 0.01
+[232/233]  time: 0.01
+[233/233]  time: 0.01
+Epoch : 0 Details
+Epoch No.: 0	Train Loss = 1.7959	 mIOU(val) = 0.1810	 lr= 0.000351
+
+=====> the number of iterations per epoch:  14
+/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py:558: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+/usr/lib/python3.10/multiprocessing/popen_fork.py:66: RuntimeWarning: os.fork() was called. os.fork() is incompatible with multithreaded code, and JAX is multithreaded, so this will likely lead to a deadlock.
+  self.pid = os.fork()
+/usr/local/lib/python3.10/dist-packages/torch/optim/lr_scheduler.py:143: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+=====> epoch[2/200] iter: (1/14) 	cur_lr: 0.000352 loss: 1.324 time:0.78
+=====> epoch[2/200] iter: (2/14) 	cur_lr: 0.000353 loss: 1.232 time:0.69
+=====> epoch[2/200] iter: (3/14) 	cur_lr: 0.000355 loss: 1.290 time:0.71
+=====> epoch[2/200] iter: (4/14) 	cur_lr: 0.000356 loss: 1.151 time:0.76
+=====> epoch[2/200] iter: (5/14) 	cur_lr: 0.000357 loss: 1.203 time:0.68
+=====> epoch[2/200] iter: (6/14) 	cur_lr: 0.000359 loss: 1.219 time:0.79
+=====> epoch[2/200] iter: (7/14) 	cur_lr: 0.000360 loss: 1.119 time:0.84
+=====> epoch[2/200] iter: (8/14) 	cur_lr: 0.000361 loss: 1.152 time:0.78
+=====> epoch[2/200] iter: (9/14) 	cur_lr: 0.000363 loss: 1.088 time:0.70
+=====> epoch[2/200] iter: (10/14) 	cur_lr: 0.000364 loss: 1.100 time:0.65
+=====> epoch[2/200] iter: (11/14) 	cur_lr: 0.000365 loss: 1.129 time:0.60
+=====> epoch[2/200] iter: (12/14) 	cur_lr: 0.000367 loss: 1.117 time:0.59
+=====> epoch[2/200] iter: (13/14) 	cur_lr: 0.000368 loss: 1.059 time:0.59
+=====> epoch[2/200] iter: (14/14) 	cur_lr: 0.000369 loss: 1.007 time:0.60
+Remaining training time = 0 hour 37 minutes 22 seconds
+Epoch : 1 Details
+Epoch No.: 1	Train Loss = 1.1564	 lr= 0.000369
+
+=====> the number of iterations per epoch:  14
+=====> epoch[3/200] iter: (1/14) 	cur_lr: 0.000371 loss: 1.050 time:0.79
+=====> epoch[3/200] iter: (2/14) 	cur_lr: 0.000372 loss: 0.945 time:0.71
+=====> epoch[3/200] iter: (3/14) 	cur_lr: 0.000373 loss: 0.990 time:0.74
+=====> epoch[3/200] iter: (4/14) 	cur_lr: 0.000375 loss: 0.991 time:0.75
+=====> epoch[3/200] iter: (5/14) 	cur_lr: 0.000376 loss: 0.996 time:0.68
+=====> epoch[3/200] iter: (6/14) 	cur_lr: 0.000377 loss: 0.966 time:0.73
+=====> epoch[3/200] iter: (7/14) 	cur_lr: 0.000379 loss: 0.928 time:0.67
+=====> epoch[3/200] iter: (8/14) 	cur_lr: 0.000380 loss: 0.910 time:0.62
+=====> epoch[3/200] iter: (9/14) 	cur_lr: 0.000381 loss: 0.872 time:0.60
+=====> epoch[3/200] iter: (10/14) 	cur_lr: 0.000383 loss: 0.914 time:0.61
+=====> epoch[3/200] iter: (11/14) 	cur_lr: 0.000384 loss: 0.838 time:0.62
+=====> epoch[3/200] iter: (12/14) 	cur_lr: 0.000385 loss: 0.916 time:0.61
+=====> epoch[3/200] iter: (13/14) 	cur_lr: 0.000387 loss: 0.855 time:0.61
+=====> epoch[3/200] iter: (14/14) 	cur_lr: 0.000388 loss: 0.876 time:0.61
+Remaining training time = 0 hour 35 minutes 55 seconds
+Epoch : 2 Details
+Epoch No.: 2	Train Loss = 0.9319	 lr= 0.000388
+
+=====> the number of iterations per epoch:  14
+=====> epoch[4/200] iter: (1/14) 	cur_lr: 0.000389 loss: 0.861 time:0.79
+=====> epoch[4/200] iter: (2/14) 	cur_lr: 0.000391 loss: 0.895 time:0.68
+=====> epoch[4/200] iter: (3/14) 	cur_lr: 0.000392 loss: 0.847 time:0.71
+=====> epoch[4/200] iter: (4/14) 	cur_lr: 0.000393 loss: 0.833 time:0.70
+=====> epoch[4/200] iter: (5/14) 	cur_lr: 0.000395 loss: 0.804 time:0.71
+=====> epoch[4/200] iter: (6/14) 	cur_lr: 0.000396 loss: 0.751 time:0.67
+=====> epoch[4/200] iter: (7/14) 	cur_lr: 0.000397 loss: 0.905 time:0.68
+=====> epoch[4/200] iter: (8/14) 	cur_lr: 0.000399 loss: 0.768 time:0.60
+=====> epoch[4/200] iter: (9/14) 	cur_lr: 0.000400 loss: 0.878 time:0.60
+=====> epoch[4/200] iter: (10/14) 	cur_lr: 0.000401 loss: 0.832 time:0.60
+=====> epoch[4/200] iter: (11/14) 	cur_lr: 0.000403 loss: 0.832 time:0.61
+=====> epoch[4/200] iter: (12/14) 	cur_lr: 0.000404 loss: 0.673 time:0.60
+=====> epoch[4/200] iter: (13/14) 	cur_lr: 0.000405 loss: 0.762 time:0.62
+=====> epoch[4/200] iter: (14/14) 	cur_lr: 0.000407 loss: 0.747 time:0.62
+Remaining training time = 0 hour 36 minutes 49 seconds
+Epoch : 3 Details
+Epoch No.: 3	Train Loss = 0.8134	 lr= 0.000407
+
+=====> the number of iterations per epoch:  14
+=====> epoch[5/200] iter: (1/14) 	cur_lr: 0.000408 loss: 0.831 time:0.79
+=====> epoch[5/200] iter: (2/14) 	cur_lr: 0.000409 loss: 0.705 time:0.75
+=====> epoch[5/200] iter: (3/14) 	cur_lr: 0.000411 loss: 0.738 time:0.75
+=====> epoch[5/200] iter: (4/14) 	cur_lr: 0.000412 loss: 0.747 time:0.75
+=====> epoch[5/200] iter: (5/14) 	cur_lr: 0.000413 loss: 0.761 time:0.73
+=====> epoch[5/200] iter: (6/14) 	cur_lr: 0.000415 loss: 0.709 time:0.67
+=====> epoch[5/200] iter: (7/14) 	cur_lr: 0.000416 loss: 0.756 time:0.63
+=====> epoch[5/200] iter: (8/14) 	cur_lr: 0.000417 loss: 0.656 time:0.61
+=====> epoch[5/200] iter: (9/14) 	cur_lr: 0.000419 loss: 0.760 time:0.61
+=====> epoch[5/200] iter: (10/14) 	cur_lr: 0.000420 loss: 0.671 time:0.61
+=====> epoch[5/200] iter: (11/14) 	cur_lr: 0.000421 loss: 0.792 time:0.61
+=====> epoch[5/200] iter: (12/14) 	cur_lr: 0.000423 loss: 0.667 time:0.62
+=====> epoch[5/200] iter: (13/14) 	cur_lr: 0.000424 loss: 0.688 time:0.61
+=====> epoch[5/200] iter: (14/14) 	cur_lr: 0.000425 loss: 0.658 time:0.61
+Remaining training time = 0 hour 39 minutes 47 seconds
+Epoch : 4 Details
+Epoch No.: 4	Train Loss = 0.7242	 lr= 0.000425
+
+=====> the number of iterations per epoch:  14
+=====> epoch[6/200] iter: (1/14) 	cur_lr: 0.000427 loss: 0.623 time:0.87
+=====> epoch[6/200] iter: (2/14) 	cur_lr: 0.000428 loss: 0.629 time:0.72
+=====> epoch[6/200] iter: (3/14) 	cur_lr: 0.000429 loss: 0.664 time:0.75
+=====> epoch[6/200] iter: (4/14) 	cur_lr: 0.000431 loss: 0.798 time:0.71
+=====> epoch[6/200] iter: (5/14) 	cur_lr: 0.000432 loss: 0.602 time:0.76
+=====> epoch[6/200] iter: (6/14) 	cur_lr: 0.000433 loss: 0.678 time:0.74
+=====> epoch[6/200] iter: (7/14) 	cur_lr: 0.000435 loss: 0.612 time:0.68
+=====> epoch[6/200] iter: (8/14) 	cur_lr: 0.000436 loss: 0.698 time:0.62
+=====> epoch[6/200] iter: (9/14) 	cur_lr: 0.000437 loss: 0.662 time:0.61
+=====> epoch[6/200] iter: (10/14) 	cur_lr: 0.000439 loss: 0.632 time:0.61
+=====> epoch[6/200] iter: (11/14) 	cur_lr: 0.000440 loss: 0.643 time:0.61
+=====> epoch[6/200] iter: (12/14) 	cur_lr: 0.000441 loss: 0.567 time:0.61
+=====> epoch[6/200] iter: (13/14) 	cur_lr: 0.000443 loss: 0.719 time:0.61
+=====> epoch[6/200] iter: (14/14) 	cur_lr: 0.000444 loss: 0.692 time:0.61
+Remaining training time = 0 hour 41 minutes 35 seconds
+Epoch : 5 Details
+Epoch No.: 5	Train Loss = 0.6584	 lr= 0.000444
+
+=====> the number of iterations per epoch:  14
+=====> epoch[7/200] iter: (1/14) 	cur_lr: 0.000445 loss: 0.692 time:0.92
+=====> epoch[7/200] iter: (2/14) 	cur_lr: 0.000447 loss: 0.624 time:0.84
+=====> epoch[7/200] iter: (3/14) 	cur_lr: 0.000448 loss: 0.577 time:0.84
+=====> epoch[7/200] iter: (4/14) 	cur_lr: 0.000449 loss: 0.602 time:0.87
+=====> epoch[7/200] iter: (5/14) 	cur_lr: 0.000451 loss: 0.646 time:0.72
+=====> epoch[7/200] iter: (6/14) 	cur_lr: 0.000452 loss: 0.573 time:0.71
+=====> epoch[7/200] iter: (7/14) 	cur_lr: 0.000453 loss: 0.558 time:0.67
+=====> epoch[7/200] iter: (8/14) 	cur_lr: 0.000455 loss: 0.619 time:0.69
+=====> epoch[7/200] iter: (9/14) 	cur_lr: 0.000456 loss: 0.652 time:0.61
+=====> epoch[7/200] iter: (10/14) 	cur_lr: 0.000457 loss: 0.575 time:0.61
+=====> epoch[7/200] iter: (11/14) 	cur_lr: 0.000459 loss: 0.570 time:0.61
+=====> epoch[7/200] iter: (12/14) 	cur_lr: 0.000460 loss: 0.742 time:0.61
+=====> epoch[7/200] iter: (13/14) 	cur_lr: 0.000461 loss: 0.608 time:0.60
+=====> epoch[7/200] iter: (14/14) 	cur_lr: 0.000463 loss: 0.604 time:0.60
+Remaining training time = 0 hour 40 minutes 21 seconds
+Epoch : 6 Details
+Epoch No.: 6	Train Loss = 0.6171	 lr= 0.000463
+
+=====> the number of iterations per epoch:  14
+=====> epoch[8/200] iter: (1/14) 	cur_lr: 0.000464 loss: 0.537 time:0.77
+=====> epoch[8/200] iter: (2/14) 	cur_lr: 0.000465 loss: 0.585 time:0.70
+=====> epoch[8/200] iter: (3/14) 	cur_lr: 0.000467 loss: 0.547 time:0.85
+=====> epoch[8/200] iter: (4/14) 	cur_lr: 0.000468 loss: 0.601 time:0.82
+=====> epoch[8/200] iter: (5/14) 	cur_lr: 0.000469 loss: 0.605 time:0.85
+=====> epoch[8/200] iter: (6/14) 	cur_lr: 0.000471 loss: 0.588 time:0.83
+=====> epoch[8/200] iter: (7/14) 	cur_lr: 0.000472 loss: 0.550 time:0.74
+=====> epoch[8/200] iter: (8/14) 	cur_lr: 0.000473 loss: 0.588 time:0.62
+=====> epoch[8/200] iter: (9/14) 	cur_lr: 0.000475 loss: 0.607 time:0.63
+=====> epoch[8/200] iter: (10/14) 	cur_lr: 0.000476 loss: 0.572 time:0.60
+=====> epoch[8/200] iter: (11/14) 	cur_lr: 0.000477 loss: 0.587 time:0.60
+=====> epoch[8/200] iter: (12/14) 	cur_lr: 0.000479 loss: 0.636 time:0.61
+=====> epoch[8/200] iter: (13/14) 	cur_lr: 0.000480 loss: 0.597 time:0.60
+=====> epoch[8/200] iter: (14/14) 	cur_lr: 0.000481 loss: 0.574 time:0.60
+Remaining training time = 0 hour 38 minutes 26 seconds
+Epoch : 7 Details
+Epoch No.: 7	Train Loss = 0.5840	 lr= 0.000481
+
+=====> the number of iterations per epoch:  14
+=====> epoch[9/200] iter: (1/14) 	cur_lr: 0.000483 loss: 0.617 time:0.82
+=====> epoch[9/200] iter: (2/14) 	cur_lr: 0.000484 loss: 0.542 time:0.74
+=====> epoch[9/200] iter: (3/14) 	cur_lr: 0.000485 loss: 0.558 time:0.73
+=====> epoch[9/200] iter: (4/14) 	cur_lr: 0.000487 loss: 0.602 time:0.73
+=====> epoch[9/200] iter: (5/14) 	cur_lr: 0.000488 loss: 0.558 time:0.79
+=====> epoch[9/200] iter: (6/14) 	cur_lr: 0.000489 loss: 0.601 time:0.80
+=====> epoch[9/200] iter: (7/14) 	cur_lr: 0.000491 loss: 0.569 time:0.75
+=====> epoch[9/200] iter: (8/14) 	cur_lr: 0.000492 loss: 0.557 time:0.69
+=====> epoch[9/200] iter: (9/14) 	cur_lr: 0.000493 loss: 0.507 time:0.61
+=====> epoch[9/200] iter: (10/14) 	cur_lr: 0.000495 loss: 0.461 time:0.61
+=====> epoch[9/200] iter: (11/14) 	cur_lr: 0.000496 loss: 0.582 time:0.60
+=====> epoch[9/200] iter: (12/14) 	cur_lr: 0.000497 loss: 0.522 time:0.60
+=====> epoch[9/200] iter: (13/14) 	cur_lr: 0.000499 loss: 0.560 time:0.61
+=====> epoch[9/200] iter: (14/14) 	cur_lr: 0.000500 loss: 0.674 time:0.60
+Remaining training time = 0 hour 37 minutes 50 seconds
+Epoch : 8 Details
+Epoch No.: 8	Train Loss = 0.5650	 lr= 0.000500
+
+=====> the number of iterations per epoch:  14
+=====> epoch[10/200] iter: (1/14) 	cur_lr: 0.000501 loss: 0.503 time:0.79
+=====> epoch[10/200] iter: (2/14) 	cur_lr: 0.000503 loss: 0.562 time:0.73
+=====> epoch[10/200] iter: (3/14) 	cur_lr: 0.000504 loss: 0.548 time:0.74
+=====> epoch[10/200] iter: (4/14) 	cur_lr: 0.000505 loss: 0.592 time:0.71
+=====> epoch[10/200] iter: (5/14) 	cur_lr: 0.000507 loss: 0.534 time:0.71
+=====> epoch[10/200] iter: (6/14) 	cur_lr: 0.000508 loss: 0.540 time:0.63
+=====> epoch[10/200] iter: (7/14) 	cur_lr: 0.000509 loss: 0.575 time:0.62
+=====> epoch[10/200] iter: (8/14) 	cur_lr: 0.000511 loss: 0.518 time:0.60
+=====> epoch[10/200] iter: (9/14) 	cur_lr: 0.000512 loss: 0.536 time:0.61
+=====> epoch[10/200] iter: (10/14) 	cur_lr: 0.000513 loss: 0.530 time:0.61
+=====> epoch[10/200] iter: (11/14) 	cur_lr: 0.000515 loss: 0.549 time:0.62
+=====> epoch[10/200] iter: (12/14) 	cur_lr: 0.000516 loss: 0.613 time:0.62
+=====> epoch[10/200] iter: (13/14) 	cur_lr: 0.000517 loss: 0.554 time:0.62
+=====> epoch[10/200] iter: (14/14) 	cur_lr: 0.000519 loss: 0.514 time:0.60
+Remaining training time = 0 hour 35 minutes 26 seconds
+Epoch : 9 Details
+Epoch No.: 9	Train Loss = 0.5477	 lr= 0.000519
+
+=====> the number of iterations per epoch:  14
+=====> epoch[11/200] iter: (1/14) 	cur_lr: 0.000520 loss: 0.560 time:0.68
+=====> epoch[11/200] iter: (2/14) 	cur_lr: 0.000521 loss: 0.573 time:0.71
+=====> epoch[11/200] iter: (3/14) 	cur_lr: 0.000523 loss: 0.508 time:0.74
+=====> epoch[11/200] iter: (4/14) 	cur_lr: 0.000524 loss: 0.538 time:0.75
+=====> epoch[11/200] iter: (5/14) 	cur_lr: 0.000525 loss: 0.494 time:0.71
+=====> epoch[11/200] iter: (6/14) 	cur_lr: 0.000527 loss: 0.510 time:0.74
+=====> epoch[11/200] iter: (7/14) 	cur_lr: 0.000528 loss: 0.522 time:0.65
+=====> epoch[11/200] iter: (8/14) 	cur_lr: 0.000529 loss: 0.552 time:0.60
+=====> epoch[11/200] iter: (9/14) 	cur_lr: 0.000531 loss: 0.509 time:0.60
+=====> epoch[11/200] iter: (10/14) 	cur_lr: 0.000532 loss: 0.510 time:0.60
+=====> epoch[11/200] iter: (11/14) 	cur_lr: 0.000533 loss: 0.508 time:0.60
+=====> epoch[11/200] iter: (12/14) 	cur_lr: 0.000535 loss: 0.548 time:0.60
+=====> epoch[11/200] iter: (13/14) 	cur_lr: 0.000536 loss: 0.512 time:0.61
+=====> epoch[11/200] iter: (14/14) 	cur_lr: 0.000537 loss: 0.536 time:0.62
+Remaining training time = 0 hour 34 minutes 47 seconds
+Epoch : 10 Details
+Epoch No.: 10	Train Loss = 0.5272	 lr= 0.000537
+
+=====> the number of iterations per epoch:  14
+=====> epoch[12/200] iter: (1/14) 	cur_lr: 0.000539 loss: 0.502 time:0.82
+=====> epoch[12/200] iter: (2/14) 	cur_lr: 0.000540 loss: 0.511 time:0.69
+=====> epoch[12/200] iter: (3/14) 	cur_lr: 0.000541 loss: 0.500 time:0.75
+=====> epoch[12/200] iter: (4/14) 	cur_lr: 0.000543 loss: 0.529 time:0.76
+=====> epoch[12/200] iter: (5/14) 	cur_lr: 0.000544 loss: 0.506 time:0.75
+=====> epoch[12/200] iter: (6/14) 	cur_lr: 0.000545 loss: 0.561 time:0.74
+=====> epoch[12/200] iter: (7/14) 	cur_lr: 0.000547 loss: 0.528 time:0.65
+=====> epoch[12/200] iter: (8/14) 	cur_lr: 0.000548 loss: 0.455 time:0.61
+=====> epoch[12/200] iter: (9/14) 	cur_lr: 0.000549 loss: 0.427 time:0.60
+=====> epoch[12/200] iter: (10/14) 	cur_lr: 0.000551 loss: 0.477 time:0.60
+=====> epoch[12/200] iter: (11/14) 	cur_lr: 0.000552 loss: 0.455 time:0.60
+=====> epoch[12/200] iter: (12/14) 	cur_lr: 0.000553 loss: 0.463 time:0.60
+=====> epoch[12/200] iter: (13/14) 	cur_lr: 0.000555 loss: 0.467 time:0.60
+=====> epoch[12/200] iter: (14/14) 	cur_lr: 0.000556 loss: 0.429 time:0.60
+Remaining training time = 0 hour 37 minutes 1 seconds
+Epoch : 11 Details
+Epoch No.: 11	Train Loss = 0.4864	 lr= 0.000556
+
+=====> the number of iterations per epoch:  14
+=====> epoch[13/200] iter: (1/14) 	cur_lr: 0.000557 loss: 0.447 time:0.86
+=====> epoch[13/200] iter: (2/14) 	cur_lr: 0.000559 loss: 0.575 time:0.82
+=====> epoch[13/200] iter: (3/14) 	cur_lr: 0.000560 loss: 0.500 time:0.71
+=====> epoch[13/200] iter: (4/14) 	cur_lr: 0.000561 loss: 0.461 time:0.75
+=====> epoch[13/200] iter: (5/14) 	cur_lr: 0.000563 loss: 0.474 time:0.74
+=====> epoch[13/200] iter: (6/14) 	cur_lr: 0.000564 loss: 0.457 time:0.74
+=====> epoch[13/200] iter: (7/14) 	cur_lr: 0.000565 loss: 0.491 time:0.69
+=====> epoch[13/200] iter: (8/14) 	cur_lr: 0.000567 loss: 0.508 time:0.63
+=====> epoch[13/200] iter: (9/14) 	cur_lr: 0.000568 loss: 0.461 time:0.60
+=====> epoch[13/200] iter: (10/14) 	cur_lr: 0.000569 loss: 0.447 time:0.60
+=====> epoch[13/200] iter: (11/14) 	cur_lr: 0.000571 loss: 0.493 time:0.60
+=====> epoch[13/200] iter: (12/14) 	cur_lr: 0.000572 loss: 0.470 time:0.60
+=====> epoch[13/200] iter: (13/14) 	cur_lr: 0.000573 loss: 0.496 time:0.60
+=====> epoch[13/200] iter: (14/14) 	cur_lr: 0.000575 loss: 0.478 time:0.60
+Remaining training time = 0 hour 38 minutes 51 seconds
+Epoch : 12 Details
+Epoch No.: 12	Train Loss = 0.4827	 lr= 0.000575
+
+=====> the number of iterations per epoch:  14
+=====> epoch[14/200] iter: (1/14) 	cur_lr: 0.000576 loss: 0.435 time:0.86
+=====> epoch[14/200] iter: (2/14) 	cur_lr: 0.000577 loss: 0.500 time:0.84
+=====> epoch[14/200] iter: (3/14) 	cur_lr: 0.000579 loss: 0.448 time:0.84
+=====> epoch[14/200] iter: (4/14) 	cur_lr: 0.000580 loss: 0.489 time:0.85
+=====> epoch[14/200] iter: (5/14) 	cur_lr: 0.000581 loss: 0.451 time:0.84
+=====> epoch[14/200] iter: (6/14) 	cur_lr: 0.000583 loss: 0.422 time:0.75
+=====> epoch[14/200] iter: (7/14) 	cur_lr: 0.000584 loss: 0.425 time:0.71
+=====> epoch[14/200] iter: (8/14) 	cur_lr: 0.000585 loss: 0.398 time:0.67
+=====> epoch[14/200] iter: (9/14) 	cur_lr: 0.000587 loss: 0.622 time:0.61
+=====> epoch[14/200] iter: (10/14) 	cur_lr: 0.000588 loss: 0.463 time:0.60
+=====> epoch[14/200] iter: (11/14) 	cur_lr: 0.000589 loss: 0.485 time:0.61
+=====> epoch[14/200] iter: (12/14) 	cur_lr: 0.000591 loss: 0.490 time:0.62
+=====> epoch[14/200] iter: (13/14) 	cur_lr: 0.000592 loss: 0.466 time:0.60
+=====> epoch[14/200] iter: (14/14) 	cur_lr: 0.000593 loss: 0.497 time:0.61
+Remaining training time = 0 hour 37 minutes 44 seconds
+Epoch : 13 Details
+Epoch No.: 13	Train Loss = 0.4708	 lr= 0.000593
+
+=====> the number of iterations per epoch:  14
+=====> epoch[15/200] iter: (1/14) 	cur_lr: 0.000595 loss: 0.449 time:0.78
+=====> epoch[15/200] iter: (2/14) 	cur_lr: 0.000596 loss: 0.435 time:0.72
+=====> epoch[15/200] iter: (3/14) 	cur_lr: 0.000597 loss: 0.475 time:0.78
+=====> epoch[15/200] iter: (4/14) 	cur_lr: 0.000599 loss: 0.442 time:0.72
+=====> epoch[15/200] iter: (5/14) 	cur_lr: 0.000600 loss: 0.455 time:0.84
+=====> epoch[15/200] iter: (6/14) 	cur_lr: 0.000601 loss: 0.480 time:0.92
+=====> epoch[15/200] iter: (7/14) 	cur_lr: 0.000603 loss: 0.447 time:0.82
+=====> epoch[15/200] iter: (8/14) 	cur_lr: 0.000604 loss: 0.447 time:0.74
+=====> epoch[15/200] iter: (9/14) 	cur_lr: 0.000605 loss: 0.424 time:0.62
+=====> epoch[15/200] iter: (10/14) 	cur_lr: 0.000607 loss: 0.478 time:0.60
+=====> epoch[15/200] iter: (11/14) 	cur_lr: 0.000608 loss: 0.494 time:0.61
+=====> epoch[15/200] iter: (12/14) 	cur_lr: 0.000609 loss: 0.416 time:0.61
+=====> epoch[15/200] iter: (13/14) 	cur_lr: 0.000611 loss: 0.467 time:0.61
+=====> epoch[15/200] iter: (14/14) 	cur_lr: 0.000612 loss: 0.482 time:0.61
+Remaining training time = 0 hour 37 minutes 19 seconds
+Epoch : 14 Details
+Epoch No.: 14	Train Loss = 0.4565	 lr= 0.000612
+
+=====> the number of iterations per epoch:  14
+=====> epoch[16/200] iter: (1/14) 	cur_lr: 0.000613 loss: 0.450 time:0.75
+=====> epoch[16/200] iter: (2/14) 	cur_lr: 0.000615 loss: 0.415 time:0.69
+=====> epoch[16/200] iter: (3/14) 	cur_lr: 0.000616 loss: 0.430 time:0.72
+=====> epoch[16/200] iter: (4/14) 	cur_lr: 0.000617 loss: 0.471 time:0.74
+=====> epoch[16/200] iter: (5/14) 	cur_lr: 0.000619 loss: 0.456 time:0.69
+=====> epoch[16/200] iter: (6/14) 	cur_lr: 0.000620 loss: 0.415 time:0.69
+=====> epoch[16/200] iter: (7/14) 	cur_lr: 0.000621 loss: 0.416 time:0.71
+=====> epoch[16/200] iter: (8/14) 	cur_lr: 0.000623 loss: 0.498 time:0.69
+=====> epoch[16/200] iter: (9/14) 	cur_lr: 0.000624 loss: 0.420 time:0.62
+=====> epoch[16/200] iter: (10/14) 	cur_lr: 0.000625 loss: 0.422 time:0.62
+=====> epoch[16/200] iter: (11/14) 	cur_lr: 0.000627 loss: 0.435 time:0.62
+=====> epoch[16/200] iter: (12/14) 	cur_lr: 0.000628 loss: 0.478 time:0.62
+=====> epoch[16/200] iter: (13/14) 	cur_lr: 0.000629 loss: 0.423 time:0.60
+=====> epoch[16/200] iter: (14/14) 	cur_lr: 0.000631 loss: 0.426 time:0.60
+Remaining training time = 0 hour 34 minutes 26 seconds
+Epoch : 15 Details
+Epoch No.: 15	Train Loss = 0.4396	 lr= 0.000631
+
+=====> the number of iterations per epoch:  14
+=====> epoch[17/200] iter: (1/14) 	cur_lr: 0.000632 loss: 0.398 time:0.78
+=====> epoch[17/200] iter: (2/14) 	cur_lr: 0.000633 loss: 0.439 time:0.74
+=====> epoch[17/200] iter: (3/14) 	cur_lr: 0.000635 loss: 0.418 time:0.70
+=====> epoch[17/200] iter: (4/14) 	cur_lr: 0.000636 loss: 0.464 time:0.74
+=====> epoch[17/200] iter: (5/14) 	cur_lr: 0.000637 loss: 0.395 time:0.74
+=====> epoch[17/200] iter: (6/14) 	cur_lr: 0.000639 loss: 0.470 time:0.76
+=====> epoch[17/200] iter: (7/14) 	cur_lr: 0.000640 loss: 0.428 time:0.62
+=====> epoch[17/200] iter: (8/14) 	cur_lr: 0.000641 loss: 0.417 time:0.61
+=====> epoch[17/200] iter: (9/14) 	cur_lr: 0.000643 loss: 0.421 time:0.60
+=====> epoch[17/200] iter: (10/14) 	cur_lr: 0.000644 loss: 0.389 time:0.60
+=====> epoch[17/200] iter: (11/14) 	cur_lr: 0.000645 loss: 0.420 time:0.62
+=====> epoch[17/200] iter: (12/14) 	cur_lr: 0.000647 loss: 0.423 time:0.62
+=====> epoch[17/200] iter: (13/14) 	cur_lr: 0.000648 loss: 0.395 time:0.62
+=====> epoch[17/200] iter: (14/14) 	cur_lr: 0.000649 loss: 0.427 time:0.61
+Remaining training time = 0 hour 35 minutes 9 seconds
+Epoch : 16 Details
+Epoch No.: 16	Train Loss = 0.4217	 lr= 0.000649
+
+=====> the number of iterations per epoch:  14
+=====> epoch[18/200] iter: (1/14) 	cur_lr: 0.000651 loss: 0.453 time:0.85
+=====> epoch[18/200] iter: (2/14) 	cur_lr: 0.000652 loss: 0.457 time:0.69
+=====> epoch[18/200] iter: (3/14) 	cur_lr: 0.000653 loss: 0.456 time:0.71
+=====> epoch[18/200] iter: (4/14) 	cur_lr: 0.000655 loss: 0.441 time:0.77
+=====> epoch[18/200] iter: (5/14) 	cur_lr: 0.000656 loss: 0.379 time:0.72
+=====> epoch[18/200] iter: (6/14) 	cur_lr: 0.000657 loss: 0.469 time:0.72
+=====> epoch[18/200] iter: (7/14) 	cur_lr: 0.000659 loss: 0.381 time:0.63
+=====> epoch[18/200] iter: (8/14) 	cur_lr: 0.000660 loss: 0.392 time:0.63
+=====> epoch[18/200] iter: (9/14) 	cur_lr: 0.000661 loss: 0.421 time:0.60
+=====> epoch[18/200] iter: (10/14) 	cur_lr: 0.000663 loss: 0.401 time:0.60
+=====> epoch[18/200] iter: (11/14) 	cur_lr: 0.000664 loss: 0.405 time:0.60
+=====> epoch[18/200] iter: (12/14) 	cur_lr: 0.000665 loss: 0.380 time:0.60
+=====> epoch[18/200] iter: (13/14) 	cur_lr: 0.000667 loss: 0.486 time:0.60
+=====> epoch[18/200] iter: (14/14) 	cur_lr: 0.000668 loss: 0.411 time:0.61
+Remaining training time = 0 hour 33 minutes 52 seconds
+Epoch : 17 Details
+Epoch No.: 17	Train Loss = 0.4237	 lr= 0.000668
+
+=====> the number of iterations per epoch:  14
+=====> epoch[19/200] iter: (1/14) 	cur_lr: 0.000669 loss: 0.423 time:0.75
+=====> epoch[19/200] iter: (2/14) 	cur_lr: 0.000671 loss: 0.385 time:0.71
+=====> epoch[19/200] iter: (3/14) 	cur_lr: 0.000672 loss: 0.353 time:0.71
+=====> epoch[19/200] iter: (4/14) 	cur_lr: 0.000673 loss: 0.424 time:0.71
+=====> epoch[19/200] iter: (5/14) 	cur_lr: 0.000675 loss: 0.408 time:0.76
+=====> epoch[19/200] iter: (6/14) 	cur_lr: 0.000676 loss: 0.449 time:0.71
+=====> epoch[19/200] iter: (7/14) 	cur_lr: 0.000677 loss: 0.404 time:0.63
+=====> epoch[19/200] iter: (8/14) 	cur_lr: 0.000679 loss: 0.380 time:0.60
+=====> epoch[19/200] iter: (9/14) 	cur_lr: 0.000680 loss: 0.398 time:0.60
+=====> epoch[19/200] iter: (10/14) 	cur_lr: 0.000681 loss: 0.436 time:0.60
+=====> epoch[19/200] iter: (11/14) 	cur_lr: 0.000683 loss: 0.435 time:0.60
+=====> epoch[19/200] iter: (12/14) 	cur_lr: 0.000684 loss: 0.430 time:0.60
+=====> epoch[19/200] iter: (13/14) 	cur_lr: 0.000685 loss: 0.390 time:0.60
+=====> epoch[19/200] iter: (14/14) 	cur_lr: 0.000687 loss: 0.363 time:0.61
+Remaining training time = 0 hour 37 minutes 53 seconds
+Epoch : 18 Details
+Epoch No.: 18	Train Loss = 0.4055	 lr= 0.000687
+
+=====> the number of iterations per epoch:  14
+=====> epoch[20/200] iter: (1/14) 	cur_lr: 0.000688 loss: 0.410 time:0.97
+=====> epoch[20/200] iter: (2/14) 	cur_lr: 0.000689 loss: 0.427 time:0.81
+=====> epoch[20/200] iter: (3/14) 	cur_lr: 0.000691 loss: 0.447 time:0.66
+=====> epoch[20/200] iter: (4/14) 	cur_lr: 0.000692 loss: 0.417 time:0.74
+=====> epoch[20/200] iter: (5/14) 	cur_lr: 0.000693 loss: 0.393 time:0.71
+=====> epoch[20/200] iter: (6/14) 	cur_lr: 0.000695 loss: 0.442 time:0.74
+=====> epoch[20/200] iter: (7/14) 	cur_lr: 0.000696 loss: 0.385 time:0.66
+=====> epoch[20/200] iter: (8/14) 	cur_lr: 0.000697 loss: 0.404 time:0.62
+=====> epoch[20/200] iter: (9/14) 	cur_lr: 0.000699 loss: 0.396 time:0.60
+=====> epoch[20/200] iter: (10/14) 	cur_lr: 0.000700 loss: 0.419 time:0.60
+=====> epoch[20/200] iter: (11/14) 	cur_lr: 0.000701 loss: 0.374 time:0.60
+=====> epoch[20/200] iter: (12/14) 	cur_lr: 0.000703 loss: 0.388 time:0.60
+=====> epoch[20/200] iter: (13/14) 	cur_lr: 0.000704 loss: 0.401 time:0.61
+=====> epoch[20/200] iter: (14/14) 	cur_lr: 0.000705 loss: 0.385 time:0.60
+Remaining training time = 0 hour 37 minutes 25 seconds
+Epoch : 19 Details
+Epoch No.: 19	Train Loss = 0.4062	 lr= 0.000705
+
+=====> the number of iterations per epoch:  14
+=====> epoch[21/200] iter: (1/14) 	cur_lr: 0.000707 loss: 0.390 time:0.69
+=====> epoch[21/200] iter: (2/14) 	cur_lr: 0.000708 loss: 0.452 time:0.86
+=====> epoch[21/200] iter: (3/14) 	cur_lr: 0.000709 loss: 0.358 time:0.79
+=====> epoch[21/200] iter: (4/14) 	cur_lr: 0.000711 loss: 0.438 time:0.77
+=====> epoch[21/200] iter: (5/14) 	cur_lr: 0.000712 loss: 0.385 time:0.90
+=====> epoch[21/200] iter: (6/14) 	cur_lr: 0.000713 loss: 0.344 time:0.82
+=====> epoch[21/200] iter: (7/14) 	cur_lr: 0.000715 loss: 0.369 time:0.80
+=====> epoch[21/200] iter: (8/14) 	cur_lr: 0.000716 loss: 0.410 time:0.72
+=====> epoch[21/200] iter: (9/14) 	cur_lr: 0.000717 loss: 0.409 time:0.62
+=====> epoch[21/200] iter: (10/14) 	cur_lr: 0.000719 loss: 0.359 time:0.62
+=====> epoch[21/200] iter: (11/14) 	cur_lr: 0.000720 loss: 0.439 time:0.61
+=====> epoch[21/200] iter: (12/14) 	cur_lr: 0.000721 loss: 0.363 time:0.61
+=====> epoch[21/200] iter: (13/14) 	cur_lr: 0.000723 loss: 0.399 time:0.61
+=====> epoch[21/200] iter: (14/14) 	cur_lr: 0.000724 loss: 0.366 time:0.60
+Remaining training time = 0 hour 34 minutes 25 seconds
+Epoch : 20 Details
+Epoch No.: 20	Train Loss = 0.3916	 lr= 0.000724
+
+=====> the number of iterations per epoch:  14
+=====> epoch[22/200] iter: (1/14) 	cur_lr: 0.000725 loss: 0.378 time:0.79
+=====> epoch[22/200] iter: (2/14) 	cur_lr: 0.000727 loss: 0.406 time:0.73
+=====> epoch[22/200] iter: (3/14) 	cur_lr: 0.000728 loss: 0.398 time:0.73
+=====> epoch[22/200] iter: (4/14) 	cur_lr: 0.000729 loss: 0.427 time:0.74
+=====> epoch[22/200] iter: (5/14) 	cur_lr: 0.000731 loss: 0.422 time:0.78
+=====> epoch[22/200] iter: (6/14) 	cur_lr: 0.000732 loss: 0.425 time:0.82
+=====> epoch[22/200] iter: (7/14) 	cur_lr: 0.000733 loss: 0.365 time:0.78
+=====> epoch[22/200] iter: (8/14) 	cur_lr: 0.000735 loss: 0.391 time:0.68
+=====> epoch[22/200] iter: (9/14) 	cur_lr: 0.000736 loss: 0.410 time:0.64
+=====> epoch[22/200] iter: (10/14) 	cur_lr: 0.000737 loss: 0.411 time:0.61
+=====> epoch[22/200] iter: (11/14) 	cur_lr: 0.000739 loss: 0.368 time:0.61
+=====> epoch[22/200] iter: (12/14) 	cur_lr: 0.000740 loss: 0.357 time:0.61
+=====> epoch[22/200] iter: (13/14) 	cur_lr: 0.000741 loss: 0.364 time:0.61
+=====> epoch[22/200] iter: (14/14) 	cur_lr: 0.000743 loss: 0.400 time:0.61
+Remaining training time = 0 hour 35 minutes 1 seconds
+Epoch : 21 Details
+Epoch No.: 21	Train Loss = 0.3944	 lr= 0.000743
+
+=====> the number of iterations per epoch:  14
+=====> epoch[23/200] iter: (1/14) 	cur_lr: 0.000744 loss: 0.377 time:0.78
+=====> epoch[23/200] iter: (2/14) 	cur_lr: 0.000745 loss: 0.356 time:0.73
+=====> epoch[23/200] iter: (3/14) 	cur_lr: 0.000747 loss: 0.374 time:0.68
+=====> epoch[23/200] iter: (4/14) 	cur_lr: 0.000748 loss: 0.421 time:0.75
+=====> epoch[23/200] iter: (5/14) 	cur_lr: 0.000749 loss: 0.407 time:0.70
+=====> epoch[23/200] iter: (6/14) 	cur_lr: 0.000751 loss: 0.326 time:0.70
+=====> epoch[23/200] iter: (7/14) 	cur_lr: 0.000752 loss: 0.371 time:0.62
+=====> epoch[23/200] iter: (8/14) 	cur_lr: 0.000753 loss: 0.372 time:0.62
+=====> epoch[23/200] iter: (9/14) 	cur_lr: 0.000755 loss: 0.406 time:0.62
+=====> epoch[23/200] iter: (10/14) 	cur_lr: 0.000756 loss: 0.351 time:0.62
+=====> epoch[23/200] iter: (11/14) 	cur_lr: 0.000757 loss: 0.387 time:0.62
+=====> epoch[23/200] iter: (12/14) 	cur_lr: 0.000759 loss: 0.356 time:0.62
+=====> epoch[23/200] iter: (13/14) 	cur_lr: 0.000760 loss: 0.396 time:0.61
+=====> epoch[23/200] iter: (14/14) 	cur_lr: 0.000761 loss: 0.381 time:0.61
+Remaining training time = 0 hour 34 minutes 7 seconds
+Epoch : 22 Details
+Epoch No.: 22	Train Loss = 0.3772	 lr= 0.000761
+
+=====> the number of iterations per epoch:  14
+=====> epoch[24/200] iter: (1/14) 	cur_lr: 0.000763 loss: 0.341 time:0.81
+=====> epoch[24/200] iter: (2/14) 	cur_lr: 0.000764 loss: 0.373 time:0.70
+=====> epoch[24/200] iter: (3/14) 	cur_lr: 0.000765 loss: 0.371 time:0.70
+=====> epoch[24/200] iter: (4/14) 	cur_lr: 0.000767 loss: 0.401 time:0.72
+=====> epoch[24/200] iter: (5/14) 	cur_lr: 0.000768 loss: 0.358 time:0.68
+=====> epoch[24/200] iter: (6/14) 	cur_lr: 0.000769 loss: 0.405 time:0.62
+=====> epoch[24/200] iter: (7/14) 	cur_lr: 0.000771 loss: 0.417 time:0.69
+=====> epoch[24/200] iter: (8/14) 	cur_lr: 0.000772 loss: 0.358 time:0.60
+=====> epoch[24/200] iter: (9/14) 	cur_lr: 0.000773 loss: 0.346 time:0.60
+=====> epoch[24/200] iter: (10/14) 	cur_lr: 0.000775 loss: 0.383 time:0.61
+=====> epoch[24/200] iter: (11/14) 	cur_lr: 0.000776 loss: 0.380 time:0.62
+=====> epoch[24/200] iter: (12/14) 	cur_lr: 0.000777 loss: 0.344 time:0.62
+=====> epoch[24/200] iter: (13/14) 	cur_lr: 0.000779 loss: 0.342 time:0.62
+=====> epoch[24/200] iter: (14/14) 	cur_lr: 0.000780 loss: 0.368 time:0.62
+Remaining training time = 0 hour 33 minutes 6 seconds
+Epoch : 23 Details
+Epoch No.: 23	Train Loss = 0.3706	 lr= 0.000780
+
+=====> the number of iterations per epoch:  14
+=====> epoch[25/200] iter: (1/14) 	cur_lr: 0.000781 loss: 0.347 time:0.78
+=====> epoch[25/200] iter: (2/14) 	cur_lr: 0.000783 loss: 0.404 time:0.73
+=====> epoch[25/200] iter: (3/14) 	cur_lr: 0.000784 loss: 0.411 time:0.74
+=====> epoch[25/200] iter: (4/14) 	cur_lr: 0.000785 loss: 0.351 time:0.77
+=====> epoch[25/200] iter: (5/14) 	cur_lr: 0.000787 loss: 0.364 time:0.70
+=====> epoch[25/200] iter: (6/14) 	cur_lr: 0.000788 loss: 0.336 time:0.69
+=====> epoch[25/200] iter: (7/14) 	cur_lr: 0.000789 loss: 0.418 time:0.68
+=====> epoch[25/200] iter: (8/14) 	cur_lr: 0.000791 loss: 0.360 time:0.61
+=====> epoch[25/200] iter: (9/14) 	cur_lr: 0.000792 loss: 0.433 time:0.61
+=====> epoch[25/200] iter: (10/14) 	cur_lr: 0.000793 loss: 0.365 time:0.61
+=====> epoch[25/200] iter: (11/14) 	cur_lr: 0.000795 loss: 0.391 time:0.61
+=====> epoch[25/200] iter: (12/14) 	cur_lr: 0.000796 loss: 0.332 time:0.61
+=====> epoch[25/200] iter: (13/14) 	cur_lr: 0.000797 loss: 0.399 time:0.61
+=====> epoch[25/200] iter: (14/14) 	cur_lr: 0.000799 loss: 0.351 time:0.62
+Remaining training time = 0 hour 33 minutes 13 seconds
+Epoch : 24 Details
+Epoch No.: 24	Train Loss = 0.3757	 lr= 0.000799
+
+=====> the number of iterations per epoch:  14
+=====> epoch[26/200] iter: (1/14) 	cur_lr: 0.000800 loss: 0.368 time:0.83
+=====> epoch[26/200] iter: (2/14) 	cur_lr: 0.000801 loss: 0.387 time:0.74
+=====> epoch[26/200] iter: (3/14) 	cur_lr: 0.000803 loss: 0.356 time:0.67
+=====> epoch[26/200] iter: (4/14) 	cur_lr: 0.000804 loss: 0.364 time:0.76
+=====> epoch[26/200] iter: (5/14) 	cur_lr: 0.000805 loss: 0.357 time:0.72
+=====> epoch[26/200] iter: (6/14) 	cur_lr: 0.000807 loss: 0.369 time:0.71
+=====> epoch[26/200] iter: (7/14) 	cur_lr: 0.000808 loss: 0.338 time:0.66
+=====> epoch[26/200] iter: (8/14) 	cur_lr: 0.000809 loss: 0.361 time:0.60
+=====> epoch[26/200] iter: (9/14) 	cur_lr: 0.000811 loss: 0.295 time:0.60
+=====> epoch[26/200] iter: (10/14) 	cur_lr: 0.000812 loss: 0.340 time:0.60
+=====> epoch[26/200] iter: (11/14) 	cur_lr: 0.000813 loss: 0.387 time:0.60
+=====> epoch[26/200] iter: (12/14) 	cur_lr: 0.000815 loss: 0.340 time:0.60
+=====> epoch[26/200] iter: (13/14) 	cur_lr: 0.000816 loss: 0.339 time:0.61
+=====> epoch[26/200] iter: (14/14) 	cur_lr: 0.000817 loss: 0.410 time:0.61
+Remaining training time = 0 hour 35 minutes 16 seconds
+Epoch : 25 Details
+Epoch No.: 25	Train Loss = 0.3580	 lr= 0.000817
+
+=====> the number of iterations per epoch:  14
+=====> epoch[27/200] iter: (1/14) 	cur_lr: 0.000819 loss: 0.339 time:0.96
+=====> epoch[27/200] iter: (2/14) 	cur_lr: 0.000820 loss: 0.301 time:0.80
+=====> epoch[27/200] iter: (3/14) 	cur_lr: 0.000821 loss: 0.340 time:0.63
+=====> epoch[27/200] iter: (4/14) 	cur_lr: 0.000823 loss: 0.331 time:0.75
+=====> epoch[27/200] iter: (5/14) 	cur_lr: 0.000824 loss: 0.312 time:0.75
+=====> epoch[27/200] iter: (6/14) 	cur_lr: 0.000825 loss: 0.373 time:0.74
+=====> epoch[27/200] iter: (7/14) 	cur_lr: 0.000827 loss: 0.344 time:0.62
+=====> epoch[27/200] iter: (8/14) 	cur_lr: 0.000828 loss: 0.372 time:0.65
+=====> epoch[27/200] iter: (9/14) 	cur_lr: 0.000829 loss: 0.403 time:0.60
+=====> epoch[27/200] iter: (10/14) 	cur_lr: 0.000831 loss: 0.310 time:0.60
+=====> epoch[27/200] iter: (11/14) 	cur_lr: 0.000832 loss: 0.347 time:0.61
+=====> epoch[27/200] iter: (12/14) 	cur_lr: 0.000833 loss: 0.362 time:0.61
+=====> epoch[27/200] iter: (13/14) 	cur_lr: 0.000835 loss: 0.371 time:0.62
+=====> epoch[27/200] iter: (14/14) 	cur_lr: 0.000836 loss: 0.337 time:0.60
+Remaining training time = 0 hour 36 minutes 2 seconds
+Epoch : 26 Details
+Epoch No.: 26	Train Loss = 0.3458	 lr= 0.000836
+
+=====> the number of iterations per epoch:  14
+=====> epoch[28/200] iter: (1/14) 	cur_lr: 0.000837 loss: 0.333 time:0.81
+=====> epoch[28/200] iter: (2/14) 	cur_lr: 0.000839 loss: 0.347 time:0.84
+=====> epoch[28/200] iter: (3/14) 	cur_lr: 0.000840 loss: 0.339 time:0.81
+=====> epoch[28/200] iter: (4/14) 	cur_lr: 0.000841 loss: 0.316 time:0.92
+=====> epoch[28/200] iter: (5/14) 	cur_lr: 0.000843 loss: 0.338 time:0.87
+=====> epoch[28/200] iter: (6/14) 	cur_lr: 0.000844 loss: 0.439 time:0.66
+=====> epoch[28/200] iter: (7/14) 	cur_lr: 0.000845 loss: 0.404 time:0.72
+=====> epoch[28/200] iter: (8/14) 	cur_lr: 0.000847 loss: 0.314 time:0.70
+=====> epoch[28/200] iter: (9/14) 	cur_lr: 0.000848 loss: 0.368 time:0.63
+=====> epoch[28/200] iter: (10/14) 	cur_lr: 0.000849 loss: 0.354 time:0.60
+=====> epoch[28/200] iter: (11/14) 	cur_lr: 0.000851 loss: 0.344 time:0.60
+=====> epoch[28/200] iter: (12/14) 	cur_lr: 0.000852 loss: 0.364 time:0.61
+=====> epoch[28/200] iter: (13/14) 	cur_lr: 0.000853 loss: 0.390 time:0.61
+=====> epoch[28/200] iter: (14/14) 	cur_lr: 0.000855 loss: 0.364 time:0.61
+Remaining training time = 0 hour 34 minutes 14 seconds
+Epoch : 27 Details
+Epoch No.: 27	Train Loss = 0.3581	 lr= 0.000855
+
+=====> the number of iterations per epoch:  14
+=====> epoch[29/200] iter: (1/14) 	cur_lr: 0.000856 loss: 0.334 time:0.77
+=====> epoch[29/200] iter: (2/14) 	cur_lr: 0.000857 loss: 0.348 time:0.73
+=====> epoch[29/200] iter: (3/14) 	cur_lr: 0.000859 loss: 0.346 time:0.77
+=====> epoch[29/200] iter: (4/14) 	cur_lr: 0.000860 loss: 0.341 time:0.81
+=====> epoch[29/200] iter: (5/14) 	cur_lr: 0.000861 loss: 0.366 time:0.78
+=====> epoch[29/200] iter: (6/14) 	cur_lr: 0.000863 loss: 0.329 time:0.82
+=====> epoch[29/200] iter: (7/14) 	cur_lr: 0.000864 loss: 0.399 time:0.76
+=====> epoch[29/200] iter: (8/14) 	cur_lr: 0.000865 loss: 0.357 time:0.70
+=====> epoch[29/200] iter: (9/14) 	cur_lr: 0.000867 loss: 0.344 time:0.60
+=====> epoch[29/200] iter: (10/14) 	cur_lr: 0.000868 loss: 0.346 time:0.60
+=====> epoch[29/200] iter: (11/14) 	cur_lr: 0.000869 loss: 0.360 time:0.61
+=====> epoch[29/200] iter: (12/14) 	cur_lr: 0.000871 loss: 0.331 time:0.61
+=====> epoch[29/200] iter: (13/14) 	cur_lr: 0.000872 loss: 0.410 time:0.61
+=====> epoch[29/200] iter: (14/14) 	cur_lr: 0.000873 loss: 0.340 time:0.60
+Remaining training time = 0 hour 34 minutes 18 seconds
+Epoch : 28 Details
+Epoch No.: 28	Train Loss = 0.3537	 lr= 0.000873
+
+=====> the number of iterations per epoch:  14
+=====> epoch[30/200] iter: (1/14) 	cur_lr: 0.000875 loss: 0.372 time:0.80
+=====> epoch[30/200] iter: (2/14) 	cur_lr: 0.000876 loss: 0.344 time:0.76
+=====> epoch[30/200] iter: (3/14) 	cur_lr: 0.000877 loss: 0.317 time:0.72
+=====> epoch[30/200] iter: (4/14) 	cur_lr: 0.000879 loss: 0.341 time:0.70
+=====> epoch[30/200] iter: (5/14) 	cur_lr: 0.000880 loss: 0.401 time:0.74
+=====> epoch[30/200] iter: (6/14) 	cur_lr: 0.000881 loss: 0.352 time:0.69
+=====> epoch[30/200] iter: (7/14) 	cur_lr: 0.000883 loss: 0.326 time:0.71
+=====> epoch[30/200] iter: (8/14) 	cur_lr: 0.000884 loss: 0.335 time:0.64
+=====> epoch[30/200] iter: (9/14) 	cur_lr: 0.000885 loss: 0.337 time:0.62
+=====> epoch[30/200] iter: (10/14) 	cur_lr: 0.000887 loss: 0.361 time:0.62
+=====> epoch[30/200] iter: (11/14) 	cur_lr: 0.000888 loss: 0.378 time:0.62
+=====> epoch[30/200] iter: (12/14) 	cur_lr: 0.000889 loss: 0.317 time:0.61
+=====> epoch[30/200] iter: (13/14) 	cur_lr: 0.000891 loss: 0.349 time:0.61
+=====> epoch[30/200] iter: (14/14) 	cur_lr: 0.000892 loss: 0.355 time:0.61
+Remaining training time = 0 hour 33 minutes 6 seconds
+Epoch : 29 Details
+Epoch No.: 29	Train Loss = 0.3488	 lr= 0.000892
+
+=====> the number of iterations per epoch:  14
+=====> epoch[31/200] iter: (1/14) 	cur_lr: 0.000893 loss: 0.328 time:0.75
+=====> epoch[31/200] iter: (2/14) 	cur_lr: 0.000895 loss: 0.346 time:0.76
+=====> epoch[31/200] iter: (3/14) 	cur_lr: 0.000896 loss: 0.325 time:0.71
+=====> epoch[31/200] iter: (4/14) 	cur_lr: 0.000897 loss: 0.371 time:0.69
+=====> epoch[31/200] iter: (5/14) 	cur_lr: 0.000899 loss: 0.318 time:0.76
+=====> epoch[31/200] iter: (6/14) 	cur_lr: 0.000900 loss: 0.360 time:0.73
+=====> epoch[31/200] iter: (7/14) 	cur_lr: 0.000901 loss: 0.330 time:0.70
+=====> epoch[31/200] iter: (8/14) 	cur_lr: 0.000903 loss: 0.348 time:0.63
+=====> epoch[31/200] iter: (9/14) 	cur_lr: 0.000904 loss: 0.331 time:0.60
+=====> epoch[31/200] iter: (10/14) 	cur_lr: 0.000905 loss: 0.390 time:0.62
+=====> epoch[31/200] iter: (11/14) 	cur_lr: 0.000907 loss: 0.357 time:0.62
+=====> epoch[31/200] iter: (12/14) 	cur_lr: 0.000908 loss: 0.304 time:0.62
+=====> epoch[31/200] iter: (13/14) 	cur_lr: 0.000909 loss: 0.379 time:0.62
+=====> epoch[31/200] iter: (14/14) 	cur_lr: 0.000911 loss: 0.375 time:0.62
+Remaining training time = 0 hour 30 minutes 52 seconds
+Epoch : 30 Details
+Epoch No.: 30	Train Loss = 0.3473	 lr= 0.000911
+
+=====> the number of iterations per epoch:  14
+=====> epoch[32/200] iter: (1/14) 	cur_lr: 0.000912 loss: 0.366 time:0.82
+=====> epoch[32/200] iter: (2/14) 	cur_lr: 0.000913 loss: 0.309 time:0.77
+=====> epoch[32/200] iter: (3/14) 	cur_lr: 0.000915 loss: 0.310 time:0.73
+=====> epoch[32/200] iter: (4/14) 	cur_lr: 0.000916 loss: 0.298 time:0.75
+=====> epoch[32/200] iter: (5/14) 	cur_lr: 0.000917 loss: 0.268 time:0.73
+=====> epoch[32/200] iter: (6/14) 	cur_lr: 0.000919 loss: 0.393 time:0.68
+=====> epoch[32/200] iter: (7/14) 	cur_lr: 0.000920 loss: 0.316 time:0.69
+=====> epoch[32/200] iter: (8/14) 	cur_lr: 0.000921 loss: 0.347 time:0.60
+=====> epoch[32/200] iter: (9/14) 	cur_lr: 0.000923 loss: 0.317 time:0.60
+=====> epoch[32/200] iter: (10/14) 	cur_lr: 0.000924 loss: 0.329 time:0.61
+=====> epoch[32/200] iter: (11/14) 	cur_lr: 0.000925 loss: 0.319 time:0.61
+=====> epoch[32/200] iter: (12/14) 	cur_lr: 0.000927 loss: 0.342 time:0.60
+=====> epoch[32/200] iter: (13/14) 	cur_lr: 0.000928 loss: 0.380 time:0.62
+=====> epoch[32/200] iter: (14/14) 	cur_lr: 0.000929 loss: 0.302 time:0.62
+Remaining training time = 0 hour 31 minutes 40 seconds
+Epoch : 31 Details
+Epoch No.: 31	Train Loss = 0.3283	 lr= 0.000929
+
+=====> the number of iterations per epoch:  14
+=====> epoch[33/200] iter: (1/14) 	cur_lr: 0.000931 loss: 0.377 time:0.78
+=====> epoch[33/200] iter: (2/14) 	cur_lr: 0.000932 loss: 0.301 time:0.75
+=====> epoch[33/200] iter: (3/14) 	cur_lr: 0.000933 loss: 0.338 time:0.71
+=====> epoch[33/200] iter: (4/14) 	cur_lr: 0.000935 loss: 0.370 time:0.73
+=====> epoch[33/200] iter: (5/14) 	cur_lr: 0.000936 loss: 0.294 time:0.73
+=====> epoch[33/200] iter: (6/14) 	cur_lr: 0.000937 loss: 0.279 time:0.77
+=====> epoch[33/200] iter: (7/14) 	cur_lr: 0.000939 loss: 0.354 time:0.68
+=====> epoch[33/200] iter: (8/14) 	cur_lr: 0.000940 loss: 0.322 time:0.60
+=====> epoch[33/200] iter: (9/14) 	cur_lr: 0.000941 loss: 0.280 time:0.61
+=====> epoch[33/200] iter: (10/14) 	cur_lr: 0.000943 loss: 0.322 time:0.60
+=====> epoch[33/200] iter: (11/14) 	cur_lr: 0.000944 loss: 0.314 time:0.60
+=====> epoch[33/200] iter: (12/14) 	cur_lr: 0.000945 loss: 0.353 time:0.60
+=====> epoch[33/200] iter: (13/14) 	cur_lr: 0.000947 loss: 0.287 time:0.60
+=====> epoch[33/200] iter: (14/14) 	cur_lr: 0.000948 loss: 0.311 time:0.61
+Remaining training time = 0 hour 33 minutes 28 seconds
+Epoch : 32 Details
+Epoch No.: 32	Train Loss = 0.3214	 lr= 0.000948
+
+=====> the number of iterations per epoch:  14
+=====> epoch[34/200] iter: (1/14) 	cur_lr: 0.000949 loss: 0.347 time:0.92
+=====> epoch[34/200] iter: (2/14) 	cur_lr: 0.000951 loss: 0.317 time:0.77
+=====> epoch[34/200] iter: (3/14) 	cur_lr: 0.000952 loss: 0.296 time:0.72
+=====> epoch[34/200] iter: (4/14) 	cur_lr: 0.000953 loss: 0.310 time:0.72
+=====> epoch[34/200] iter: (5/14) 	cur_lr: 0.000955 loss: 0.356 time:0.73
+=====> epoch[34/200] iter: (6/14) 	cur_lr: 0.000956 loss: 0.325 time:0.72
+=====> epoch[34/200] iter: (7/14) 	cur_lr: 0.000957 loss: 0.291 time:0.67
+=====> epoch[34/200] iter: (8/14) 	cur_lr: 0.000959 loss: 0.266 time:0.61
+=====> epoch[34/200] iter: (9/14) 	cur_lr: 0.000960 loss: 0.325 time:0.60
+=====> epoch[34/200] iter: (10/14) 	cur_lr: 0.000961 loss: 0.339 time:0.60
+=====> epoch[34/200] iter: (11/14) 	cur_lr: 0.000963 loss: 0.328 time:0.60
+=====> epoch[34/200] iter: (12/14) 	cur_lr: 0.000964 loss: 0.334 time:0.60
+=====> epoch[34/200] iter: (13/14) 	cur_lr: 0.000965 loss: 0.317 time:0.60
+=====> epoch[34/200] iter: (14/14) 	cur_lr: 0.000967 loss: 0.284 time:0.60
+Remaining training time = 0 hour 35 minutes 13 seconds
+Epoch : 33 Details
+Epoch No.: 33	Train Loss = 0.3167	 lr= 0.000967
+
+=====> the number of iterations per epoch:  14
+=====> epoch[35/200] iter: (1/14) 	cur_lr: 0.000968 loss: 0.282 time:0.97
+=====> epoch[35/200] iter: (2/14) 	cur_lr: 0.000969 loss: 0.301 time:0.81
+=====> epoch[35/200] iter: (3/14) 	cur_lr: 0.000971 loss: 0.335 time:0.84
+=====> epoch[35/200] iter: (4/14) 	cur_lr: 0.000972 loss: 0.299 time:0.85
+=====> epoch[35/200] iter: (5/14) 	cur_lr: 0.000973 loss: 0.308 time:0.77
+=====> epoch[35/200] iter: (6/14) 	cur_lr: 0.000975 loss: 0.348 time:0.68
+=====> epoch[35/200] iter: (7/14) 	cur_lr: 0.000976 loss: 0.291 time:0.76
+=====> epoch[35/200] iter: (8/14) 	cur_lr: 0.000977 loss: 0.367 time:0.65
+=====> epoch[35/200] iter: (9/14) 	cur_lr: 0.000979 loss: 0.357 time:0.60
+=====> epoch[35/200] iter: (10/14) 	cur_lr: 0.000980 loss: 0.350 time:0.60
+=====> epoch[35/200] iter: (11/14) 	cur_lr: 0.000981 loss: 0.304 time:0.61
+=====> epoch[35/200] iter: (12/14) 	cur_lr: 0.000983 loss: 0.307 time:0.60
+=====> epoch[35/200] iter: (13/14) 	cur_lr: 0.000984 loss: 0.322 time:0.60
+=====> epoch[35/200] iter: (14/14) 	cur_lr: 0.000985 loss: 0.287 time:0.60
+Remaining training time = 0 hour 33 minutes 25 seconds
+Epoch : 34 Details
+Epoch No.: 34	Train Loss = 0.3185	 lr= 0.000985
+
+=====> the number of iterations per epoch:  14
+=====> epoch[36/200] iter: (1/14) 	cur_lr: 0.000987 loss: 0.359 time:0.80
+=====> epoch[36/200] iter: (2/14) 	cur_lr: 0.000988 loss: 0.332 time:0.76
+=====> epoch[36/200] iter: (3/14) 	cur_lr: 0.000989 loss: 0.336 time:0.85
+=====> epoch[36/200] iter: (4/14) 	cur_lr: 0.000991 loss: 0.287 time:0.82
+=====> epoch[36/200] iter: (5/14) 	cur_lr: 0.000992 loss: 0.287 time:0.85
+=====> epoch[36/200] iter: (6/14) 	cur_lr: 0.000993 loss: 0.313 time:0.80
+=====> epoch[36/200] iter: (7/14) 	cur_lr: 0.000995 loss: 0.308 time:0.76
+=====> epoch[36/200] iter: (8/14) 	cur_lr: 0.000996 loss: 0.278 time:0.68
+=====> epoch[36/200] iter: (9/14) 	cur_lr: 0.000997 loss: 0.328 time:0.60
+=====> epoch[36/200] iter: (10/14) 	cur_lr: 0.000999 loss: 0.346 time:0.61
+=====> epoch[36/200] iter: (11/14) 	cur_lr: 0.001000 loss: 0.302 time:0.61
+=====> epoch[36/200] iter: (12/14) 	cur_lr: 0.001000 loss: 0.277 time:0.61
+=====> epoch[36/200] iter: (13/14) 	cur_lr: 0.000999 loss: 0.310 time:0.61
+=====> epoch[36/200] iter: (14/14) 	cur_lr: 0.000999 loss: 0.339 time:0.61
+Remaining training time = 0 hour 33 minutes 12 seconds
+Epoch : 35 Details
+Epoch No.: 35	Train Loss = 0.3144	 lr= 0.000999
+
+=====> the number of iterations per epoch:  14
+=====> epoch[37/200] iter: (1/14) 	cur_lr: 0.000998 loss: 0.328 time:0.77
+=====> epoch[37/200] iter: (2/14) 	cur_lr: 0.000998 loss: 0.312 time:0.72
+=====> epoch[37/200] iter: (3/14) 	cur_lr: 0.000998 loss: 0.297 time:0.75
+=====> epoch[37/200] iter: (4/14) 	cur_lr: 0.000997 loss: 0.382 time:0.68
+=====> epoch[37/200] iter: (5/14) 	cur_lr: 0.000997 loss: 0.293 time:0.70
+=====> epoch[37/200] iter: (6/14) 	cur_lr: 0.000996 loss: 0.335 time:0.68
+=====> epoch[37/200] iter: (7/14) 	cur_lr: 0.000996 loss: 0.313 time:0.84
+=====> epoch[37/200] iter: (8/14) 	cur_lr: 0.000996 loss: 0.322 time:0.69
+=====> epoch[37/200] iter: (9/14) 	cur_lr: 0.000995 loss: 0.370 time:0.73
+=====> epoch[37/200] iter: (10/14) 	cur_lr: 0.000995 loss: 0.340 time:0.62
+=====> epoch[37/200] iter: (11/14) 	cur_lr: 0.000995 loss: 0.296 time:0.61
+=====> epoch[37/200] iter: (12/14) 	cur_lr: 0.000994 loss: 0.384 time:0.61
+=====> epoch[37/200] iter: (13/14) 	cur_lr: 0.000994 loss: 0.356 time:0.61
+=====> epoch[37/200] iter: (14/14) 	cur_lr: 0.000993 loss: 0.300 time:0.61
+Remaining training time = 0 hour 31 minutes 1 seconds
+Epoch : 36 Details
+Epoch No.: 36	Train Loss = 0.3306	 lr= 0.000993
+
+=====> the number of iterations per epoch:  14
+=====> epoch[38/200] iter: (1/14) 	cur_lr: 0.000993 loss: 0.371 time:0.78
+=====> epoch[38/200] iter: (2/14) 	cur_lr: 0.000993 loss: 0.352 time:0.74
+=====> epoch[38/200] iter: (3/14) 	cur_lr: 0.000992 loss: 0.316 time:0.73
+=====> epoch[38/200] iter: (4/14) 	cur_lr: 0.000992 loss: 0.360 time:0.72
+=====> epoch[38/200] iter: (5/14) 	cur_lr: 0.000991 loss: 0.384 time:0.75
+=====> epoch[38/200] iter: (6/14) 	cur_lr: 0.000991 loss: 0.288 time:0.69
+=====> epoch[38/200] iter: (7/14) 	cur_lr: 0.000991 loss: 0.319 time:0.63
+=====> epoch[38/200] iter: (8/14) 	cur_lr: 0.000990 loss: 0.373 time:0.62
+=====> epoch[38/200] iter: (9/14) 	cur_lr: 0.000990 loss: 0.330 time:0.62
+=====> epoch[38/200] iter: (10/14) 	cur_lr: 0.000989 loss: 0.272 time:0.62
+=====> epoch[38/200] iter: (11/14) 	cur_lr: 0.000989 loss: 0.310 time:0.62
+=====> epoch[38/200] iter: (12/14) 	cur_lr: 0.000989 loss: 0.296 time:0.63
+=====> epoch[38/200] iter: (13/14) 	cur_lr: 0.000988 loss: 0.319 time:0.62
+=====> epoch[38/200] iter: (14/14) 	cur_lr: 0.000988 loss: 0.303 time:0.62
+Remaining training time = 0 hour 30 minutes 59 seconds
+Epoch : 37 Details
+Epoch No.: 37	Train Loss = 0.3280	 lr= 0.000988
+
+=====> the number of iterations per epoch:  14
+=====> epoch[39/200] iter: (1/14) 	cur_lr: 0.000987 loss: 0.274 time:0.82
+=====> epoch[39/200] iter: (2/14) 	cur_lr: 0.000987 loss: 0.280 time:0.79
+=====> epoch[39/200] iter: (3/14) 	cur_lr: 0.000987 loss: 0.344 time:0.77
+=====> epoch[39/200] iter: (4/14) 	cur_lr: 0.000986 loss: 0.359 time:0.73
+=====> epoch[39/200] iter: (5/14) 	cur_lr: 0.000986 loss: 0.279 time:0.71
+=====> epoch[39/200] iter: (6/14) 	cur_lr: 0.000986 loss: 0.315 time:0.73
+=====> epoch[39/200] iter: (7/14) 	cur_lr: 0.000985 loss: 0.334 time:0.69
+=====> epoch[39/200] iter: (8/14) 	cur_lr: 0.000985 loss: 0.317 time:0.62
+=====> epoch[39/200] iter: (9/14) 	cur_lr: 0.000984 loss: 0.306 time:0.61
+=====> epoch[39/200] iter: (10/14) 	cur_lr: 0.000984 loss: 0.361 time:0.60
+=====> epoch[39/200] iter: (11/14) 	cur_lr: 0.000984 loss: 0.296 time:0.61
+=====> epoch[39/200] iter: (12/14) 	cur_lr: 0.000983 loss: 0.292 time:0.61
+=====> epoch[39/200] iter: (13/14) 	cur_lr: 0.000983 loss: 0.307 time:0.62
+=====> epoch[39/200] iter: (14/14) 	cur_lr: 0.000982 loss: 0.315 time:0.62
+Remaining training time = 0 hour 31 minutes 7 seconds
+Epoch : 38 Details
+Epoch No.: 38	Train Loss = 0.3127	 lr= 0.000982
+
+=====> the number of iterations per epoch:  14
+=====> epoch[40/200] iter: (1/14) 	cur_lr: 0.000982 loss: 0.300 time:0.78
+=====> epoch[40/200] iter: (2/14) 	cur_lr: 0.000982 loss: 0.340 time:0.74
+=====> epoch[40/200] iter: (3/14) 	cur_lr: 0.000981 loss: 0.333 time:0.72
+=====> epoch[40/200] iter: (4/14) 	cur_lr: 0.000981 loss: 0.306 time:0.66
+=====> epoch[40/200] iter: (5/14) 	cur_lr: 0.000980 loss: 0.293 time:0.77
+=====> epoch[40/200] iter: (6/14) 	cur_lr: 0.000980 loss: 0.324 time:0.80
+=====> epoch[40/200] iter: (7/14) 	cur_lr: 0.000980 loss: 0.281 time:0.72
+=====> epoch[40/200] iter: (8/14) 	cur_lr: 0.000979 loss: 0.281 time:0.68
+=====> epoch[40/200] iter: (9/14) 	cur_lr: 0.000979 loss: 0.306 time:0.63
+=====> epoch[40/200] iter: (10/14) 	cur_lr: 0.000978 loss: 0.290 time:0.61
+=====> epoch[40/200] iter: (11/14) 	cur_lr: 0.000978 loss: 0.292 time:0.60
+=====> epoch[40/200] iter: (12/14) 	cur_lr: 0.000978 loss: 0.307 time:0.61
+=====> epoch[40/200] iter: (13/14) 	cur_lr: 0.000977 loss: 0.262 time:0.61
+=====> epoch[40/200] iter: (14/14) 	cur_lr: 0.000977 loss: 0.330 time:0.61
+Remaining training time = 0 hour 32 minutes 44 seconds
+Epoch : 39 Details
+Epoch No.: 39	Train Loss = 0.3032	 lr= 0.000977
+
+=====> the number of iterations per epoch:  14
+=====> epoch[41/200] iter: (1/14) 	cur_lr: 0.000976 loss: 0.290 time:0.87
+=====> epoch[41/200] iter: (2/14) 	cur_lr: 0.000976 loss: 0.312 time:0.70
+=====> epoch[41/200] iter: (3/14) 	cur_lr: 0.000976 loss: 0.311 time:0.70
+=====> epoch[41/200] iter: (4/14) 	cur_lr: 0.000975 loss: 0.288 time:0.74
+=====> epoch[41/200] iter: (5/14) 	cur_lr: 0.000975 loss: 0.298 time:0.73
+=====> epoch[41/200] iter: (6/14) 	cur_lr: 0.000975 loss: 0.300 time:0.71
+=====> epoch[41/200] iter: (7/14) 	cur_lr: 0.000974 loss: 0.303 time:0.65
+=====> epoch[41/200] iter: (8/14) 	cur_lr: 0.000974 loss: 0.342 time:0.61
+=====> epoch[41/200] iter: (9/14) 	cur_lr: 0.000973 loss: 0.272 time:0.60
+=====> epoch[41/200] iter: (10/14) 	cur_lr: 0.000973 loss: 0.266 time:0.61
+=====> epoch[41/200] iter: (11/14) 	cur_lr: 0.000973 loss: 0.311 time:0.61
+=====> epoch[41/200] iter: (12/14) 	cur_lr: 0.000972 loss: 0.282 time:0.60
+=====> epoch[41/200] iter: (13/14) 	cur_lr: 0.000972 loss: 0.270 time:0.61
+=====> epoch[41/200] iter: (14/14) 	cur_lr: 0.000971 loss: 0.281 time:0.61
+Remaining training time = 0 hour 34 minutes 32 seconds
+Epoch : 40 Details
+Epoch No.: 40	Train Loss = 0.2948	 lr= 0.000971
+
+=====> the number of iterations per epoch:  14
+=====> epoch[42/200] iter: (1/14) 	cur_lr: 0.000971 loss: 0.277 time:0.95
+=====> epoch[42/200] iter: (2/14) 	cur_lr: 0.000971 loss: 0.272 time:0.84
+=====> epoch[42/200] iter: (3/14) 	cur_lr: 0.000970 loss: 0.304 time:0.83
+=====> epoch[42/200] iter: (4/14) 	cur_lr: 0.000970 loss: 0.315 time:0.79
+=====> epoch[42/200] iter: (5/14) 	cur_lr: 0.000969 loss: 0.289 time:0.73
+=====> epoch[42/200] iter: (6/14) 	cur_lr: 0.000969 loss: 0.255 time:0.65
+=====> epoch[42/200] iter: (7/14) 	cur_lr: 0.000969 loss: 0.313 time:0.70
+=====> epoch[42/200] iter: (8/14) 	cur_lr: 0.000968 loss: 0.277 time:0.69
+=====> epoch[42/200] iter: (9/14) 	cur_lr: 0.000968 loss: 0.297 time:0.69
+=====> epoch[42/200] iter: (10/14) 	cur_lr: 0.000967 loss: 0.276 time:0.61
+=====> epoch[42/200] iter: (11/14) 	cur_lr: 0.000967 loss: 0.294 time:0.60
+=====> epoch[42/200] iter: (12/14) 	cur_lr: 0.000967 loss: 0.266 time:0.61
+=====> epoch[42/200] iter: (13/14) 	cur_lr: 0.000966 loss: 0.328 time:0.60
+=====> epoch[42/200] iter: (14/14) 	cur_lr: 0.000966 loss: 0.278 time:0.61
+Remaining training time = 0 hour 33 minutes 18 seconds
+Epoch : 41 Details
+Epoch No.: 41	Train Loss = 0.2886	 lr= 0.000966
+
+=====> the number of iterations per epoch:  14
+=====> epoch[43/200] iter: (1/14) 	cur_lr: 0.000965 loss: 0.266 time:0.80
+=====> epoch[43/200] iter: (2/14) 	cur_lr: 0.000965 loss: 0.311 time:0.71
+=====> epoch[43/200] iter: (3/14) 	cur_lr: 0.000965 loss: 0.255 time:0.79
+=====> epoch[43/200] iter: (4/14) 	cur_lr: 0.000964 loss: 0.314 time:0.88
+=====> epoch[43/200] iter: (5/14) 	cur_lr: 0.000964 loss: 0.346 time:0.74
+=====> epoch[43/200] iter: (6/14) 	cur_lr: 0.000964 loss: 0.298 time:0.84
+=====> epoch[43/200] iter: (7/14) 	cur_lr: 0.000963 loss: 0.302 time:0.77
+=====> epoch[43/200] iter: (8/14) 	cur_lr: 0.000963 loss: 0.290 time:0.81
+=====> epoch[43/200] iter: (9/14) 	cur_lr: 0.000962 loss: 0.312 time:0.65
+=====> epoch[43/200] iter: (10/14) 	cur_lr: 0.000962 loss: 0.307 time:0.60
+=====> epoch[43/200] iter: (11/14) 	cur_lr: 0.000962 loss: 0.265 time:0.60
+=====> epoch[43/200] iter: (12/14) 	cur_lr: 0.000961 loss: 0.284 time:0.61
+=====> epoch[43/200] iter: (13/14) 	cur_lr: 0.000961 loss: 0.267 time:0.61
+=====> epoch[43/200] iter: (14/14) 	cur_lr: 0.000960 loss: 0.275 time:0.61
+Remaining training time = 0 hour 31 minutes 19 seconds
+Epoch : 42 Details
+Epoch No.: 42	Train Loss = 0.2923	 lr= 0.000960
+
+=====> the number of iterations per epoch:  14
+=====> epoch[44/200] iter: (1/14) 	cur_lr: 0.000960 loss: 0.254 time:0.76
+=====> epoch[44/200] iter: (2/14) 	cur_lr: 0.000960 loss: 0.286 time:0.71
+=====> epoch[44/200] iter: (3/14) 	cur_lr: 0.000959 loss: 0.295 time:0.71
+=====> epoch[44/200] iter: (4/14) 	cur_lr: 0.000959 loss: 0.306 time:0.70
+=====> epoch[44/200] iter: (5/14) 	cur_lr: 0.000958 loss: 0.266 time:0.77
+=====> epoch[44/200] iter: (6/14) 	cur_lr: 0.000958 loss: 0.295 time:0.75
+=====> epoch[44/200] iter: (7/14) 	cur_lr: 0.000958 loss: 0.308 time:0.70
+=====> epoch[44/200] iter: (8/14) 	cur_lr: 0.000957 loss: 0.279 time:0.68
+=====> epoch[44/200] iter: (9/14) 	cur_lr: 0.000957 loss: 0.288 time:0.71
+=====> epoch[44/200] iter: (10/14) 	cur_lr: 0.000956 loss: 0.301 time:0.62
+=====> epoch[44/200] iter: (11/14) 	cur_lr: 0.000956 loss: 0.277 time:0.62
+=====> epoch[44/200] iter: (12/14) 	cur_lr: 0.000956 loss: 0.252 time:0.62
+=====> epoch[44/200] iter: (13/14) 	cur_lr: 0.000955 loss: 0.290 time:0.61
+=====> epoch[44/200] iter: (14/14) 	cur_lr: 0.000955 loss: 0.273 time:0.61
+Remaining training time = 0 hour 29 minutes 0 seconds
+Epoch : 43 Details
+Epoch No.: 43	Train Loss = 0.2835	 lr= 0.000955
+
+=====> the number of iterations per epoch:  14
+=====> epoch[45/200] iter: (1/14) 	cur_lr: 0.000954 loss: 0.264 time:0.80
+=====> epoch[45/200] iter: (2/14) 	cur_lr: 0.000954 loss: 0.280 time:0.75
+=====> epoch[45/200] iter: (3/14) 	cur_lr: 0.000954 loss: 0.269 time:0.72
+=====> epoch[45/200] iter: (4/14) 	cur_lr: 0.000953 loss: 0.263 time:0.76
+=====> epoch[45/200] iter: (5/14) 	cur_lr: 0.000953 loss: 0.334 time:0.70
+=====> epoch[45/200] iter: (6/14) 	cur_lr: 0.000953 loss: 0.246 time:0.77
+=====> epoch[45/200] iter: (7/14) 	cur_lr: 0.000952 loss: 0.287 time:0.75
+=====> epoch[45/200] iter: (8/14) 	cur_lr: 0.000952 loss: 0.265 time:0.62
+=====> epoch[45/200] iter: (9/14) 	cur_lr: 0.000951 loss: 0.258 time:0.61
+=====> epoch[45/200] iter: (10/14) 	cur_lr: 0.000951 loss: 0.273 time:0.63
+=====> epoch[45/200] iter: (11/14) 	cur_lr: 0.000951 loss: 0.294 time:0.62
+=====> epoch[45/200] iter: (12/14) 	cur_lr: 0.000950 loss: 0.295 time:0.62
+=====> epoch[45/200] iter: (13/14) 	cur_lr: 0.000950 loss: 0.254 time:0.62
+=====> epoch[45/200] iter: (14/14) 	cur_lr: 0.000949 loss: 0.264 time:0.62
+Remaining training time = 0 hour 29 minutes 40 seconds
+Epoch : 44 Details
+Epoch No.: 44	Train Loss = 0.2748	 lr= 0.000949
+
+=====> the number of iterations per epoch:  14
+=====> epoch[46/200] iter: (1/14) 	cur_lr: 0.000949 loss: 0.279 time:0.78
+=====> epoch[46/200] iter: (2/14) 	cur_lr: 0.000949 loss: 0.295 time:0.74
+=====> epoch[46/200] iter: (3/14) 	cur_lr: 0.000948 loss: 0.272 time:0.78
+=====> epoch[46/200] iter: (4/14) 	cur_lr: 0.000948 loss: 0.277 time:0.76
+=====> epoch[46/200] iter: (5/14) 	cur_lr: 0.000947 loss: 0.264 time:0.72
+=====> epoch[46/200] iter: (6/14) 	cur_lr: 0.000947 loss: 0.280 time:0.71
+=====> epoch[46/200] iter: (7/14) 	cur_lr: 0.000947 loss: 0.280 time:0.63
+=====> epoch[46/200] iter: (8/14) 	cur_lr: 0.000946 loss: 0.233 time:0.60
+=====> epoch[46/200] iter: (9/14) 	cur_lr: 0.000946 loss: 0.291 time:0.61
+=====> epoch[46/200] iter: (10/14) 	cur_lr: 0.000945 loss: 0.277 time:0.61
+=====> epoch[46/200] iter: (11/14) 	cur_lr: 0.000945 loss: 0.271 time:0.60
+=====> epoch[46/200] iter: (12/14) 	cur_lr: 0.000945 loss: 0.303 time:0.60
+=====> epoch[46/200] iter: (13/14) 	cur_lr: 0.000944 loss: 0.247 time:0.60
+=====> epoch[46/200] iter: (14/14) 	cur_lr: 0.000944 loss: 0.292 time:0.62
+Remaining training time = 0 hour 29 minutes 6 seconds
+Epoch : 45 Details
+Epoch No.: 45	Train Loss = 0.2758	 lr= 0.000944
+
+=====> the number of iterations per epoch:  14
+=====> epoch[47/200] iter: (1/14) 	cur_lr: 0.000943 loss: 0.296 time:0.90
+=====> epoch[47/200] iter: (2/14) 	cur_lr: 0.000943 loss: 0.284 time:0.72
+=====> epoch[47/200] iter: (3/14) 	cur_lr: 0.000943 loss: 0.293 time:0.73
+=====> epoch[47/200] iter: (4/14) 	cur_lr: 0.000942 loss: 0.285 time:0.69
+=====> epoch[47/200] iter: (5/14) 	cur_lr: 0.000942 loss: 0.271 time:0.75
+=====> epoch[47/200] iter: (6/14) 	cur_lr: 0.000942 loss: 0.238 time:0.74
+=====> epoch[47/200] iter: (7/14) 	cur_lr: 0.000941 loss: 0.227 time:0.65
+=====> epoch[47/200] iter: (8/14) 	cur_lr: 0.000941 loss: 0.293 time:0.60
+=====> epoch[47/200] iter: (9/14) 	cur_lr: 0.000940 loss: 0.260 time:0.61
+=====> epoch[47/200] iter: (10/14) 	cur_lr: 0.000940 loss: 0.332 time:0.61
+=====> epoch[47/200] iter: (11/14) 	cur_lr: 0.000940 loss: 0.251 time:0.60
+=====> epoch[47/200] iter: (12/14) 	cur_lr: 0.000939 loss: 0.243 time:0.61
+=====> epoch[47/200] iter: (13/14) 	cur_lr: 0.000939 loss: 0.261 time:0.61
+=====> epoch[47/200] iter: (14/14) 	cur_lr: 0.000938 loss: 0.268 time:0.61
+Remaining training time = 0 hour 32 minutes 23 seconds
+Epoch : 46 Details
+Epoch No.: 46	Train Loss = 0.2717	 lr= 0.000938
+
+=====> the number of iterations per epoch:  14
+=====> epoch[48/200] iter: (1/14) 	cur_lr: 0.000938 loss: 0.277 time:0.94
+=====> epoch[48/200] iter: (2/14) 	cur_lr: 0.000938 loss: 0.279 time:0.82
+=====> epoch[48/200] iter: (3/14) 	cur_lr: 0.000937 loss: 0.258 time:0.79
+=====> epoch[48/200] iter: (4/14) 	cur_lr: 0.000937 loss: 0.292 time:0.76
+=====> epoch[48/200] iter: (5/14) 	cur_lr: 0.000936 loss: 0.256 time:0.73
+=====> epoch[48/200] iter: (6/14) 	cur_lr: 0.000936 loss: 0.280 time:0.76
+=====> epoch[48/200] iter: (7/14) 	cur_lr: 0.000936 loss: 0.273 time:0.67
+=====> epoch[48/200] iter: (8/14) 	cur_lr: 0.000935 loss: 0.294 time:0.68
+=====> epoch[48/200] iter: (9/14) 	cur_lr: 0.000935 loss: 0.303 time:0.60
+=====> epoch[48/200] iter: (10/14) 	cur_lr: 0.000934 loss: 0.295 time:0.60
+=====> epoch[48/200] iter: (11/14) 	cur_lr: 0.000934 loss: 0.242 time:0.60
+=====> epoch[48/200] iter: (12/14) 	cur_lr: 0.000934 loss: 0.311 time:0.61
+=====> epoch[48/200] iter: (13/14) 	cur_lr: 0.000933 loss: 0.306 time:0.61
+=====> epoch[48/200] iter: (14/14) 	cur_lr: 0.000933 loss: 0.277 time:0.61
+Remaining training time = 0 hour 31 minutes 57 seconds
+Epoch : 47 Details
+Epoch No.: 47	Train Loss = 0.2817	 lr= 0.000933
+
+=====> the number of iterations per epoch:  14
+=====> epoch[49/200] iter: (1/14) 	cur_lr: 0.000932 loss: 0.280 time:0.80
+=====> epoch[49/200] iter: (2/14) 	cur_lr: 0.000932 loss: 0.225 time:0.67
+=====> epoch[49/200] iter: (3/14) 	cur_lr: 0.000932 loss: 0.265 time:0.89
+=====> epoch[49/200] iter: (4/14) 	cur_lr: 0.000931 loss: 0.257 time:0.88
+=====> epoch[49/200] iter: (5/14) 	cur_lr: 0.000931 loss: 0.291 time:0.84
+=====> epoch[49/200] iter: (6/14) 	cur_lr: 0.000930 loss: 0.282 time:0.81
+=====> epoch[49/200] iter: (7/14) 	cur_lr: 0.000930 loss: 0.305 time:0.83
+=====> epoch[49/200] iter: (8/14) 	cur_lr: 0.000930 loss: 0.274 time:0.69
+=====> epoch[49/200] iter: (9/14) 	cur_lr: 0.000929 loss: 0.256 time:0.69
+=====> epoch[49/200] iter: (10/14) 	cur_lr: 0.000929 loss: 0.250 time:0.61
+=====> epoch[49/200] iter: (11/14) 	cur_lr: 0.000928 loss: 0.270 time:0.61
+=====> epoch[49/200] iter: (12/14) 	cur_lr: 0.000928 loss: 0.273 time:0.60
+=====> epoch[49/200] iter: (13/14) 	cur_lr: 0.000928 loss: 0.257 time:0.60
+=====> epoch[49/200] iter: (14/14) 	cur_lr: 0.000927 loss: 0.253 time:0.61
+Remaining training time = 0 hour 31 minutes 12 seconds
+Epoch : 48 Details
+Epoch No.: 48	Train Loss = 0.2670	 lr= 0.000927
+
+=====> the number of iterations per epoch:  14
+=====> epoch[50/200] iter: (1/14) 	cur_lr: 0.000927 loss: 0.260 time:0.80
+=====> epoch[50/200] iter: (2/14) 	cur_lr: 0.000927 loss: 0.248 time:0.76
+=====> epoch[50/200] iter: (3/14) 	cur_lr: 0.000926 loss: 0.254 time:0.74
+=====> epoch[50/200] iter: (4/14) 	cur_lr: 0.000926 loss: 0.236 time:0.80
+=====> epoch[50/200] iter: (5/14) 	cur_lr: 0.000925 loss: 0.245 time:0.74
+=====> epoch[50/200] iter: (6/14) 	cur_lr: 0.000925 loss: 0.268 time:0.74
+=====> epoch[50/200] iter: (7/14) 	cur_lr: 0.000925 loss: 0.274 time:0.79
+=====> epoch[50/200] iter: (8/14) 	cur_lr: 0.000924 loss: 0.250 time:0.71
+=====> epoch[50/200] iter: (9/14) 	cur_lr: 0.000924 loss: 0.286 time:0.65
+=====> epoch[50/200] iter: (10/14) 	cur_lr: 0.000923 loss: 0.276 time:0.62
+=====> epoch[50/200] iter: (11/14) 	cur_lr: 0.000923 loss: 0.248 time:0.62
+=====> epoch[50/200] iter: (12/14) 	cur_lr: 0.000923 loss: 0.273 time:0.61
+=====> epoch[50/200] iter: (13/14) 	cur_lr: 0.000922 loss: 0.242 time:0.60
+=====> epoch[50/200] iter: (14/14) 	cur_lr: 0.000922 loss: 0.261 time:0.61
+Remaining training time = 0 hour 29 minutes 38 seconds
+Epoch : 49 Details
+Epoch No.: 49	Train Loss = 0.2587	 lr= 0.000922
+
+=====> the number of iterations per epoch:  14
+=====> epoch[51/200] iter: (1/14) 	cur_lr: 0.000921 loss: 0.256 time:0.82
+=====> epoch[51/200] iter: (2/14) 	cur_lr: 0.000921 loss: 0.232 time:0.71
+=====> epoch[51/200] iter: (3/14) 	cur_lr: 0.000921 loss: 0.245 time:0.71
+=====> epoch[51/200] iter: (4/14) 	cur_lr: 0.000920 loss: 0.269 time:0.73
+=====> epoch[51/200] iter: (5/14) 	cur_lr: 0.000920 loss: 0.303 time:0.74
+=====> epoch[51/200] iter: (6/14) 	cur_lr: 0.000919 loss: 0.225 time:0.65
+=====> epoch[51/200] iter: (7/14) 	cur_lr: 0.000919 loss: 0.217 time:0.70
+=====> epoch[51/200] iter: (8/14) 	cur_lr: 0.000919 loss: 0.239 time:0.60
+=====> epoch[51/200] iter: (9/14) 	cur_lr: 0.000918 loss: 0.265 time:0.62
+=====> epoch[51/200] iter: (10/14) 	cur_lr: 0.000918 loss: 0.258 time:0.62
+=====> epoch[51/200] iter: (11/14) 	cur_lr: 0.000917 loss: 0.273 time:0.62
+=====> epoch[51/200] iter: (12/14) 	cur_lr: 0.000917 loss: 0.280 time:0.62
+=====> epoch[51/200] iter: (13/14) 	cur_lr: 0.000917 loss: 0.266 time:0.62
+=====> epoch[51/200] iter: (14/14) 	cur_lr: 0.000916 loss: 0.241 time:0.62
+Remaining training time = 0 hour 28 minutes 9 seconds
+[1/233]  time: 0.09
+[2/233]  time: 0.02
+[3/233]  time: 0.02
+[4/233]  time: 0.02
+[5/233]  time: 0.02
+[6/233]  time: 0.02
+[7/233]  time: 0.02
+[8/233]  time: 0.02
+[9/233]  time: 0.02
+[10/233]  time: 0.02
+[11/233]  time: 0.01
+[12/233]  time: 0.02
+[13/233]  time: 0.02
+[14/233]  time: 0.02
+[15/233]  time: 0.02
+[16/233]  time: 0.02
+[17/233]  time: 0.01
+[18/233]  time: 0.02
+[19/233]  time: 0.02
+[20/233]  time: 0.01
+[21/233]  time: 0.01
+[22/233]  time: 0.02
+[23/233]  time: 0.03
+[24/233]  time: 0.02
+[25/233]  time: 0.02
+[26/233]  time: 0.02
+[27/233]  time: 0.02
+[28/233]  time: 0.02
+[29/233]  time: 0.01
+[30/233]  time: 0.02
+[31/233]  time: 0.02
+[32/233]  time: 0.02
+[33/233]  time: 0.02
+[34/233]  time: 0.03
+[35/233]  time: 0.02
+[36/233]  time: 0.02
+[37/233]  time: 0.02
+[38/233]  time: 0.02
+[39/233]  time: 0.02
+[40/233]  time: 0.02
+[41/233]  time: 0.02
+[42/233]  time: 0.02
+[43/233]  time: 0.02
+[44/233]  time: 0.03
+[45/233]  time: 0.02
+[46/233]  time: 0.02
+[47/233]  time: 0.02
+[48/233]  time: 0.02
+[49/233]  time: 0.02
+[50/233]  time: 0.03
+[51/233]  time: 0.02
+[52/233]  time: 0.02
+[53/233]  time: 0.02
+[54/233]  time: 0.02
+[55/233]  time: 0.02
+[56/233]  time: 0.02
+[57/233]  time: 0.03
+[58/233]  time: 0.03
+[59/233]  time: 0.02
+[60/233]  time: 0.02
+[61/233]  time: 0.02
+[62/233]  time: 0.02
+[63/233]  time: 0.03
+[64/233]  time: 0.02
+[65/233]  time: 0.02
+[66/233]  time: 0.02
+[67/233]  time: 0.02
+[68/233]  time: 0.02
+[69/233]  time: 0.02
+[70/233]  time: 0.02
+[71/233]  time: 0.02
+[72/233]  time: 0.02
+[73/233]  time: 0.02
+[74/233]  time: 0.02
+[75/233]  time: 0.02
+[76/233]  time: 0.03
+[77/233]  time: 0.02
+[78/233]  time: 0.02
+[79/233]  time: 0.02
+[80/233]  time: 0.02
+[81/233]  time: 0.02
+[82/233]  time: 0.02
+[83/233]  time: 0.02
+[84/233]  time: 0.02
+[85/233]  time: 0.02
+[86/233]  time: 0.02
+[87/233]  time: 0.02
+[88/233]  time: 0.02
+[89/233]  time: 0.02
+[90/233]  time: 0.02
+[91/233]  time: 0.02
+[92/233]  time: 0.02
+[93/233]  time: 0.02
+[94/233]  time: 0.01
+[95/233]  time: 0.02
+[96/233]  time: 0.02
+[97/233]  time: 0.02
+[98/233]  time: 0.02
+[99/233]  time: 0.02
+[100/233]  time: 0.02
+[101/233]  time: 0.03
+[102/233]  time: 0.02
+[103/233]  time: 0.02
+[104/233]  time: 0.02
+[105/233]  time: 0.02
+[106/233]  time: 0.02
+[107/233]  time: 0.02
+[108/233]  time: 0.02
+[109/233]  time: 0.02
+[110/233]  time: 0.02
+[111/233]  time: 0.02
+[112/233]  time: 0.02
+[113/233]  time: 0.02
+[114/233]  time: 0.02
+[115/233]  time: 0.01
+[116/233]  time: 0.01
+[117/233]  time: 0.02
+[118/233]  time: 0.02
+[119/233]  time: 0.02
+[120/233]  time: 0.01
+[121/233]  time: 0.01
+[122/233]  time: 0.02
+[123/233]  time: 0.02
+[124/233]  time: 0.01
+[125/233]  time: 0.01
+[126/233]  time: 0.03
+[127/233]  time: 0.02
+[128/233]  time: 0.01
+[129/233]  time: 0.02
+[130/233]  time: 0.02
+[131/233]  time: 0.02
+[132/233]  time: 0.02
+[133/233]  time: 0.02
+[134/233]  time: 0.01
+[135/233]  time: 0.02
+[136/233]  time: 0.02
+[137/233]  time: 0.02
+[138/233]  time: 0.02
+[139/233]  time: 0.01
+[140/233]  time: 0.02
+[141/233]  time: 0.02
+[142/233]  time: 0.02
+[143/233]  time: 0.02
+[144/233]  time: 0.02
+[145/233]  time: 0.02
+[146/233]  time: 0.02
+[147/233]  time: 0.02
+[148/233]  time: 0.02
+[149/233]  time: 0.02
+[150/233]  time: 0.02
+[151/233]  time: 0.02
+[152/233]  time: 0.02
+[153/233]  time: 0.02
+[154/233]  time: 0.02
+[155/233]  time: 0.02
+[156/233]  time: 0.02
+[157/233]  time: 0.02
+[158/233]  time: 0.01
+[159/233]  time: 0.02
+[160/233]  time: 0.02
+[161/233]  time: 0.02
+[162/233]  time: 0.02
+[163/233]  time: 0.02
+[164/233]  time: 0.02
+[165/233]  time: 0.02
+[166/233]  time: 0.02
+[167/233]  time: 0.02
+[168/233]  time: 0.02
+[169/233]  time: 0.02
+[170/233]  time: 0.02
+[171/233]  time: 0.02
+[172/233]  time: 0.02
+[173/233]  time: 0.02
+[174/233]  time: 0.02
+[175/233]  time: 0.02
+[176/233]  time: 0.02
+[177/233]  time: 0.02
+[178/233]  time: 0.01
+[179/233]  time: 0.02
+[180/233]  time: 0.02
+[181/233]  time: 0.02
+[182/233]  time: 0.02
+[183/233]  time: 0.02
+[184/233]  time: 0.02
+[185/233]  time: 0.02
+[186/233]  time: 0.01
+[187/233]  time: 0.01
+[188/233]  time: 0.02
+[189/233]  time: 0.02
+[190/233]  time: 0.02
+[191/233]  time: 0.01
+[192/233]  time: 0.01
+[193/233]  time: 0.01
+[194/233]  time: 0.02
+[195/233]  time: 0.03
+[196/233]  time: 0.02
+[197/233]  time: 0.02
+[198/233]  time: 0.02
+[199/233]  time: 0.02
+[200/233]  time: 0.02
+[201/233]  time: 0.02
+[202/233]  time: 0.02
+[203/233]  time: 0.02
+[204/233]  time: 0.02
+[205/233]  time: 0.02
+[206/233]  time: 0.02
+[207/233]  time: 0.02
+[208/233]  time: 0.03
+[209/233]  time: 0.02
+[210/233]  time: 0.01
+[211/233]  time: 0.03
+[212/233]  time: 0.02
+[213/233]  time: 0.02
+[214/233]  time: 0.02
+[215/233]  time: 0.02
+[216/233]  time: 0.02
+[217/233]  time: 0.02
+[218/233]  time: 0.02
+[219/233]  time: 0.02
+[220/233]  time: 0.02
+[221/233]  time: 0.02
+[222/233]  time: 0.02
+[223/233]  time: 0.02
+[224/233]  time: 0.02
+[225/233]  time: 0.02
+[226/233]  time: 0.01
+[227/233]  time: 0.01
+[228/233]  time: 0.01
+[229/233]  time: 0.01
+[230/233]  time: 0.01
+[231/233]  time: 0.01
+[232/233]  time: 0.01
+[233/233]  time: 0.01
+Epoch : 50 Details
+Epoch No.: 50	Train Loss = 0.2550	 mIOU(val) = 0.5003	 lr= 0.000916
+
+=====> the number of iterations per epoch:  14
+=====> epoch[52/200] iter: (1/14) 	cur_lr: 0.000916 loss: 0.274 time:0.83
+=====> epoch[52/200] iter: (2/14) 	cur_lr: 0.000915 loss: 0.280 time:0.69
+=====> epoch[52/200] iter: (3/14) 	cur_lr: 0.000915 loss: 0.246 time:0.76
+=====> epoch[52/200] iter: (4/14) 	cur_lr: 0.000915 loss: 0.250 time:0.76
+=====> epoch[52/200] iter: (5/14) 	cur_lr: 0.000914 loss: 0.231 time:0.69
+=====> epoch[52/200] iter: (6/14) 	cur_lr: 0.000914 loss: 0.270 time:0.71
+=====> epoch[52/200] iter: (7/14) 	cur_lr: 0.000913 loss: 0.270 time:0.63
+=====> epoch[52/200] iter: (8/14) 	cur_lr: 0.000913 loss: 0.261 time:0.61
+=====> epoch[52/200] iter: (9/14) 	cur_lr: 0.000913 loss: 0.247 time:0.61
+=====> epoch[52/200] iter: (10/14) 	cur_lr: 0.000912 loss: 0.255 time:0.61
+=====> epoch[52/200] iter: (11/14) 	cur_lr: 0.000912 loss: 0.229 time:0.63
+=====> epoch[52/200] iter: (12/14) 	cur_lr: 0.000912 loss: 0.224 time:0.62
+=====> epoch[52/200] iter: (13/14) 	cur_lr: 0.000911 loss: 0.249 time:0.60
+=====> epoch[52/200] iter: (14/14) 	cur_lr: 0.000911 loss: 0.292 time:0.61
+Remaining training time = 0 hour 28 minutes 30 seconds
+Epoch : 51 Details
+Epoch No.: 51	Train Loss = 0.2557	 lr= 0.000911
+
+=====> the number of iterations per epoch:  14
+=====> epoch[53/200] iter: (1/14) 	cur_lr: 0.000910 loss: 0.233 time:0.78
+=====> epoch[53/200] iter: (2/14) 	cur_lr: 0.000910 loss: 0.259 time:0.72
+=====> epoch[53/200] iter: (3/14) 	cur_lr: 0.000910 loss: 0.235 time:0.79
+=====> epoch[53/200] iter: (4/14) 	cur_lr: 0.000909 loss: 0.260 time:0.69
+=====> epoch[53/200] iter: (5/14) 	cur_lr: 0.000909 loss: 0.239 time:0.69
+=====> epoch[53/200] iter: (6/14) 	cur_lr: 0.000908 loss: 0.234 time:0.87
+=====> epoch[53/200] iter: (7/14) 	cur_lr: 0.000908 loss: 0.257 time:0.67
+=====> epoch[53/200] iter: (8/14) 	cur_lr: 0.000908 loss: 0.256 time:0.61
+=====> epoch[53/200] iter: (9/14) 	cur_lr: 0.000907 loss: 0.265 time:0.61
+=====> epoch[53/200] iter: (10/14) 	cur_lr: 0.000907 loss: 0.270 time:0.61
+=====> epoch[53/200] iter: (11/14) 	cur_lr: 0.000906 loss: 0.277 time:0.62
+=====> epoch[53/200] iter: (12/14) 	cur_lr: 0.000906 loss: 0.268 time:0.62
+=====> epoch[53/200] iter: (13/14) 	cur_lr: 0.000906 loss: 0.278 time:0.62
+=====> epoch[53/200] iter: (14/14) 	cur_lr: 0.000905 loss: 0.254 time:0.63
+Remaining training time = 0 hour 28 minutes 29 seconds
+Epoch : 52 Details
+Epoch No.: 52	Train Loss = 0.2560	 lr= 0.000905
+
+=====> the number of iterations per epoch:  14
+=====> epoch[54/200] iter: (1/14) 	cur_lr: 0.000905 loss: 0.227 time:0.83
+=====> epoch[54/200] iter: (2/14) 	cur_lr: 0.000904 loss: 0.290 time:0.73
+=====> epoch[54/200] iter: (3/14) 	cur_lr: 0.000904 loss: 0.253 time:0.70
+=====> epoch[54/200] iter: (4/14) 	cur_lr: 0.000904 loss: 0.264 time:0.76
+=====> epoch[54/200] iter: (5/14) 	cur_lr: 0.000903 loss: 0.265 time:0.70
+=====> epoch[54/200] iter: (6/14) 	cur_lr: 0.000903 loss: 0.259 time:0.68
+=====> epoch[54/200] iter: (7/14) 	cur_lr: 0.000902 loss: 0.256 time:0.64
+=====> epoch[54/200] iter: (8/14) 	cur_lr: 0.000902 loss: 0.243 time:0.62
+=====> epoch[54/200] iter: (9/14) 	cur_lr: 0.000902 loss: 0.252 time:0.62
+=====> epoch[54/200] iter: (10/14) 	cur_lr: 0.000901 loss: 0.232 time:0.61
+=====> epoch[54/200] iter: (11/14) 	cur_lr: 0.000901 loss: 0.266 time:0.61
+=====> epoch[54/200] iter: (12/14) 	cur_lr: 0.000900 loss: 0.291 time:0.61
+=====> epoch[54/200] iter: (13/14) 	cur_lr: 0.000900 loss: 0.222 time:0.62
+=====> epoch[54/200] iter: (14/14) 	cur_lr: 0.000900 loss: 0.284 time:0.62
+Remaining training time = 0 hour 28 minutes 53 seconds
+Epoch : 53 Details
+Epoch No.: 53	Train Loss = 0.2575	 lr= 0.000900
+
+=====> the number of iterations per epoch:  14
+=====> epoch[55/200] iter: (1/14) 	cur_lr: 0.000899 loss: 0.247 time:0.77
+=====> epoch[55/200] iter: (2/14) 	cur_lr: 0.000899 loss: 0.250 time:0.72
+=====> epoch[55/200] iter: (3/14) 	cur_lr: 0.000898 loss: 0.272 time:0.70
+=====> epoch[55/200] iter: (4/14) 	cur_lr: 0.000898 loss: 0.268 time:0.80
+=====> epoch[55/200] iter: (5/14) 	cur_lr: 0.000898 loss: 0.263 time:0.73
+=====> epoch[55/200] iter: (6/14) 	cur_lr: 0.000897 loss: 0.262 time:0.80
+=====> epoch[55/200] iter: (7/14) 	cur_lr: 0.000897 loss: 0.249 time:0.70
+=====> epoch[55/200] iter: (8/14) 	cur_lr: 0.000896 loss: 0.215 time:0.63
+=====> epoch[55/200] iter: (9/14) 	cur_lr: 0.000896 loss: 0.266 time:0.61
+=====> epoch[55/200] iter: (10/14) 	cur_lr: 0.000896 loss: 0.249 time:0.61
+=====> epoch[55/200] iter: (11/14) 	cur_lr: 0.000895 loss: 0.267 time:0.61
+=====> epoch[55/200] iter: (12/14) 	cur_lr: 0.000895 loss: 0.259 time:0.60
+=====> epoch[55/200] iter: (13/14) 	cur_lr: 0.000894 loss: 0.266 time:0.60
+=====> epoch[55/200] iter: (14/14) 	cur_lr: 0.000894 loss: 0.293 time:0.61
+Remaining training time = 0 hour 29 minutes 50 seconds
+Epoch : 54 Details
+Epoch No.: 54	Train Loss = 0.2590	 lr= 0.000894
+
+=====> the number of iterations per epoch:  14
+=====> epoch[56/200] iter: (1/14) 	cur_lr: 0.000894 loss: 0.287 time:0.86
+=====> epoch[56/200] iter: (2/14) 	cur_lr: 0.000893 loss: 0.221 time:0.90
+=====> epoch[56/200] iter: (3/14) 	cur_lr: 0.000893 loss: 0.279 time:0.75
+=====> epoch[56/200] iter: (4/14) 	cur_lr: 0.000893 loss: 0.289 time:0.76
+=====> epoch[56/200] iter: (5/14) 	cur_lr: 0.000892 loss: 0.271 time:0.69
+=====> epoch[56/200] iter: (6/14) 	cur_lr: 0.000892 loss: 0.279 time:0.74
+=====> epoch[56/200] iter: (7/14) 	cur_lr: 0.000891 loss: 0.239 time:0.73
+=====> epoch[56/200] iter: (8/14) 	cur_lr: 0.000891 loss: 0.230 time:0.68
+=====> epoch[56/200] iter: (9/14) 	cur_lr: 0.000891 loss: 0.265 time:0.60
+=====> epoch[56/200] iter: (10/14) 	cur_lr: 0.000890 loss: 0.266 time:0.60
+=====> epoch[56/200] iter: (11/14) 	cur_lr: 0.000890 loss: 0.251 time:0.60
+=====> epoch[56/200] iter: (12/14) 	cur_lr: 0.000889 loss: 0.271 time:0.60
+=====> epoch[56/200] iter: (13/14) 	cur_lr: 0.000889 loss: 0.248 time:0.60
+=====> epoch[56/200] iter: (14/14) 	cur_lr: 0.000889 loss: 0.249 time:0.61
+Remaining training time = 0 hour 29 minutes 38 seconds
+Epoch : 55 Details
+Epoch No.: 55	Train Loss = 0.2605	 lr= 0.000889
+
+=====> the number of iterations per epoch:  14
+=====> epoch[57/200] iter: (1/14) 	cur_lr: 0.000888 loss: 0.262 time:0.75
+=====> epoch[57/200] iter: (2/14) 	cur_lr: 0.000888 loss: 0.254 time:0.84
+=====> epoch[57/200] iter: (3/14) 	cur_lr: 0.000887 loss: 0.241 time:0.88
+=====> epoch[57/200] iter: (4/14) 	cur_lr: 0.000887 loss: 0.287 time:0.87
+=====> epoch[57/200] iter: (5/14) 	cur_lr: 0.000887 loss: 0.262 time:0.88
+=====> epoch[57/200] iter: (6/14) 	cur_lr: 0.000886 loss: 0.309 time:0.78
+=====> epoch[57/200] iter: (7/14) 	cur_lr: 0.000886 loss: 0.230 time:0.65
+=====> epoch[57/200] iter: (8/14) 	cur_lr: 0.000885 loss: 0.281 time:0.70
+=====> epoch[57/200] iter: (9/14) 	cur_lr: 0.000885 loss: 0.265 time:0.64
+=====> epoch[57/200] iter: (10/14) 	cur_lr: 0.000885 loss: 0.268 time:0.63
+=====> epoch[57/200] iter: (11/14) 	cur_lr: 0.000884 loss: 0.229 time:0.60
+=====> epoch[57/200] iter: (12/14) 	cur_lr: 0.000884 loss: 0.238 time:0.60
+=====> epoch[57/200] iter: (13/14) 	cur_lr: 0.000883 loss: 0.229 time:0.60
+=====> epoch[57/200] iter: (14/14) 	cur_lr: 0.000883 loss: 0.287 time:0.60
+Remaining training time = 0 hour 27 minutes 43 seconds
+Epoch : 56 Details
+Epoch No.: 56	Train Loss = 0.2602	 lr= 0.000883
+
+=====> the number of iterations per epoch:  14
+=====> epoch[58/200] iter: (1/14) 	cur_lr: 0.000883 loss: 0.234 time:0.82
+=====> epoch[58/200] iter: (2/14) 	cur_lr: 0.000882 loss: 0.286 time:0.70
+=====> epoch[58/200] iter: (3/14) 	cur_lr: 0.000882 loss: 0.221 time:0.78
+=====> epoch[58/200] iter: (4/14) 	cur_lr: 0.000881 loss: 0.236 time:0.73
+=====> epoch[58/200] iter: (5/14) 	cur_lr: 0.000881 loss: 0.248 time:0.80
+=====> epoch[58/200] iter: (6/14) 	cur_lr: 0.000881 loss: 0.288 time:0.90
+=====> epoch[58/200] iter: (7/14) 	cur_lr: 0.000880 loss: 0.264 time:0.86
+=====> epoch[58/200] iter: (8/14) 	cur_lr: 0.000880 loss: 0.238 time:0.72
+=====> epoch[58/200] iter: (9/14) 	cur_lr: 0.000879 loss: 0.263 time:0.71
+=====> epoch[58/200] iter: (10/14) 	cur_lr: 0.000879 loss: 0.248 time:0.63
+=====> epoch[58/200] iter: (11/14) 	cur_lr: 0.000879 loss: 0.245 time:0.60
+=====> epoch[58/200] iter: (12/14) 	cur_lr: 0.000878 loss: 0.286 time:0.60
+=====> epoch[58/200] iter: (13/14) 	cur_lr: 0.000878 loss: 0.230 time:0.61
+=====> epoch[58/200] iter: (14/14) 	cur_lr: 0.000877 loss: 0.249 time:0.60
+Remaining training time = 0 hour 28 minutes 27 seconds
+Epoch : 57 Details
+Epoch No.: 57	Train Loss = 0.2526	 lr= 0.000877
+
+=====> the number of iterations per epoch:  14
+=====> epoch[59/200] iter: (1/14) 	cur_lr: 0.000877 loss: 0.253 time:0.79
+=====> epoch[59/200] iter: (2/14) 	cur_lr: 0.000877 loss: 0.280 time:0.76
+=====> epoch[59/200] iter: (3/14) 	cur_lr: 0.000876 loss: 0.241 time:0.75
+=====> epoch[59/200] iter: (4/14) 	cur_lr: 0.000876 loss: 0.218 time:0.69
+=====> epoch[59/200] iter: (5/14) 	cur_lr: 0.000875 loss: 0.271 time:0.72
+=====> epoch[59/200] iter: (6/14) 	cur_lr: 0.000875 loss: 0.255 time:0.70
+=====> epoch[59/200] iter: (7/14) 	cur_lr: 0.000875 loss: 0.267 time:0.68
+=====> epoch[59/200] iter: (8/14) 	cur_lr: 0.000874 loss: 0.291 time:0.60
+=====> epoch[59/200] iter: (9/14) 	cur_lr: 0.000874 loss: 0.238 time:0.62
+=====> epoch[59/200] iter: (10/14) 	cur_lr: 0.000873 loss: 0.240 time:0.61
+=====> epoch[59/200] iter: (11/14) 	cur_lr: 0.000873 loss: 0.285 time:0.62
+=====> epoch[59/200] iter: (12/14) 	cur_lr: 0.000873 loss: 0.261 time:0.62
+=====> epoch[59/200] iter: (13/14) 	cur_lr: 0.000872 loss: 0.227 time:0.61
+=====> epoch[59/200] iter: (14/14) 	cur_lr: 0.000872 loss: 0.251 time:0.60
+Remaining training time = 0 hour 26 minutes 25 seconds
+Epoch : 58 Details
+Epoch No.: 58	Train Loss = 0.2555	 lr= 0.000872
+
+=====> the number of iterations per epoch:  14
+=====> epoch[60/200] iter: (1/14) 	cur_lr: 0.000871 loss: 0.249 time:0.79
+=====> epoch[60/200] iter: (2/14) 	cur_lr: 0.000871 loss: 0.253 time:0.79
+=====> epoch[60/200] iter: (3/14) 	cur_lr: 0.000871 loss: 0.233 time:0.78
+=====> epoch[60/200] iter: (4/14) 	cur_lr: 0.000870 loss: 0.252 time:0.77
+=====> epoch[60/200] iter: (5/14) 	cur_lr: 0.000870 loss: 0.268 time:0.69
+=====> epoch[60/200] iter: (6/14) 	cur_lr: 0.000869 loss: 0.250 time:0.73
+=====> epoch[60/200] iter: (7/14) 	cur_lr: 0.000869 loss: 0.226 time:0.64
+=====> epoch[60/200] iter: (8/14) 	cur_lr: 0.000869 loss: 0.262 time:0.60
+=====> epoch[60/200] iter: (9/14) 	cur_lr: 0.000868 loss: 0.249 time:0.60
+=====> epoch[60/200] iter: (10/14) 	cur_lr: 0.000868 loss: 0.203 time:0.60
+=====> epoch[60/200] iter: (11/14) 	cur_lr: 0.000868 loss: 0.224 time:0.62
+=====> epoch[60/200] iter: (12/14) 	cur_lr: 0.000867 loss: 0.227 time:0.62
+=====> epoch[60/200] iter: (13/14) 	cur_lr: 0.000867 loss: 0.253 time:0.62
+=====> epoch[60/200] iter: (14/14) 	cur_lr: 0.000866 loss: 0.239 time:0.62
+Remaining training time = 0 hour 27 minutes 1 seconds
+Epoch : 59 Details
+Epoch No.: 59	Train Loss = 0.2421	 lr= 0.000866
+
+=====> the number of iterations per epoch:  14
+=====> epoch[61/200] iter: (1/14) 	cur_lr: 0.000866 loss: 0.246 time:0.90
+=====> epoch[61/200] iter: (2/14) 	cur_lr: 0.000866 loss: 0.238 time:0.72
+=====> epoch[61/200] iter: (3/14) 	cur_lr: 0.000865 loss: 0.271 time:0.80
+=====> epoch[61/200] iter: (4/14) 	cur_lr: 0.000865 loss: 0.231 time:0.70
+=====> epoch[61/200] iter: (5/14) 	cur_lr: 0.000864 loss: 0.269 time:0.75
+=====> epoch[61/200] iter: (6/14) 	cur_lr: 0.000864 loss: 0.286 time:0.69
+=====> epoch[61/200] iter: (7/14) 	cur_lr: 0.000864 loss: 0.249 time:0.63
+=====> epoch[61/200] iter: (8/14) 	cur_lr: 0.000863 loss: 0.228 time:0.60
+=====> epoch[61/200] iter: (9/14) 	cur_lr: 0.000863 loss: 0.254 time:0.61
+=====> epoch[61/200] iter: (10/14) 	cur_lr: 0.000862 loss: 0.239 time:0.61
+=====> epoch[61/200] iter: (11/14) 	cur_lr: 0.000862 loss: 0.291 time:0.60
+=====> epoch[61/200] iter: (12/14) 	cur_lr: 0.000862 loss: 0.253 time:0.61
+=====> epoch[61/200] iter: (13/14) 	cur_lr: 0.000861 loss: 0.265 time:0.61
+=====> epoch[61/200] iter: (14/14) 	cur_lr: 0.000861 loss: 0.258 time:0.62
+Remaining training time = 0 hour 27 minutes 20 seconds
+Epoch : 60 Details
+Epoch No.: 60	Train Loss = 0.2555	 lr= 0.000861
+
+=====> the number of iterations per epoch:  14
+=====> epoch[62/200] iter: (1/14) 	cur_lr: 0.000860 loss: 0.248 time:0.81
+=====> epoch[62/200] iter: (2/14) 	cur_lr: 0.000860 loss: 0.249 time:0.71
+=====> epoch[62/200] iter: (3/14) 	cur_lr: 0.000860 loss: 0.223 time:0.70
+=====> epoch[62/200] iter: (4/14) 	cur_lr: 0.000859 loss: 0.245 time:0.71
+=====> epoch[62/200] iter: (5/14) 	cur_lr: 0.000859 loss: 0.225 time:0.74
+=====> epoch[62/200] iter: (6/14) 	cur_lr: 0.000858 loss: 0.221 time:0.69
+=====> epoch[62/200] iter: (7/14) 	cur_lr: 0.000858 loss: 0.256 time:0.69
+=====> epoch[62/200] iter: (8/14) 	cur_lr: 0.000858 loss: 0.242 time:0.60
+=====> epoch[62/200] iter: (9/14) 	cur_lr: 0.000857 loss: 0.263 time:0.60
+=====> epoch[62/200] iter: (10/14) 	cur_lr: 0.000857 loss: 0.227 time:0.60
+=====> epoch[62/200] iter: (11/14) 	cur_lr: 0.000856 loss: 0.228 time:0.60
+=====> epoch[62/200] iter: (12/14) 	cur_lr: 0.000856 loss: 0.282 time:0.61
+=====> epoch[62/200] iter: (13/14) 	cur_lr: 0.000856 loss: 0.252 time:0.61
+=====> epoch[62/200] iter: (14/14) 	cur_lr: 0.000855 loss: 0.232 time:0.61
+Remaining training time = 0 hour 28 minutes 33 seconds
+Epoch : 61 Details
+Epoch No.: 61	Train Loss = 0.2424	 lr= 0.000855
+
+=====> the number of iterations per epoch:  14
+=====> epoch[63/200] iter: (1/14) 	cur_lr: 0.000855 loss: 0.248 time:0.98
+=====> epoch[63/200] iter: (2/14) 	cur_lr: 0.000854 loss: 0.239 time:0.84
+=====> epoch[63/200] iter: (3/14) 	cur_lr: 0.000854 loss: 0.226 time:0.76
+=====> epoch[63/200] iter: (4/14) 	cur_lr: 0.000854 loss: 0.233 time:0.77
+=====> epoch[63/200] iter: (5/14) 	cur_lr: 0.000853 loss: 0.217 time:0.77
+=====> epoch[63/200] iter: (6/14) 	cur_lr: 0.000853 loss: 0.262 time:0.88
+=====> epoch[63/200] iter: (7/14) 	cur_lr: 0.000852 loss: 0.241 time:0.75
+=====> epoch[63/200] iter: (8/14) 	cur_lr: 0.000852 loss: 0.216 time:0.64
+=====> epoch[63/200] iter: (9/14) 	cur_lr: 0.000852 loss: 0.238 time:0.61
+=====> epoch[63/200] iter: (10/14) 	cur_lr: 0.000851 loss: 0.258 time:0.61
+=====> epoch[63/200] iter: (11/14) 	cur_lr: 0.000851 loss: 0.217 time:0.61
+=====> epoch[63/200] iter: (12/14) 	cur_lr: 0.000850 loss: 0.254 time:0.60
+=====> epoch[63/200] iter: (13/14) 	cur_lr: 0.000850 loss: 0.276 time:0.60
+=====> epoch[63/200] iter: (14/14) 	cur_lr: 0.000850 loss: 0.223 time:0.61
+Remaining training time = 0 hour 28 minutes 55 seconds
+Epoch : 62 Details
+Epoch No.: 62	Train Loss = 0.2392	 lr= 0.000850
+
+=====> the number of iterations per epoch:  14
+=====> epoch[64/200] iter: (1/14) 	cur_lr: 0.000849 loss: 0.250 time:0.93
+=====> epoch[64/200] iter: (2/14) 	cur_lr: 0.000849 loss: 0.255 time:0.93
+=====> epoch[64/200] iter: (3/14) 	cur_lr: 0.000848 loss: 0.239 time:0.82
+=====> epoch[64/200] iter: (4/14) 	cur_lr: 0.000848 loss: 0.250 time:0.88
+=====> epoch[64/200] iter: (5/14) 	cur_lr: 0.000848 loss: 0.245 time:0.86
+=====> epoch[64/200] iter: (6/14) 	cur_lr: 0.000847 loss: 0.240 time:0.71
+=====> epoch[64/200] iter: (7/14) 	cur_lr: 0.000847 loss: 0.213 time:0.73
+=====> epoch[64/200] iter: (8/14) 	cur_lr: 0.000846 loss: 0.271 time:0.74
+=====> epoch[64/200] iter: (9/14) 	cur_lr: 0.000846 loss: 0.233 time:0.68
+=====> epoch[64/200] iter: (10/14) 	cur_lr: 0.000846 loss: 0.244 time:0.61
+=====> epoch[64/200] iter: (11/14) 	cur_lr: 0.000845 loss: 0.229 time:0.60
+=====> epoch[64/200] iter: (12/14) 	cur_lr: 0.000845 loss: 0.230 time:0.60
+=====> epoch[64/200] iter: (13/14) 	cur_lr: 0.000844 loss: 0.230 time:0.60
+=====> epoch[64/200] iter: (14/14) 	cur_lr: 0.000844 loss: 0.226 time:0.61
+Remaining training time = 0 hour 28 minutes 11 seconds
+Epoch : 63 Details
+Epoch No.: 63	Train Loss = 0.2397	 lr= 0.000844
+
+=====> the number of iterations per epoch:  14
+=====> epoch[65/200] iter: (1/14) 	cur_lr: 0.000844 loss: 0.218 time:0.80
+=====> epoch[65/200] iter: (2/14) 	cur_lr: 0.000843 loss: 0.227 time:0.69
+=====> epoch[65/200] iter: (3/14) 	cur_lr: 0.000843 loss: 0.239 time:0.77
+=====> epoch[65/200] iter: (4/14) 	cur_lr: 0.000842 loss: 0.234 time:0.76
+=====> epoch[65/200] iter: (5/14) 	cur_lr: 0.000842 loss: 0.240 time:0.87
+=====> epoch[65/200] iter: (6/14) 	cur_lr: 0.000842 loss: 0.264 time:0.78
+=====> epoch[65/200] iter: (7/14) 	cur_lr: 0.000841 loss: 0.215 time:0.83
+=====> epoch[65/200] iter: (8/14) 	cur_lr: 0.000841 loss: 0.218 time:0.71
+=====> epoch[65/200] iter: (9/14) 	cur_lr: 0.000840 loss: 0.234 time:0.62
+=====> epoch[65/200] iter: (10/14) 	cur_lr: 0.000840 loss: 0.249 time:0.61
+=====> epoch[65/200] iter: (11/14) 	cur_lr: 0.000840 loss: 0.227 time:0.60
+=====> epoch[65/200] iter: (12/14) 	cur_lr: 0.000839 loss: 0.239 time:0.60
+=====> epoch[65/200] iter: (13/14) 	cur_lr: 0.000839 loss: 0.234 time:0.60
+=====> epoch[65/200] iter: (14/14) 	cur_lr: 0.000838 loss: 0.221 time:0.60
+Remaining training time = 0 hour 26 minutes 48 seconds
+Epoch : 64 Details
+Epoch No.: 64	Train Loss = 0.2327	 lr= 0.000838
+
+=====> the number of iterations per epoch:  14
+=====> epoch[66/200] iter: (1/14) 	cur_lr: 0.000838 loss: 0.265 time:0.86
+=====> epoch[66/200] iter: (2/14) 	cur_lr: 0.000838 loss: 0.246 time:0.74
+=====> epoch[66/200] iter: (3/14) 	cur_lr: 0.000837 loss: 0.230 time:0.70
+=====> epoch[66/200] iter: (4/14) 	cur_lr: 0.000837 loss: 0.207 time:0.74
+=====> epoch[66/200] iter: (5/14) 	cur_lr: 0.000836 loss: 0.241 time:0.69
+=====> epoch[66/200] iter: (6/14) 	cur_lr: 0.000836 loss: 0.237 time:0.71
+=====> epoch[66/200] iter: (7/14) 	cur_lr: 0.000836 loss: 0.225 time:0.70
+=====> epoch[66/200] iter: (8/14) 	cur_lr: 0.000835 loss: 0.216 time:0.67
+=====> epoch[66/200] iter: (9/14) 	cur_lr: 0.000835 loss: 0.236 time:0.62
+=====> epoch[66/200] iter: (10/14) 	cur_lr: 0.000834 loss: 0.216 time:0.62
+=====> epoch[66/200] iter: (11/14) 	cur_lr: 0.000834 loss: 0.190 time:0.61
+=====> epoch[66/200] iter: (12/14) 	cur_lr: 0.000834 loss: 0.242 time:0.61
+=====> epoch[66/200] iter: (13/14) 	cur_lr: 0.000833 loss: 0.237 time:0.60
+=====> epoch[66/200] iter: (14/14) 	cur_lr: 0.000833 loss: 0.266 time:0.61
+Remaining training time = 0 hour 25 minutes 52 seconds
+Epoch : 65 Details
+Epoch No.: 65	Train Loss = 0.2324	 lr= 0.000833
+
+=====> the number of iterations per epoch:  14
+=====> epoch[67/200] iter: (1/14) 	cur_lr: 0.000832 loss: 0.217 time:0.85
+=====> epoch[67/200] iter: (2/14) 	cur_lr: 0.000832 loss: 0.234 time:0.73
+=====> epoch[67/200] iter: (3/14) 	cur_lr: 0.000832 loss: 0.231 time:0.75
+=====> epoch[67/200] iter: (4/14) 	cur_lr: 0.000831 loss: 0.219 time:0.70
+=====> epoch[67/200] iter: (5/14) 	cur_lr: 0.000831 loss: 0.232 time:0.77
+=====> epoch[67/200] iter: (6/14) 	cur_lr: 0.000830 loss: 0.199 time:0.73
+=====> epoch[67/200] iter: (7/14) 	cur_lr: 0.000830 loss: 0.234 time:0.68
+=====> epoch[67/200] iter: (8/14) 	cur_lr: 0.000830 loss: 0.280 time:0.60
+=====> epoch[67/200] iter: (9/14) 	cur_lr: 0.000829 loss: 0.246 time:0.60
+=====> epoch[67/200] iter: (10/14) 	cur_lr: 0.000829 loss: 0.251 time:0.62
+=====> epoch[67/200] iter: (11/14) 	cur_lr: 0.000828 loss: 0.250 time:0.61
+=====> epoch[67/200] iter: (12/14) 	cur_lr: 0.000828 loss: 0.219 time:0.62
+=====> epoch[67/200] iter: (13/14) 	cur_lr: 0.000828 loss: 0.218 time:0.62
+=====> epoch[67/200] iter: (14/14) 	cur_lr: 0.000827 loss: 0.219 time:0.61
+Remaining training time = 0 hour 24 minutes 48 seconds
+Epoch : 66 Details
+Epoch No.: 66	Train Loss = 0.2321	 lr= 0.000827
+
+=====> the number of iterations per epoch:  14
+=====> epoch[68/200] iter: (1/14) 	cur_lr: 0.000827 loss: 0.257 time:0.72
+=====> epoch[68/200] iter: (2/14) 	cur_lr: 0.000826 loss: 0.220 time:0.74
+=====> epoch[68/200] iter: (3/14) 	cur_lr: 0.000826 loss: 0.239 time:0.72
+=====> epoch[68/200] iter: (4/14) 	cur_lr: 0.000826 loss: 0.228 time:0.77
+=====> epoch[68/200] iter: (5/14) 	cur_lr: 0.000825 loss: 0.223 time:0.76
+=====> epoch[68/200] iter: (6/14) 	cur_lr: 0.000825 loss: 0.225 time:0.75
+=====> epoch[68/200] iter: (7/14) 	cur_lr: 0.000824 loss: 0.218 time:0.64
+=====> epoch[68/200] iter: (8/14) 	cur_lr: 0.000824 loss: 0.227 time:0.62
+=====> epoch[68/200] iter: (9/14) 	cur_lr: 0.000824 loss: 0.246 time:0.61
+=====> epoch[68/200] iter: (10/14) 	cur_lr: 0.000823 loss: 0.248 time:0.61
+=====> epoch[68/200] iter: (11/14) 	cur_lr: 0.000823 loss: 0.213 time:0.60
+=====> epoch[68/200] iter: (12/14) 	cur_lr: 0.000822 loss: 0.214 time:0.61
+=====> epoch[68/200] iter: (13/14) 	cur_lr: 0.000822 loss: 0.228 time:0.62
+=====> epoch[68/200] iter: (14/14) 	cur_lr: 0.000822 loss: 0.228 time:0.62
+Remaining training time = 0 hour 24 minutes 6 seconds
+Epoch : 67 Details
+Epoch No.: 67	Train Loss = 0.2295	 lr= 0.000822
+
+=====> the number of iterations per epoch:  14
+=====> epoch[69/200] iter: (1/14) 	cur_lr: 0.000821 loss: 0.211 time:0.82
+=====> epoch[69/200] iter: (2/14) 	cur_lr: 0.000821 loss: 0.246 time:0.77
+=====> epoch[69/200] iter: (3/14) 	cur_lr: 0.000820 loss: 0.197 time:0.72
+=====> epoch[69/200] iter: (4/14) 	cur_lr: 0.000820 loss: 0.224 time:0.69
+=====> epoch[69/200] iter: (5/14) 	cur_lr: 0.000820 loss: 0.234 time:0.70
+=====> epoch[69/200] iter: (6/14) 	cur_lr: 0.000819 loss: 0.263 time:0.68
+=====> epoch[69/200] iter: (7/14) 	cur_lr: 0.000819 loss: 0.203 time:0.64
+=====> epoch[69/200] iter: (8/14) 	cur_lr: 0.000818 loss: 0.229 time:0.61
+=====> epoch[69/200] iter: (9/14) 	cur_lr: 0.000818 loss: 0.274 time:0.60
+=====> epoch[69/200] iter: (10/14) 	cur_lr: 0.000818 loss: 0.231 time:0.61
+=====> epoch[69/200] iter: (11/14) 	cur_lr: 0.000817 loss: 0.252 time:0.61
+=====> epoch[69/200] iter: (12/14) 	cur_lr: 0.000817 loss: 0.242 time:0.61
+=====> epoch[69/200] iter: (13/14) 	cur_lr: 0.000816 loss: 0.215 time:0.60
+=====> epoch[69/200] iter: (14/14) 	cur_lr: 0.000816 loss: 0.249 time:0.60
+Remaining training time = 0 hour 25 minutes 59 seconds
+Epoch : 68 Details
+Epoch No.: 68	Train Loss = 0.2337	 lr= 0.000816
+
+=====> the number of iterations per epoch:  14
+=====> epoch[70/200] iter: (1/14) 	cur_lr: 0.000816 loss: 0.253 time:0.92
+=====> epoch[70/200] iter: (2/14) 	cur_lr: 0.000815 loss: 0.260 time:0.74
+=====> epoch[70/200] iter: (3/14) 	cur_lr: 0.000815 loss: 0.265 time:0.72
+=====> epoch[70/200] iter: (4/14) 	cur_lr: 0.000814 loss: 0.247 time:0.72
+=====> epoch[70/200] iter: (5/14) 	cur_lr: 0.000814 loss: 0.221 time:0.70
+=====> epoch[70/200] iter: (6/14) 	cur_lr: 0.000814 loss: 0.232 time:0.77
+=====> epoch[70/200] iter: (7/14) 	cur_lr: 0.000813 loss: 0.246 time:0.66
+=====> epoch[70/200] iter: (8/14) 	cur_lr: 0.000813 loss: 0.249 time:0.60
+=====> epoch[70/200] iter: (9/14) 	cur_lr: 0.000812 loss: 0.206 time:0.61
+=====> epoch[70/200] iter: (10/14) 	cur_lr: 0.000812 loss: 0.236 time:0.60
+=====> epoch[70/200] iter: (11/14) 	cur_lr: 0.000812 loss: 0.257 time:0.60
+=====> epoch[70/200] iter: (12/14) 	cur_lr: 0.000811 loss: 0.237 time:0.61
+=====> epoch[70/200] iter: (13/14) 	cur_lr: 0.000811 loss: 0.248 time:0.61
+=====> epoch[70/200] iter: (14/14) 	cur_lr: 0.000810 loss: 0.237 time:0.61
+Remaining training time = 0 hour 27 minutes 37 seconds
+Epoch : 69 Details
+Epoch No.: 69	Train Loss = 0.2426	 lr= 0.000810
+
+=====> the number of iterations per epoch:  14
+=====> epoch[71/200] iter: (1/14) 	cur_lr: 0.000810 loss: 0.243 time:0.85
+=====> epoch[71/200] iter: (2/14) 	cur_lr: 0.000810 loss: 0.249 time:0.86
+=====> epoch[71/200] iter: (3/14) 	cur_lr: 0.000809 loss: 0.263 time:0.85
+=====> epoch[71/200] iter: (4/14) 	cur_lr: 0.000809 loss: 0.238 time:0.84
+=====> epoch[71/200] iter: (5/14) 	cur_lr: 0.000808 loss: 0.213 time:0.70
+=====> epoch[71/200] iter: (6/14) 	cur_lr: 0.000808 loss: 0.209 time:0.67
+=====> epoch[71/200] iter: (7/14) 	cur_lr: 0.000808 loss: 0.217 time:0.68
+=====> epoch[71/200] iter: (8/14) 	cur_lr: 0.000807 loss: 0.245 time:0.62
+=====> epoch[71/200] iter: (9/14) 	cur_lr: 0.000807 loss: 0.240 time:0.61
+=====> epoch[71/200] iter: (10/14) 	cur_lr: 0.000806 loss: 0.249 time:0.60
+=====> epoch[71/200] iter: (11/14) 	cur_lr: 0.000806 loss: 0.222 time:0.60
+=====> epoch[71/200] iter: (12/14) 	cur_lr: 0.000806 loss: 0.235 time:0.61
+=====> epoch[71/200] iter: (13/14) 	cur_lr: 0.000805 loss: 0.233 time:0.60
+=====> epoch[71/200] iter: (14/14) 	cur_lr: 0.000805 loss: 0.226 time:0.61
+Remaining training time = 0 hour 26 minutes 54 seconds
+Epoch : 70 Details
+Epoch No.: 70	Train Loss = 0.2342	 lr= 0.000805
+
+=====> the number of iterations per epoch:  14
+=====> epoch[72/200] iter: (1/14) 	cur_lr: 0.000804 loss: 0.237 time:0.82
+=====> epoch[72/200] iter: (2/14) 	cur_lr: 0.000804 loss: 0.228 time:0.71
+=====> epoch[72/200] iter: (3/14) 	cur_lr: 0.000804 loss: 0.210 time:0.76
+=====> epoch[72/200] iter: (4/14) 	cur_lr: 0.000803 loss: 0.240 time:0.91
+=====> epoch[72/200] iter: (5/14) 	cur_lr: 0.000803 loss: 0.229 time:0.84
+=====> epoch[72/200] iter: (6/14) 	cur_lr: 0.000802 loss: 0.224 time:0.85
+=====> epoch[72/200] iter: (7/14) 	cur_lr: 0.000802 loss: 0.209 time:0.84
+=====> epoch[72/200] iter: (8/14) 	cur_lr: 0.000802 loss: 0.205 time:0.68
+=====> epoch[72/200] iter: (9/14) 	cur_lr: 0.000801 loss: 0.236 time:0.62
+=====> epoch[72/200] iter: (10/14) 	cur_lr: 0.000801 loss: 0.242 time:0.60
+=====> epoch[72/200] iter: (11/14) 	cur_lr: 0.000800 loss: 0.222 time:0.61
+=====> epoch[72/200] iter: (12/14) 	cur_lr: 0.000800 loss: 0.249 time:0.60
+=====> epoch[72/200] iter: (13/14) 	cur_lr: 0.000800 loss: 0.210 time:0.60
+=====> epoch[72/200] iter: (14/14) 	cur_lr: 0.000799 loss: 0.251 time:0.60
+Remaining training time = 0 hour 25 minutes 13 seconds
+Epoch : 71 Details
+Epoch No.: 71	Train Loss = 0.2281	 lr= 0.000799
+
+=====> the number of iterations per epoch:  14
+=====> epoch[73/200] iter: (1/14) 	cur_lr: 0.000799 loss: 0.231 time:0.79
+=====> epoch[73/200] iter: (2/14) 	cur_lr: 0.000798 loss: 0.215 time:0.70
+=====> epoch[73/200] iter: (3/14) 	cur_lr: 0.000798 loss: 0.233 time:0.74
+=====> epoch[73/200] iter: (4/14) 	cur_lr: 0.000798 loss: 0.234 time:0.68
+=====> epoch[73/200] iter: (5/14) 	cur_lr: 0.000797 loss: 0.225 time:0.73
+=====> epoch[73/200] iter: (6/14) 	cur_lr: 0.000797 loss: 0.253 time:0.83
+=====> epoch[73/200] iter: (7/14) 	cur_lr: 0.000796 loss: 0.214 time:0.80
+=====> epoch[73/200] iter: (8/14) 	cur_lr: 0.000796 loss: 0.231 time:0.72
+=====> epoch[73/200] iter: (9/14) 	cur_lr: 0.000796 loss: 0.216 time:0.62
+=====> epoch[73/200] iter: (10/14) 	cur_lr: 0.000795 loss: 0.239 time:0.62
+=====> epoch[73/200] iter: (11/14) 	cur_lr: 0.000795 loss: 0.241 time:0.61
+=====> epoch[73/200] iter: (12/14) 	cur_lr: 0.000794 loss: 0.201 time:0.60
+=====> epoch[73/200] iter: (13/14) 	cur_lr: 0.000794 loss: 0.212 time:0.60
+=====> epoch[73/200] iter: (14/14) 	cur_lr: 0.000794 loss: 0.237 time:0.60
+Remaining training time = 0 hour 24 minutes 29 seconds
+Epoch : 72 Details
+Epoch No.: 72	Train Loss = 0.2273	 lr= 0.000794
+
+=====> the number of iterations per epoch:  14
+=====> epoch[74/200] iter: (1/14) 	cur_lr: 0.000793 loss: 0.249 time:0.73
+=====> epoch[74/200] iter: (2/14) 	cur_lr: 0.000793 loss: 0.195 time:0.75
+=====> epoch[74/200] iter: (3/14) 	cur_lr: 0.000792 loss: 0.249 time:0.67
+=====> epoch[74/200] iter: (4/14) 	cur_lr: 0.000792 loss: 0.252 time:0.67
+=====> epoch[74/200] iter: (5/14) 	cur_lr: 0.000792 loss: 0.214 time:0.68
+=====> epoch[74/200] iter: (6/14) 	cur_lr: 0.000791 loss: 0.231 time:0.70
+=====> epoch[74/200] iter: (7/14) 	cur_lr: 0.000791 loss: 0.222 time:0.64
+=====> epoch[74/200] iter: (8/14) 	cur_lr: 0.000790 loss: 0.201 time:0.61
+=====> epoch[74/200] iter: (9/14) 	cur_lr: 0.000790 loss: 0.241 time:0.61
+=====> epoch[74/200] iter: (10/14) 	cur_lr: 0.000790 loss: 0.238 time:0.62
+=====> epoch[74/200] iter: (11/14) 	cur_lr: 0.000789 loss: 0.205 time:0.62
+=====> epoch[74/200] iter: (12/14) 	cur_lr: 0.000789 loss: 0.238 time:0.62
+=====> epoch[74/200] iter: (13/14) 	cur_lr: 0.000788 loss: 0.267 time:0.62
+=====> epoch[74/200] iter: (14/14) 	cur_lr: 0.000788 loss: 0.211 time:0.60
+Remaining training time = 0 hour 23 minutes 58 seconds
+Epoch : 73 Details
+Epoch No.: 73	Train Loss = 0.2295	 lr= 0.000788
+
+=====> the number of iterations per epoch:  14
+=====> epoch[75/200] iter: (1/14) 	cur_lr: 0.000788 loss: 0.214 time:0.80
+=====> epoch[75/200] iter: (2/14) 	cur_lr: 0.000787 loss: 0.245 time:0.74
+=====> epoch[75/200] iter: (3/14) 	cur_lr: 0.000787 loss: 0.209 time:0.70
+=====> epoch[75/200] iter: (4/14) 	cur_lr: 0.000786 loss: 0.239 time:0.78
+=====> epoch[75/200] iter: (5/14) 	cur_lr: 0.000786 loss: 0.226 time:0.68
+=====> epoch[75/200] iter: (6/14) 	cur_lr: 0.000786 loss: 0.293 time:0.71
+=====> epoch[75/200] iter: (7/14) 	cur_lr: 0.000785 loss: 0.229 time:0.65
+=====> epoch[75/200] iter: (8/14) 	cur_lr: 0.000785 loss: 0.220 time:0.61
+=====> epoch[75/200] iter: (9/14) 	cur_lr: 0.000784 loss: 0.228 time:0.60
+=====> epoch[75/200] iter: (10/14) 	cur_lr: 0.000784 loss: 0.201 time:0.61
+=====> epoch[75/200] iter: (11/14) 	cur_lr: 0.000784 loss: 0.237 time:0.60
+=====> epoch[75/200] iter: (12/14) 	cur_lr: 0.000783 loss: 0.267 time:0.62
+=====> epoch[75/200] iter: (13/14) 	cur_lr: 0.000783 loss: 0.239 time:0.62
+=====> epoch[75/200] iter: (14/14) 	cur_lr: 0.000782 loss: 0.234 time:0.62
+Remaining training time = 0 hour 23 minutes 28 seconds
+Epoch : 74 Details
+Epoch No.: 74	Train Loss = 0.2344	 lr= 0.000782
+
+=====> the number of iterations per epoch:  14
+=====> epoch[76/200] iter: (1/14) 	cur_lr: 0.000782 loss: 0.307 time:0.79
+=====> epoch[76/200] iter: (2/14) 	cur_lr: 0.000782 loss: 0.222 time:0.66
+=====> epoch[76/200] iter: (3/14) 	cur_lr: 0.000781 loss: 0.246 time:0.69
+=====> epoch[76/200] iter: (4/14) 	cur_lr: 0.000781 loss: 0.232 time:0.76
+=====> epoch[76/200] iter: (5/14) 	cur_lr: 0.000780 loss: 0.212 time:0.74
+=====> epoch[76/200] iter: (6/14) 	cur_lr: 0.000780 loss: 0.258 time:0.67
+=====> epoch[76/200] iter: (7/14) 	cur_lr: 0.000780 loss: 0.233 time:0.62
+=====> epoch[76/200] iter: (8/14) 	cur_lr: 0.000779 loss: 0.203 time:0.61
+=====> epoch[76/200] iter: (9/14) 	cur_lr: 0.000779 loss: 0.228 time:0.60
+=====> epoch[76/200] iter: (10/14) 	cur_lr: 0.000778 loss: 0.241 time:0.60
+=====> epoch[76/200] iter: (11/14) 	cur_lr: 0.000778 loss: 0.208 time:0.61
+=====> epoch[76/200] iter: (12/14) 	cur_lr: 0.000778 loss: 0.256 time:0.60
+=====> epoch[76/200] iter: (13/14) 	cur_lr: 0.000777 loss: 0.208 time:0.60
+=====> epoch[76/200] iter: (14/14) 	cur_lr: 0.000777 loss: 0.228 time:0.62
+Remaining training time = 0 hour 24 minutes 24 seconds
+Epoch : 75 Details
+Epoch No.: 75	Train Loss = 0.2344	 lr= 0.000777
+
+=====> the number of iterations per epoch:  14
+=====> epoch[77/200] iter: (1/14) 	cur_lr: 0.000776 loss: 0.245 time:0.80
+=====> epoch[77/200] iter: (2/14) 	cur_lr: 0.000776 loss: 0.245 time:0.75
+=====> epoch[77/200] iter: (3/14) 	cur_lr: 0.000776 loss: 0.206 time:0.70
+=====> epoch[77/200] iter: (4/14) 	cur_lr: 0.000775 loss: 0.222 time:0.72
+=====> epoch[77/200] iter: (5/14) 	cur_lr: 0.000775 loss: 0.214 time:0.70
+=====> epoch[77/200] iter: (6/14) 	cur_lr: 0.000774 loss: 0.200 time:0.68
+=====> epoch[77/200] iter: (7/14) 	cur_lr: 0.000774 loss: 0.261 time:0.67
+=====> epoch[77/200] iter: (8/14) 	cur_lr: 0.000774 loss: 0.200 time:0.61
+=====> epoch[77/200] iter: (9/14) 	cur_lr: 0.000773 loss: 0.221 time:0.60
+=====> epoch[77/200] iter: (10/14) 	cur_lr: 0.000773 loss: 0.215 time:0.60
+=====> epoch[77/200] iter: (11/14) 	cur_lr: 0.000772 loss: 0.204 time:0.60
+=====> epoch[77/200] iter: (12/14) 	cur_lr: 0.000772 loss: 0.202 time:0.61
+=====> epoch[77/200] iter: (13/14) 	cur_lr: 0.000771 loss: 0.240 time:0.60
+=====> epoch[77/200] iter: (14/14) 	cur_lr: 0.000771 loss: 0.214 time:0.60
+Remaining training time = 0 hour 25 minutes 17 seconds
+Epoch : 76 Details
+Epoch No.: 76	Train Loss = 0.2206	 lr= 0.000771
+
+=====> the number of iterations per epoch:  14
+=====> epoch[78/200] iter: (1/14) 	cur_lr: 0.000771 loss: 0.200 time:0.96
+=====> epoch[78/200] iter: (2/14) 	cur_lr: 0.000770 loss: 0.216 time:0.74
+=====> epoch[78/200] iter: (3/14) 	cur_lr: 0.000770 loss: 0.210 time:0.72
+=====> epoch[78/200] iter: (4/14) 	cur_lr: 0.000769 loss: 0.212 time:0.74
+=====> epoch[78/200] iter: (5/14) 	cur_lr: 0.000769 loss: 0.211 time:0.74
+=====> epoch[78/200] iter: (6/14) 	cur_lr: 0.000769 loss: 0.206 time:0.70
+=====> epoch[78/200] iter: (7/14) 	cur_lr: 0.000768 loss: 0.223 time:0.64
+=====> epoch[78/200] iter: (8/14) 	cur_lr: 0.000768 loss: 0.226 time:0.60
+=====> epoch[78/200] iter: (9/14) 	cur_lr: 0.000767 loss: 0.217 time:0.60
+=====> epoch[78/200] iter: (10/14) 	cur_lr: 0.000767 loss: 0.255 time:0.61
+=====> epoch[78/200] iter: (11/14) 	cur_lr: 0.000767 loss: 0.232 time:0.60
+=====> epoch[78/200] iter: (12/14) 	cur_lr: 0.000766 loss: 0.232 time:0.60
+=====> epoch[78/200] iter: (13/14) 	cur_lr: 0.000766 loss: 0.217 time:0.60
+=====> epoch[78/200] iter: (14/14) 	cur_lr: 0.000765 loss: 0.209 time:0.62
+Remaining training time = 0 hour 25 minutes 31 seconds
+Epoch : 77 Details
+Epoch No.: 77	Train Loss = 0.2190	 lr= 0.000765
+
+=====> the number of iterations per epoch:  14
+=====> epoch[79/200] iter: (1/14) 	cur_lr: 0.000765 loss: 0.231 time:0.91
+=====> epoch[79/200] iter: (2/14) 	cur_lr: 0.000765 loss: 0.198 time:0.82
+=====> epoch[79/200] iter: (3/14) 	cur_lr: 0.000764 loss: 0.209 time:0.86
+=====> epoch[79/200] iter: (4/14) 	cur_lr: 0.000764 loss: 0.245 time:0.90
+=====> epoch[79/200] iter: (5/14) 	cur_lr: 0.000763 loss: 0.270 time:0.70
+=====> epoch[79/200] iter: (6/14) 	cur_lr: 0.000763 loss: 0.241 time:0.72
+=====> epoch[79/200] iter: (7/14) 	cur_lr: 0.000763 loss: 0.214 time:0.67
+=====> epoch[79/200] iter: (8/14) 	cur_lr: 0.000762 loss: 0.203 time:0.62
+=====> epoch[79/200] iter: (9/14) 	cur_lr: 0.000762 loss: 0.214 time:0.60
+=====> epoch[79/200] iter: (10/14) 	cur_lr: 0.000761 loss: 0.238 time:0.60
+=====> epoch[79/200] iter: (11/14) 	cur_lr: 0.000761 loss: 0.201 time:0.60
+=====> epoch[79/200] iter: (12/14) 	cur_lr: 0.000761 loss: 0.217 time:0.61
+=====> epoch[79/200] iter: (13/14) 	cur_lr: 0.000760 loss: 0.208 time:0.60
+=====> epoch[79/200] iter: (14/14) 	cur_lr: 0.000760 loss: 0.210 time:0.61
+Remaining training time = 0 hour 24 minutes 57 seconds
+Epoch : 78 Details
+Epoch No.: 78	Train Loss = 0.2214	 lr= 0.000760
+
+=====> the number of iterations per epoch:  14
+=====> epoch[80/200] iter: (1/14) 	cur_lr: 0.000759 loss: 0.211 time:0.81
+=====> epoch[80/200] iter: (2/14) 	cur_lr: 0.000759 loss: 0.217 time:0.71
+=====> epoch[80/200] iter: (3/14) 	cur_lr: 0.000759 loss: 0.221 time:0.79
+=====> epoch[80/200] iter: (4/14) 	cur_lr: 0.000758 loss: 0.224 time:0.88
+=====> epoch[80/200] iter: (5/14) 	cur_lr: 0.000758 loss: 0.221 time:0.85
+=====> epoch[80/200] iter: (6/14) 	cur_lr: 0.000757 loss: 0.189 time:0.73
+=====> epoch[80/200] iter: (7/14) 	cur_lr: 0.000757 loss: 0.236 time:0.81
+=====> epoch[80/200] iter: (8/14) 	cur_lr: 0.000757 loss: 0.214 time:0.62
+=====> epoch[80/200] iter: (9/14) 	cur_lr: 0.000756 loss: 0.212 time:0.65
+=====> epoch[80/200] iter: (10/14) 	cur_lr: 0.000756 loss: 0.258 time:0.61
+=====> epoch[80/200] iter: (11/14) 	cur_lr: 0.000755 loss: 0.185 time:0.60
+=====> epoch[80/200] iter: (12/14) 	cur_lr: 0.000755 loss: 0.241 time:0.60
+=====> epoch[80/200] iter: (13/14) 	cur_lr: 0.000755 loss: 0.191 time:0.61
+=====> epoch[80/200] iter: (14/14) 	cur_lr: 0.000754 loss: 0.226 time:0.61
+Remaining training time = 0 hour 23 minutes 48 seconds
+Epoch : 79 Details
+Epoch No.: 79	Train Loss = 0.2176	 lr= 0.000754
+
+=====> the number of iterations per epoch:  14
+=====> epoch[81/200] iter: (1/14) 	cur_lr: 0.000754 loss: 0.191 time:0.68
+=====> epoch[81/200] iter: (2/14) 	cur_lr: 0.000753 loss: 0.181 time:0.74
+=====> epoch[81/200] iter: (3/14) 	cur_lr: 0.000753 loss: 0.230 time:0.71
+=====> epoch[81/200] iter: (4/14) 	cur_lr: 0.000753 loss: 0.220 time:0.73
+=====> epoch[81/200] iter: (5/14) 	cur_lr: 0.000752 loss: 0.222 time:0.67
+=====> epoch[81/200] iter: (6/14) 	cur_lr: 0.000752 loss: 0.204 time:0.74
+=====> epoch[81/200] iter: (7/14) 	cur_lr: 0.000751 loss: 0.223 time:0.75
+=====> epoch[81/200] iter: (8/14) 	cur_lr: 0.000751 loss: 0.206 time:0.69
+=====> epoch[81/200] iter: (9/14) 	cur_lr: 0.000751 loss: 0.212 time:0.66
+=====> epoch[81/200] iter: (10/14) 	cur_lr: 0.000750 loss: 0.227 time:0.62
+=====> epoch[81/200] iter: (11/14) 	cur_lr: 0.000750 loss: 0.249 time:0.61
+=====> epoch[81/200] iter: (12/14) 	cur_lr: 0.000749 loss: 0.230 time:0.61
+=====> epoch[81/200] iter: (13/14) 	cur_lr: 0.000749 loss: 0.197 time:0.61
+=====> epoch[81/200] iter: (14/14) 	cur_lr: 0.000748 loss: 0.209 time:0.61
+Remaining training time = 0 hour 23 minutes 0 seconds
+Epoch : 80 Details
+Epoch No.: 80	Train Loss = 0.2142	 lr= 0.000748
+
+=====> the number of iterations per epoch:  14
+=====> epoch[82/200] iter: (1/14) 	cur_lr: 0.000748 loss: 0.228 time:0.78
+=====> epoch[82/200] iter: (2/14) 	cur_lr: 0.000748 loss: 0.191 time:0.73
+=====> epoch[82/200] iter: (3/14) 	cur_lr: 0.000747 loss: 0.216 time:0.71
+=====> epoch[82/200] iter: (4/14) 	cur_lr: 0.000747 loss: 0.196 time:0.75
+=====> epoch[82/200] iter: (5/14) 	cur_lr: 0.000746 loss: 0.224 time:0.70
+=====> epoch[82/200] iter: (6/14) 	cur_lr: 0.000746 loss: 0.240 time:0.71
+=====> epoch[82/200] iter: (7/14) 	cur_lr: 0.000746 loss: 0.203 time:0.68
+=====> epoch[82/200] iter: (8/14) 	cur_lr: 0.000745 loss: 0.210 time:0.61
+=====> epoch[82/200] iter: (9/14) 	cur_lr: 0.000745 loss: 0.219 time:0.62
+=====> epoch[82/200] iter: (10/14) 	cur_lr: 0.000744 loss: 0.204 time:0.62
+=====> epoch[82/200] iter: (11/14) 	cur_lr: 0.000744 loss: 0.213 time:0.62
+=====> epoch[82/200] iter: (12/14) 	cur_lr: 0.000744 loss: 0.235 time:0.62
+=====> epoch[82/200] iter: (13/14) 	cur_lr: 0.000743 loss: 0.215 time:0.62
+=====> epoch[82/200] iter: (14/14) 	cur_lr: 0.000743 loss: 0.185 time:0.61
+Remaining training time = 0 hour 22 minutes 14 seconds
+Epoch : 81 Details
+Epoch No.: 81	Train Loss = 0.2128	 lr= 0.000743
+
+=====> the number of iterations per epoch:  14
+=====> epoch[83/200] iter: (1/14) 	cur_lr: 0.000742 loss: 0.222 time:0.81
+=====> epoch[83/200] iter: (2/14) 	cur_lr: 0.000742 loss: 0.201 time:0.72
+=====> epoch[83/200] iter: (3/14) 	cur_lr: 0.000742 loss: 0.210 time:0.80
+=====> epoch[83/200] iter: (4/14) 	cur_lr: 0.000741 loss: 0.225 time:0.73
+=====> epoch[83/200] iter: (5/14) 	cur_lr: 0.000741 loss: 0.236 time:0.70
+=====> epoch[83/200] iter: (6/14) 	cur_lr: 0.000740 loss: 0.203 time:0.67
+=====> epoch[83/200] iter: (7/14) 	cur_lr: 0.000740 loss: 0.216 time:0.62
+=====> epoch[83/200] iter: (8/14) 	cur_lr: 0.000740 loss: 0.224 time:0.61
+=====> epoch[83/200] iter: (9/14) 	cur_lr: 0.000739 loss: 0.210 time:0.61
+=====> epoch[83/200] iter: (10/14) 	cur_lr: 0.000739 loss: 0.203 time:0.60
+=====> epoch[83/200] iter: (11/14) 	cur_lr: 0.000738 loss: 0.222 time:0.61
+=====> epoch[83/200] iter: (12/14) 	cur_lr: 0.000738 loss: 0.184 time:0.62
+=====> epoch[83/200] iter: (13/14) 	cur_lr: 0.000738 loss: 0.223 time:0.62
+=====> epoch[83/200] iter: (14/14) 	cur_lr: 0.000737 loss: 0.217 time:0.62
+Remaining training time = 0 hour 21 minutes 49 seconds
+Epoch : 82 Details
+Epoch No.: 82	Train Loss = 0.2140	 lr= 0.000737
+
+=====> the number of iterations per epoch:  14
+=====> epoch[84/200] iter: (1/14) 	cur_lr: 0.000737 loss: 0.233 time:0.82
+=====> epoch[84/200] iter: (2/14) 	cur_lr: 0.000736 loss: 0.234 time:0.70
+=====> epoch[84/200] iter: (3/14) 	cur_lr: 0.000736 loss: 0.221 time:0.74
+=====> epoch[84/200] iter: (4/14) 	cur_lr: 0.000736 loss: 0.207 time:0.74
+=====> epoch[84/200] iter: (5/14) 	cur_lr: 0.000735 loss: 0.211 time:0.72
+=====> epoch[84/200] iter: (6/14) 	cur_lr: 0.000735 loss: 0.207 time:0.69
+=====> epoch[84/200] iter: (7/14) 	cur_lr: 0.000734 loss: 0.194 time:0.67
+=====> epoch[84/200] iter: (8/14) 	cur_lr: 0.000734 loss: 0.192 time:0.60
+=====> epoch[84/200] iter: (9/14) 	cur_lr: 0.000734 loss: 0.202 time:0.60
+=====> epoch[84/200] iter: (10/14) 	cur_lr: 0.000733 loss: 0.221 time:0.60
+=====> epoch[84/200] iter: (11/14) 	cur_lr: 0.000733 loss: 0.199 time:0.60
+=====> epoch[84/200] iter: (12/14) 	cur_lr: 0.000732 loss: 0.207 time:0.60
+=====> epoch[84/200] iter: (13/14) 	cur_lr: 0.000732 loss: 0.201 time:0.60
+=====> epoch[84/200] iter: (14/14) 	cur_lr: 0.000731 loss: 0.219 time:0.61
+Remaining training time = 0 hour 23 minutes 1 seconds
+Epoch : 83 Details
+Epoch No.: 83	Train Loss = 0.2105	 lr= 0.000731
+
+=====> the number of iterations per epoch:  14
+=====> epoch[85/200] iter: (1/14) 	cur_lr: 0.000731 loss: 0.267 time:0.81
+=====> epoch[85/200] iter: (2/14) 	cur_lr: 0.000731 loss: 0.181 time:0.74
+=====> epoch[85/200] iter: (3/14) 	cur_lr: 0.000730 loss: 0.200 time:0.74
+=====> epoch[85/200] iter: (4/14) 	cur_lr: 0.000730 loss: 0.221 time:0.70
+=====> epoch[85/200] iter: (5/14) 	cur_lr: 0.000729 loss: 0.188 time:0.70
+=====> epoch[85/200] iter: (6/14) 	cur_lr: 0.000729 loss: 0.221 time:0.68
+=====> epoch[85/200] iter: (7/14) 	cur_lr: 0.000729 loss: 0.219 time:0.67
+=====> epoch[85/200] iter: (8/14) 	cur_lr: 0.000728 loss: 0.177 time:0.61
+=====> epoch[85/200] iter: (9/14) 	cur_lr: 0.000728 loss: 0.230 time:0.60
+=====> epoch[85/200] iter: (10/14) 	cur_lr: 0.000727 loss: 0.195 time:0.60
+=====> epoch[85/200] iter: (11/14) 	cur_lr: 0.000727 loss: 0.225 time:0.60
+=====> epoch[85/200] iter: (12/14) 	cur_lr: 0.000727 loss: 0.190 time:0.60
+=====> epoch[85/200] iter: (13/14) 	cur_lr: 0.000726 loss: 0.198 time:0.60
+=====> epoch[85/200] iter: (14/14) 	cur_lr: 0.000726 loss: 0.195 time:0.60
+Remaining training time = 0 hour 23 minutes 54 seconds
+Epoch : 84 Details
+Epoch No.: 84	Train Loss = 0.2077	 lr= 0.000726
+
+=====> the number of iterations per epoch:  14
+=====> epoch[86/200] iter: (1/14) 	cur_lr: 0.000725 loss: 0.209 time:0.95
+=====> epoch[86/200] iter: (2/14) 	cur_lr: 0.000725 loss: 0.184 time:0.85
+=====> epoch[86/200] iter: (3/14) 	cur_lr: 0.000725 loss: 0.211 time:0.76
+=====> epoch[86/200] iter: (4/14) 	cur_lr: 0.000724 loss: 0.200 time:0.75
+=====> epoch[86/200] iter: (5/14) 	cur_lr: 0.000724 loss: 0.239 time:0.68
+=====> epoch[86/200] iter: (6/14) 	cur_lr: 0.000723 loss: 0.198 time:0.71
+=====> epoch[86/200] iter: (7/14) 	cur_lr: 0.000723 loss: 0.197 time:0.73
+=====> epoch[86/200] iter: (8/14) 	cur_lr: 0.000723 loss: 0.201 time:0.67
+=====> epoch[86/200] iter: (9/14) 	cur_lr: 0.000722 loss: 0.239 time:0.61
+=====> epoch[86/200] iter: (10/14) 	cur_lr: 0.000722 loss: 0.179 time:0.60
+=====> epoch[86/200] iter: (11/14) 	cur_lr: 0.000721 loss: 0.235 time:0.60
+=====> epoch[86/200] iter: (12/14) 	cur_lr: 0.000721 loss: 0.206 time:0.60
+=====> epoch[86/200] iter: (13/14) 	cur_lr: 0.000721 loss: 0.204 time:0.60
+=====> epoch[86/200] iter: (14/14) 	cur_lr: 0.000720 loss: 0.201 time:0.60
+Remaining training time = 0 hour 23 minutes 3 seconds
+Epoch : 85 Details
+Epoch No.: 85	Train Loss = 0.2073	 lr= 0.000720
+
+=====> the number of iterations per epoch:  14
+=====> epoch[87/200] iter: (1/14) 	cur_lr: 0.000720 loss: 0.218 time:0.81
+=====> epoch[87/200] iter: (2/14) 	cur_lr: 0.000719 loss: 0.240 time:0.82
+=====> epoch[87/200] iter: (3/14) 	cur_lr: 0.000719 loss: 0.187 time:0.82
+=====> epoch[87/200] iter: (4/14) 	cur_lr: 0.000719 loss: 0.221 time:0.92
+=====> epoch[87/200] iter: (5/14) 	cur_lr: 0.000718 loss: 0.219 time:0.86
+=====> epoch[87/200] iter: (6/14) 	cur_lr: 0.000718 loss: 0.217 time:0.76
+=====> epoch[87/200] iter: (7/14) 	cur_lr: 0.000717 loss: 0.225 time:0.73
+=====> epoch[87/200] iter: (8/14) 	cur_lr: 0.000717 loss: 0.183 time:0.62
+=====> epoch[87/200] iter: (9/14) 	cur_lr: 0.000716 loss: 0.209 time:0.65
+=====> epoch[87/200] iter: (10/14) 	cur_lr: 0.000716 loss: 0.212 time:0.61
+=====> epoch[87/200] iter: (11/14) 	cur_lr: 0.000716 loss: 0.198 time:0.61
+=====> epoch[87/200] iter: (12/14) 	cur_lr: 0.000715 loss: 0.197 time:0.61
+=====> epoch[87/200] iter: (13/14) 	cur_lr: 0.000715 loss: 0.211 time:0.61
+=====> epoch[87/200] iter: (14/14) 	cur_lr: 0.000714 loss: 0.191 time:0.61
+Remaining training time = 0 hour 22 minutes 34 seconds
+Epoch : 86 Details
+Epoch No.: 86	Train Loss = 0.2092	 lr= 0.000714
+
+=====> the number of iterations per epoch:  14
+=====> epoch[88/200] iter: (1/14) 	cur_lr: 0.000714 loss: 0.243 time:0.77
+=====> epoch[88/200] iter: (2/14) 	cur_lr: 0.000714 loss: 0.227 time:0.68
+=====> epoch[88/200] iter: (3/14) 	cur_lr: 0.000713 loss: 0.205 time:0.75
+=====> epoch[88/200] iter: (4/14) 	cur_lr: 0.000713 loss: 0.200 time:0.76
+=====> epoch[88/200] iter: (5/14) 	cur_lr: 0.000712 loss: 0.221 time:0.72
+=====> epoch[88/200] iter: (6/14) 	cur_lr: 0.000712 loss: 0.204 time:0.79
+=====> epoch[88/200] iter: (7/14) 	cur_lr: 0.000712 loss: 0.214 time:0.78
+=====> epoch[88/200] iter: (8/14) 	cur_lr: 0.000711 loss: 0.204 time:0.70
+=====> epoch[88/200] iter: (9/14) 	cur_lr: 0.000711 loss: 0.229 time:0.63
+=====> epoch[88/200] iter: (10/14) 	cur_lr: 0.000710 loss: 0.225 time:0.61
+=====> epoch[88/200] iter: (11/14) 	cur_lr: 0.000710 loss: 0.193 time:0.61
+=====> epoch[88/200] iter: (12/14) 	cur_lr: 0.000710 loss: 0.202 time:0.61
+=====> epoch[88/200] iter: (13/14) 	cur_lr: 0.000709 loss: 0.249 time:0.61
+=====> epoch[88/200] iter: (14/14) 	cur_lr: 0.000709 loss: 0.229 time:0.61
+Remaining training time = 0 hour 22 minutes 15 seconds
+Epoch : 87 Details
+Epoch No.: 87	Train Loss = 0.2175	 lr= 0.000709
+
+=====> the number of iterations per epoch:  14
+=====> epoch[89/200] iter: (1/14) 	cur_lr: 0.000708 loss: 0.205 time:0.79
+=====> epoch[89/200] iter: (2/14) 	cur_lr: 0.000708 loss: 0.200 time:0.75
+=====> epoch[89/200] iter: (3/14) 	cur_lr: 0.000708 loss: 0.203 time:0.71
+=====> epoch[89/200] iter: (4/14) 	cur_lr: 0.000707 loss: 0.218 time:0.76
+=====> epoch[89/200] iter: (5/14) 	cur_lr: 0.000707 loss: 0.195 time:0.74
+=====> epoch[89/200] iter: (6/14) 	cur_lr: 0.000706 loss: 0.201 time:0.71
+=====> epoch[89/200] iter: (7/14) 	cur_lr: 0.000706 loss: 0.200 time:0.65
+=====> epoch[89/200] iter: (8/14) 	cur_lr: 0.000706 loss: 0.222 time:0.62
+=====> epoch[89/200] iter: (9/14) 	cur_lr: 0.000705 loss: 0.198 time:0.62
+=====> epoch[89/200] iter: (10/14) 	cur_lr: 0.000705 loss: 0.247 time:0.62
+=====> epoch[89/200] iter: (11/14) 	cur_lr: 0.000704 loss: 0.204 time:0.62
+=====> epoch[89/200] iter: (12/14) 	cur_lr: 0.000704 loss: 0.213 time:0.61
+=====> epoch[89/200] iter: (13/14) 	cur_lr: 0.000703 loss: 0.233 time:0.60
+=====> epoch[89/200] iter: (14/14) 	cur_lr: 0.000703 loss: 0.212 time:0.60
+Remaining training time = 0 hour 21 minutes 20 seconds
+Epoch : 88 Details
+Epoch No.: 88	Train Loss = 0.2108	 lr= 0.000703
+
+=====> the number of iterations per epoch:  14
+=====> epoch[90/200] iter: (1/14) 	cur_lr: 0.000703 loss: 0.206 time:0.80
+=====> epoch[90/200] iter: (2/14) 	cur_lr: 0.000702 loss: 0.202 time:0.74
+=====> epoch[90/200] iter: (3/14) 	cur_lr: 0.000702 loss: 0.195 time:0.75
+=====> epoch[90/200] iter: (4/14) 	cur_lr: 0.000701 loss: 0.203 time:0.77
+=====> epoch[90/200] iter: (5/14) 	cur_lr: 0.000701 loss: 0.209 time:0.62
+=====> epoch[90/200] iter: (6/14) 	cur_lr: 0.000701 loss: 0.208 time:0.67
+=====> epoch[90/200] iter: (7/14) 	cur_lr: 0.000700 loss: 0.204 time:0.69
+=====> epoch[90/200] iter: (8/14) 	cur_lr: 0.000700 loss: 0.244 time:0.60
+=====> epoch[90/200] iter: (9/14) 	cur_lr: 0.000699 loss: 0.188 time:0.61
+=====> epoch[90/200] iter: (10/14) 	cur_lr: 0.000699 loss: 0.213 time:0.62
+=====> epoch[90/200] iter: (11/14) 	cur_lr: 0.000699 loss: 0.211 time:0.62
+=====> epoch[90/200] iter: (12/14) 	cur_lr: 0.000698 loss: 0.199 time:0.62
+=====> epoch[90/200] iter: (13/14) 	cur_lr: 0.000698 loss: 0.195 time:0.62
+=====> epoch[90/200] iter: (14/14) 	cur_lr: 0.000697 loss: 0.224 time:0.62
+Remaining training time = 0 hour 20 minutes 48 seconds
+Epoch : 89 Details
+Epoch No.: 89	Train Loss = 0.2073	 lr= 0.000697
+
+=====> the number of iterations per epoch:  14
+=====> epoch[91/200] iter: (1/14) 	cur_lr: 0.000697 loss: 0.202 time:0.83
+=====> epoch[91/200] iter: (2/14) 	cur_lr: 0.000697 loss: 0.215 time:0.74
+=====> epoch[91/200] iter: (3/14) 	cur_lr: 0.000696 loss: 0.222 time:0.75
+=====> epoch[91/200] iter: (4/14) 	cur_lr: 0.000696 loss: 0.197 time:0.71
+=====> epoch[91/200] iter: (5/14) 	cur_lr: 0.000695 loss: 0.182 time:0.68
+=====> epoch[91/200] iter: (6/14) 	cur_lr: 0.000695 loss: 0.259 time:0.72
+=====> epoch[91/200] iter: (7/14) 	cur_lr: 0.000695 loss: 0.210 time:0.62
+=====> epoch[91/200] iter: (8/14) 	cur_lr: 0.000694 loss: 0.211 time:0.61
+=====> epoch[91/200] iter: (9/14) 	cur_lr: 0.000694 loss: 0.188 time:0.60
+=====> epoch[91/200] iter: (10/14) 	cur_lr: 0.000693 loss: 0.201 time:0.60
+=====> epoch[91/200] iter: (11/14) 	cur_lr: 0.000693 loss: 0.215 time:0.60
+=====> epoch[91/200] iter: (12/14) 	cur_lr: 0.000692 loss: 0.246 time:0.60
+=====> epoch[91/200] iter: (13/14) 	cur_lr: 0.000692 loss: 0.209 time:0.62
+=====> epoch[91/200] iter: (14/14) 	cur_lr: 0.000692 loss: 0.183 time:0.62
+Remaining training time = 0 hour 20 minutes 27 seconds
+Epoch : 90 Details
+Epoch No.: 90	Train Loss = 0.2100	 lr= 0.000692
+
+=====> the number of iterations per epoch:  14
+=====> epoch[92/200] iter: (1/14) 	cur_lr: 0.000691 loss: 0.214 time:0.86
+=====> epoch[92/200] iter: (2/14) 	cur_lr: 0.000691 loss: 0.204 time:0.69
+=====> epoch[92/200] iter: (3/14) 	cur_lr: 0.000690 loss: 0.198 time:0.74
+=====> epoch[92/200] iter: (4/14) 	cur_lr: 0.000690 loss: 0.217 time:0.71
+=====> epoch[92/200] iter: (5/14) 	cur_lr: 0.000690 loss: 0.221 time:0.72
+=====> epoch[92/200] iter: (6/14) 	cur_lr: 0.000689 loss: 0.195 time:0.68
+=====> epoch[92/200] iter: (7/14) 	cur_lr: 0.000689 loss: 0.217 time:0.63
+=====> epoch[92/200] iter: (8/14) 	cur_lr: 0.000688 loss: 0.234 time:0.61
+=====> epoch[92/200] iter: (9/14) 	cur_lr: 0.000688 loss: 0.200 time:0.60
+=====> epoch[92/200] iter: (10/14) 	cur_lr: 0.000688 loss: 0.184 time:0.61
+=====> epoch[92/200] iter: (11/14) 	cur_lr: 0.000687 loss: 0.205 time:0.60
+=====> epoch[92/200] iter: (12/14) 	cur_lr: 0.000687 loss: 0.216 time:0.60
+=====> epoch[92/200] iter: (13/14) 	cur_lr: 0.000686 loss: 0.217 time:0.61
+=====> epoch[92/200] iter: (14/14) 	cur_lr: 0.000686 loss: 0.191 time:0.60
+Remaining training time = 0 hour 21 minutes 8 seconds
+Epoch : 91 Details
+Epoch No.: 91	Train Loss = 0.2081	 lr= 0.000686
+
+=====> the number of iterations per epoch:  14
+=====> epoch[93/200] iter: (1/14) 	cur_lr: 0.000686 loss: 0.218 time:1.00
+=====> epoch[93/200] iter: (2/14) 	cur_lr: 0.000685 loss: 0.194 time:0.81
+=====> epoch[93/200] iter: (3/14) 	cur_lr: 0.000685 loss: 0.196 time:0.70
+=====> epoch[93/200] iter: (4/14) 	cur_lr: 0.000684 loss: 0.204 time:0.80
+=====> epoch[93/200] iter: (5/14) 	cur_lr: 0.000684 loss: 0.218 time:0.71
+=====> epoch[93/200] iter: (6/14) 	cur_lr: 0.000684 loss: 0.203 time:0.71
+=====> epoch[93/200] iter: (7/14) 	cur_lr: 0.000683 loss: 0.223 time:0.66
+=====> epoch[93/200] iter: (8/14) 	cur_lr: 0.000683 loss: 0.215 time:0.62
+=====> epoch[93/200] iter: (9/14) 	cur_lr: 0.000682 loss: 0.198 time:0.60
+=====> epoch[93/200] iter: (10/14) 	cur_lr: 0.000682 loss: 0.221 time:0.61
+=====> epoch[93/200] iter: (11/14) 	cur_lr: 0.000681 loss: 0.206 time:0.60
+=====> epoch[93/200] iter: (12/14) 	cur_lr: 0.000681 loss: 0.203 time:0.61
+=====> epoch[93/200] iter: (13/14) 	cur_lr: 0.000681 loss: 0.208 time:0.61
+=====> epoch[93/200] iter: (14/14) 	cur_lr: 0.000680 loss: 0.185 time:0.60
+Remaining training time = 0 hour 22 minutes 12 seconds
+Epoch : 92 Details
+Epoch No.: 92	Train Loss = 0.2066	 lr= 0.000680
+
+=====> the number of iterations per epoch:  14
+=====> epoch[94/200] iter: (1/14) 	cur_lr: 0.000680 loss: 0.225 time:0.87
+=====> epoch[94/200] iter: (2/14) 	cur_lr: 0.000679 loss: 0.186 time:0.87
+=====> epoch[94/200] iter: (3/14) 	cur_lr: 0.000679 loss: 0.238 time:0.84
+=====> epoch[94/200] iter: (4/14) 	cur_lr: 0.000679 loss: 0.181 time:0.92
+=====> epoch[94/200] iter: (5/14) 	cur_lr: 0.000678 loss: 0.213 time:0.90
+=====> epoch[94/200] iter: (6/14) 	cur_lr: 0.000678 loss: 0.213 time:0.75
+=====> epoch[94/200] iter: (7/14) 	cur_lr: 0.000677 loss: 0.199 time:0.70
+=====> epoch[94/200] iter: (8/14) 	cur_lr: 0.000677 loss: 0.193 time:0.68
+=====> epoch[94/200] iter: (9/14) 	cur_lr: 0.000677 loss: 0.217 time:0.61
+=====> epoch[94/200] iter: (10/14) 	cur_lr: 0.000676 loss: 0.193 time:0.60
+=====> epoch[94/200] iter: (11/14) 	cur_lr: 0.000676 loss: 0.199 time:0.60
+=====> epoch[94/200] iter: (12/14) 	cur_lr: 0.000675 loss: 0.187 time:0.61
+=====> epoch[94/200] iter: (13/14) 	cur_lr: 0.000675 loss: 0.204 time:0.60
+=====> epoch[94/200] iter: (14/14) 	cur_lr: 0.000675 loss: 0.204 time:0.61
+Remaining training time = 0 hour 21 minutes 20 seconds
+Epoch : 93 Details
+Epoch No.: 93	Train Loss = 0.2038	 lr= 0.000675
+
+=====> the number of iterations per epoch:  14
+=====> epoch[95/200] iter: (1/14) 	cur_lr: 0.000674 loss: 0.197 time:0.78
+=====> epoch[95/200] iter: (2/14) 	cur_lr: 0.000674 loss: 0.171 time:0.71
+=====> epoch[95/200] iter: (3/14) 	cur_lr: 0.000673 loss: 0.184 time:0.76
+=====> epoch[95/200] iter: (4/14) 	cur_lr: 0.000673 loss: 0.240 time:0.88
+=====> epoch[95/200] iter: (5/14) 	cur_lr: 0.000672 loss: 0.224 time:0.80
+=====> epoch[95/200] iter: (6/14) 	cur_lr: 0.000672 loss: 0.207 time:0.86
+=====> epoch[95/200] iter: (7/14) 	cur_lr: 0.000672 loss: 0.205 time:0.81
+=====> epoch[95/200] iter: (8/14) 	cur_lr: 0.000671 loss: 0.189 time:0.72
+=====> epoch[95/200] iter: (9/14) 	cur_lr: 0.000671 loss: 0.196 time:0.65
+=====> epoch[95/200] iter: (10/14) 	cur_lr: 0.000670 loss: 0.209 time:0.61
+=====> epoch[95/200] iter: (11/14) 	cur_lr: 0.000670 loss: 0.201 time:0.60
+=====> epoch[95/200] iter: (12/14) 	cur_lr: 0.000670 loss: 0.203 time:0.60
+=====> epoch[95/200] iter: (13/14) 	cur_lr: 0.000669 loss: 0.237 time:0.61
+=====> epoch[95/200] iter: (14/14) 	cur_lr: 0.000669 loss: 0.228 time:0.61
+Remaining training time = 0 hour 20 minutes 39 seconds
+Epoch : 94 Details
+Epoch No.: 94	Train Loss = 0.2067	 lr= 0.000669
+
+=====> the number of iterations per epoch:  14
+=====> epoch[96/200] iter: (1/14) 	cur_lr: 0.000668 loss: 0.228 time:0.82
+=====> epoch[96/200] iter: (2/14) 	cur_lr: 0.000668 loss: 0.221 time:0.71
+=====> epoch[96/200] iter: (3/14) 	cur_lr: 0.000668 loss: 0.255 time:0.73
+=====> epoch[96/200] iter: (4/14) 	cur_lr: 0.000667 loss: 0.181 time:0.77
+=====> epoch[96/200] iter: (5/14) 	cur_lr: 0.000667 loss: 0.187 time:0.76
+=====> epoch[96/200] iter: (6/14) 	cur_lr: 0.000666 loss: 0.224 time:0.70
+=====> epoch[96/200] iter: (7/14) 	cur_lr: 0.000666 loss: 0.191 time:0.72
+=====> epoch[96/200] iter: (8/14) 	cur_lr: 0.000666 loss: 0.203 time:0.72
+=====> epoch[96/200] iter: (9/14) 	cur_lr: 0.000665 loss: 0.224 time:0.61
+=====> epoch[96/200] iter: (10/14) 	cur_lr: 0.000665 loss: 0.198 time:0.62
+=====> epoch[96/200] iter: (11/14) 	cur_lr: 0.000664 loss: 0.197 time:0.62
+=====> epoch[96/200] iter: (12/14) 	cur_lr: 0.000664 loss: 0.216 time:0.61
+=====> epoch[96/200] iter: (13/14) 	cur_lr: 0.000663 loss: 0.207 time:0.60
+=====> epoch[96/200] iter: (14/14) 	cur_lr: 0.000663 loss: 0.243 time:0.61
+Remaining training time = 0 hour 19 minutes 43 seconds
+Epoch : 95 Details
+Epoch No.: 95	Train Loss = 0.2126	 lr= 0.000663
+
+=====> the number of iterations per epoch:  14
+=====> epoch[97/200] iter: (1/14) 	cur_lr: 0.000663 loss: 0.182 time:0.81
+=====> epoch[97/200] iter: (2/14) 	cur_lr: 0.000662 loss: 0.210 time:0.69
+=====> epoch[97/200] iter: (3/14) 	cur_lr: 0.000662 loss: 0.196 time:0.75
+=====> epoch[97/200] iter: (4/14) 	cur_lr: 0.000661 loss: 0.190 time:0.75
+=====> epoch[97/200] iter: (5/14) 	cur_lr: 0.000661 loss: 0.205 time:0.75
+=====> epoch[97/200] iter: (6/14) 	cur_lr: 0.000661 loss: 0.206 time:0.71
+=====> epoch[97/200] iter: (7/14) 	cur_lr: 0.000660 loss: 0.191 time:0.67
+=====> epoch[97/200] iter: (8/14) 	cur_lr: 0.000660 loss: 0.211 time:0.60
+=====> epoch[97/200] iter: (9/14) 	cur_lr: 0.000659 loss: 0.222 time:0.60
+=====> epoch[97/200] iter: (10/14) 	cur_lr: 0.000659 loss: 0.235 time:0.61
+=====> epoch[97/200] iter: (11/14) 	cur_lr: 0.000659 loss: 0.190 time:0.62
+=====> epoch[97/200] iter: (12/14) 	cur_lr: 0.000658 loss: 0.197 time:0.62
+=====> epoch[97/200] iter: (13/14) 	cur_lr: 0.000658 loss: 0.221 time:0.62
+=====> epoch[97/200] iter: (14/14) 	cur_lr: 0.000657 loss: 0.207 time:0.62
+Remaining training time = 0 hour 19 minutes 22 seconds
+Epoch : 96 Details
+Epoch No.: 96	Train Loss = 0.2045	 lr= 0.000657
+
+=====> the number of iterations per epoch:  14
+=====> epoch[98/200] iter: (1/14) 	cur_lr: 0.000657 loss: 0.188 time:0.75
+=====> epoch[98/200] iter: (2/14) 	cur_lr: 0.000657 loss: 0.234 time:0.75
+=====> epoch[98/200] iter: (3/14) 	cur_lr: 0.000656 loss: 0.187 time:0.72
+=====> epoch[98/200] iter: (4/14) 	cur_lr: 0.000656 loss: 0.221 time:0.75
+=====> epoch[98/200] iter: (5/14) 	cur_lr: 0.000655 loss: 0.178 time:0.70
+=====> epoch[98/200] iter: (6/14) 	cur_lr: 0.000655 loss: 0.206 time:0.64
+=====> epoch[98/200] iter: (7/14) 	cur_lr: 0.000654 loss: 0.203 time:0.63
+=====> epoch[98/200] iter: (8/14) 	cur_lr: 0.000654 loss: 0.196 time:0.60
+=====> epoch[98/200] iter: (9/14) 	cur_lr: 0.000654 loss: 0.187 time:0.60
+=====> epoch[98/200] iter: (10/14) 	cur_lr: 0.000653 loss: 0.185 time:0.60
+=====> epoch[98/200] iter: (11/14) 	cur_lr: 0.000653 loss: 0.205 time:0.60
+=====> epoch[98/200] iter: (12/14) 	cur_lr: 0.000652 loss: 0.210 time:0.62
+=====> epoch[98/200] iter: (13/14) 	cur_lr: 0.000652 loss: 0.206 time:0.62
+=====> epoch[98/200] iter: (14/14) 	cur_lr: 0.000652 loss: 0.180 time:0.62
+Remaining training time = 0 hour 19 minutes 26 seconds
+Epoch : 97 Details
+Epoch No.: 97	Train Loss = 0.1990	 lr= 0.000652
+
+=====> the number of iterations per epoch:  14
+=====> epoch[99/200] iter: (1/14) 	cur_lr: 0.000651 loss: 0.201 time:0.85
+=====> epoch[99/200] iter: (2/14) 	cur_lr: 0.000651 loss: 0.199 time:0.73
+=====> epoch[99/200] iter: (3/14) 	cur_lr: 0.000650 loss: 0.206 time:0.71
+=====> epoch[99/200] iter: (4/14) 	cur_lr: 0.000650 loss: 0.218 time:0.67
+=====> epoch[99/200] iter: (5/14) 	cur_lr: 0.000650 loss: 0.206 time:0.73
+=====> epoch[99/200] iter: (6/14) 	cur_lr: 0.000649 loss: 0.172 time:0.73
+=====> epoch[99/200] iter: (7/14) 	cur_lr: 0.000649 loss: 0.223 time:0.62
+=====> epoch[99/200] iter: (8/14) 	cur_lr: 0.000648 loss: 0.214 time:0.64
+=====> epoch[99/200] iter: (9/14) 	cur_lr: 0.000648 loss: 0.195 time:0.60
+=====> epoch[99/200] iter: (10/14) 	cur_lr: 0.000647 loss: 0.209 time:0.60
+=====> epoch[99/200] iter: (11/14) 	cur_lr: 0.000647 loss: 0.185 time:0.61
+=====> epoch[99/200] iter: (12/14) 	cur_lr: 0.000647 loss: 0.199 time:0.61
+=====> epoch[99/200] iter: (13/14) 	cur_lr: 0.000646 loss: 0.170 time:0.61
+=====> epoch[99/200] iter: (14/14) 	cur_lr: 0.000646 loss: 0.186 time:0.61
+Remaining training time = 0 hour 19 minutes 42 seconds
+Epoch : 98 Details
+Epoch No.: 98	Train Loss = 0.1986	 lr= 0.000646
+
+=====> the number of iterations per epoch:  14
+=====> epoch[100/200] iter: (1/14) 	cur_lr: 0.000645 loss: 0.208 time:0.90
+=====> epoch[100/200] iter: (2/14) 	cur_lr: 0.000645 loss: 0.189 time:0.69
+=====> epoch[100/200] iter: (3/14) 	cur_lr: 0.000645 loss: 0.193 time:0.79
+=====> epoch[100/200] iter: (4/14) 	cur_lr: 0.000644 loss: 0.204 time:0.74
+=====> epoch[100/200] iter: (5/14) 	cur_lr: 0.000644 loss: 0.188 time:0.68
+=====> epoch[100/200] iter: (6/14) 	cur_lr: 0.000643 loss: 0.211 time:0.72
+=====> epoch[100/200] iter: (7/14) 	cur_lr: 0.000643 loss: 0.182 time:0.62
+=====> epoch[100/200] iter: (8/14) 	cur_lr: 0.000643 loss: 0.184 time:0.61
+=====> epoch[100/200] iter: (9/14) 	cur_lr: 0.000642 loss: 0.217 time:0.60
+=====> epoch[100/200] iter: (10/14) 	cur_lr: 0.000642 loss: 0.201 time:0.61
+=====> epoch[100/200] iter: (11/14) 	cur_lr: 0.000641 loss: 0.225 time:0.61
+=====> epoch[100/200] iter: (12/14) 	cur_lr: 0.000641 loss: 0.173 time:0.61
+=====> epoch[100/200] iter: (13/14) 	cur_lr: 0.000640 loss: 0.217 time:0.61
+=====> epoch[100/200] iter: (14/14) 	cur_lr: 0.000640 loss: 0.215 time:0.61
+Remaining training time = 0 hour 21 minutes 20 seconds
+Epoch : 99 Details
+Epoch No.: 99	Train Loss = 0.2006	 lr= 0.000640
+
+=====> the number of iterations per epoch:  14
+=====> epoch[101/200] iter: (1/14) 	cur_lr: 0.000640 loss: 0.212 time:0.90
+=====> epoch[101/200] iter: (2/14) 	cur_lr: 0.000639 loss: 0.224 time:0.84
+=====> epoch[101/200] iter: (3/14) 	cur_lr: 0.000639 loss: 0.204 time:0.83
+=====> epoch[101/200] iter: (4/14) 	cur_lr: 0.000638 loss: 0.213 time:0.76
+=====> epoch[101/200] iter: (5/14) 	cur_lr: 0.000638 loss: 0.208 time:0.77
+=====> epoch[101/200] iter: (6/14) 	cur_lr: 0.000638 loss: 0.203 time:0.70
+=====> epoch[101/200] iter: (7/14) 	cur_lr: 0.000637 loss: 0.199 time:0.69
+=====> epoch[101/200] iter: (8/14) 	cur_lr: 0.000637 loss: 0.185 time:0.62
+=====> epoch[101/200] iter: (9/14) 	cur_lr: 0.000636 loss: 0.214 time:0.61
+=====> epoch[101/200] iter: (10/14) 	cur_lr: 0.000636 loss: 0.191 time:0.61
+=====> epoch[101/200] iter: (11/14) 	cur_lr: 0.000636 loss: 0.201 time:0.61
+=====> epoch[101/200] iter: (12/14) 	cur_lr: 0.000635 loss: 0.183 time:0.60
+=====> epoch[101/200] iter: (13/14) 	cur_lr: 0.000635 loss: 0.189 time:0.61
+=====> epoch[101/200] iter: (14/14) 	cur_lr: 0.000634 loss: 0.195 time:0.61
+Remaining training time = 0 hour 20 minutes 22 seconds
+[1/233]  time: 0.06
+[2/233]  time: 0.02
+[3/233]  time: 0.02
+[4/233]  time: 0.02
+[5/233]  time: 0.02
+[6/233]  time: 0.02
+[7/233]  time: 0.01
+[8/233]  time: 0.02
+[9/233]  time: 0.02
+[10/233]  time: 0.01
+[11/233]  time: 0.02
+[12/233]  time: 0.02
+[13/233]  time: 0.02
+[14/233]  time: 0.02
+[15/233]  time: 0.02
+[16/233]  time: 0.02
+[17/233]  time: 0.02
+[18/233]  time: 0.02
+[19/233]  time: 0.02
+[20/233]  time: 0.02
+[21/233]  time: 0.02
+[22/233]  time: 0.02
+[23/233]  time: 0.02
+[24/233]  time: 0.02
+[25/233]  time: 0.02
+[26/233]  time: 0.02
+[27/233]  time: 0.02
+[28/233]  time: 0.02
+[29/233]  time: 0.02
+[30/233]  time: 0.02
+[31/233]  time: 0.03
+[32/233]  time: 0.02
+[33/233]  time: 0.02
+[34/233]  time: 0.02
+[35/233]  time: 0.02
+[36/233]  time: 0.02
+[37/233]  time: 0.02
+[38/233]  time: 0.02
+[39/233]  time: 0.02
+[40/233]  time: 0.02
+[41/233]  time: 0.02
+[42/233]  time: 0.02
+[43/233]  time: 0.02
+[44/233]  time: 0.02
+[45/233]  time: 0.02
+[46/233]  time: 0.02
+[47/233]  time: 0.02
+[48/233]  time: 0.01
+[49/233]  time: 0.01
+[50/233]  time: 0.02
+[51/233]  time: 0.02
+[52/233]  time: 0.01
+[53/233]  time: 0.02
+[54/233]  time: 0.01
+[55/233]  time: 0.02
+[56/233]  time: 0.02
+[57/233]  time: 0.02
+[58/233]  time: 0.01
+[59/233]  time: 0.02
+[60/233]  time: 0.01
+[61/233]  time: 0.02
+[62/233]  time: 0.02
+[63/233]  time: 0.02
+[64/233]  time: 0.02
+[65/233]  time: 0.02
+[66/233]  time: 0.02
+[67/233]  time: 0.02
+[68/233]  time: 0.02
+[69/233]  time: 0.02
+[70/233]  time: 0.02
+[71/233]  time: 0.02
+[72/233]  time: 0.02
+[73/233]  time: 0.02
+[74/233]  time: 0.02
+[75/233]  time: 0.02
+[76/233]  time: 0.02
+[77/233]  time: 0.02
+[78/233]  time: 0.01
+[79/233]  time: 0.03
+[80/233]  time: 0.02
+[81/233]  time: 0.02
+[82/233]  time: 0.03
+[83/233]  time: 0.01
+[84/233]  time: 0.02
+[85/233]  time: 0.02
+[86/233]  time: 0.03
+[87/233]  time: 0.04
+[88/233]  time: 0.02
+[89/233]  time: 0.03
+[90/233]  time: 0.03
+[91/233]  time: 0.02
+[92/233]  time: 0.03
+[93/233]  time: 0.03
+[94/233]  time: 0.03
+[95/233]  time: 0.02
+[96/233]  time: 0.02
+[97/233]  time: 0.02
+[98/233]  time: 0.02
+[99/233]  time: 0.02
+[100/233]  time: 0.03
+[101/233]  time: 0.03
+[102/233]  time: 0.01
+[103/233]  time: 0.02
+[104/233]  time: 0.02
+[105/233]  time: 0.01
+[106/233]  time: 0.05
+[107/233]  time: 0.01
+[108/233]  time: 0.02
+[109/233]  time: 0.02
+[110/233]  time: 0.03
+[111/233]  time: 0.03
+[112/233]  time: 0.03
+[113/233]  time: 0.02
+[114/233]  time: 0.03
+[115/233]  time: 0.02
+[116/233]  time: 0.02
+[117/233]  time: 0.03
+[118/233]  time: 0.02
+[119/233]  time: 0.03
+[120/233]  time: 0.02
+[121/233]  time: 0.03
+[122/233]  time: 0.02
+[123/233]  time: 0.01
+[124/233]  time: 0.03
+[125/233]  time: 0.01
+[126/233]  time: 0.01
+[127/233]  time: 0.02
+[128/233]  time: 0.02
+[129/233]  time: 0.01
+[130/233]  time: 0.03
+[131/233]  time: 0.03
+[132/233]  time: 0.02
+[133/233]  time: 0.02
+[134/233]  time: 0.02
+[135/233]  time: 0.02
+[136/233]  time: 0.02
+[137/233]  time: 0.02
+[138/233]  time: 0.01
+[139/233]  time: 0.02
+[140/233]  time: 0.03
+[141/233]  time: 0.02
+[142/233]  time: 0.02
+[143/233]  time: 0.03
+[144/233]  time: 0.02
+[145/233]  time: 0.02
+[146/233]  time: 0.01
+[147/233]  time: 0.03
+[148/233]  time: 0.02
+[149/233]  time: 0.03
+[150/233]  time: 0.03
+[151/233]  time: 0.02
+[152/233]  time: 0.02
+[153/233]  time: 0.03
+[154/233]  time: 0.03
+[155/233]  time: 0.02
+[156/233]  time: 0.02
+[157/233]  time: 0.03
+[158/233]  time: 0.02
+[159/233]  time: 0.05
+[160/233]  time: 0.03
+[161/233]  time: 0.03
+[162/233]  time: 0.02
+[163/233]  time: 0.03
+[164/233]  time: 0.03
+[165/233]  time: 0.03
+[166/233]  time: 0.02
+[167/233]  time: 0.02
+[168/233]  time: 0.01
+[169/233]  time: 0.02
+[170/233]  time: 0.01
+[171/233]  time: 0.01
+[172/233]  time: 0.02
+[173/233]  time: 0.02
+[174/233]  time: 0.02
+[175/233]  time: 0.02
+[176/233]  time: 0.02
+[177/233]  time: 0.02
+[178/233]  time: 0.02
+[179/233]  time: 0.02
+[180/233]  time: 0.02
+[181/233]  time: 0.02
+[182/233]  time: 0.02
+[183/233]  time: 0.02
+[184/233]  time: 0.01
+[185/233]  time: 0.02
+[186/233]  time: 0.02
+[187/233]  time: 0.02
+[188/233]  time: 0.02
+[189/233]  time: 0.01
+[190/233]  time: 0.02
+[191/233]  time: 0.01
+[192/233]  time: 0.02
+[193/233]  time: 0.02
+[194/233]  time: 0.02
+[195/233]  time: 0.02
+[196/233]  time: 0.01
+[197/233]  time: 0.02
+[198/233]  time: 0.02
+[199/233]  time: 0.02
+[200/233]  time: 0.02
+[201/233]  time: 0.02
+[202/233]  time: 0.02
+[203/233]  time: 0.02
+[204/233]  time: 0.02
+[205/233]  time: 0.02
+[206/233]  time: 0.02
+[207/233]  time: 0.02
+[208/233]  time: 0.02
+[209/233]  time: 0.02
+[210/233]  time: 0.02
+[211/233]  time: 0.02
+[212/233]  time: 0.02
+[213/233]  time: 0.02
+[214/233]  time: 0.02
+[215/233]  time: 0.02
+[216/233]  time: 0.02
+[217/233]  time: 0.02
+[218/233]  time: 0.02
+[219/233]  time: 0.02
+[220/233]  time: 0.02
+[221/233]  time: 0.02
+[222/233]  time: 0.02
+[223/233]  time: 0.02
+[224/233]  time: 0.02
+[225/233]  time: 0.02
+[226/233]  time: 0.01
+[227/233]  time: 0.01
+[228/233]  time: 0.01
+[229/233]  time: 0.01
+[230/233]  time: 0.01
+[231/233]  time: 0.02
+[232/233]  time: 0.01
+[233/233]  time: 0.01
+Epoch : 100 Details
+Epoch No.: 100	Train Loss = 0.2015	 mIOU(val) = 0.5617	 lr= 0.000634
+
+=====> the number of iterations per epoch:  14
+=====> epoch[102/200] iter: (1/14) 	cur_lr: 0.000634 loss: 0.188 time:0.90
+=====> epoch[102/200] iter: (2/14) 	cur_lr: 0.000634 loss: 0.211 time:0.81
+=====> epoch[102/200] iter: (3/14) 	cur_lr: 0.000633 loss: 0.216 time:0.83
+=====> epoch[102/200] iter: (4/14) 	cur_lr: 0.000633 loss: 0.221 time:0.75
+=====> epoch[102/200] iter: (5/14) 	cur_lr: 0.000632 loss: 0.196 time:0.75
+=====> epoch[102/200] iter: (6/14) 	cur_lr: 0.000632 loss: 0.190 time:0.74
+=====> epoch[102/200] iter: (7/14) 	cur_lr: 0.000631 loss: 0.203 time:0.63
+=====> epoch[102/200] iter: (8/14) 	cur_lr: 0.000631 loss: 0.214 time:0.71
+=====> epoch[102/200] iter: (9/14) 	cur_lr: 0.000631 loss: 0.219 time:0.61
+=====> epoch[102/200] iter: (10/14) 	cur_lr: 0.000630 loss: 0.244 time:0.60
+=====> epoch[102/200] iter: (11/14) 	cur_lr: 0.000630 loss: 0.193 time:0.61
+=====> epoch[102/200] iter: (12/14) 	cur_lr: 0.000629 loss: 0.181 time:0.61
+=====> epoch[102/200] iter: (13/14) 	cur_lr: 0.000629 loss: 0.218 time:0.61
+=====> epoch[102/200] iter: (14/14) 	cur_lr: 0.000629 loss: 0.210 time:0.61
+Remaining training time = 0 hour 20 minutes 28 seconds
+Epoch : 101 Details
+Epoch No.: 101	Train Loss = 0.2075	 lr= 0.000629
+
+=====> the number of iterations per epoch:  14
+=====> epoch[103/200] iter: (1/14) 	cur_lr: 0.000628 loss: 0.184 time:0.77
+=====> epoch[103/200] iter: (2/14) 	cur_lr: 0.000628 loss: 0.204 time:0.72
+=====> epoch[103/200] iter: (3/14) 	cur_lr: 0.000627 loss: 0.191 time:0.87
+=====> epoch[103/200] iter: (4/14) 	cur_lr: 0.000627 loss: 0.192 time:0.84
+=====> epoch[103/200] iter: (5/14) 	cur_lr: 0.000627 loss: 0.197 time:0.84
+=====> epoch[103/200] iter: (6/14) 	cur_lr: 0.000626 loss: 0.184 time:0.82
+=====> epoch[103/200] iter: (7/14) 	cur_lr: 0.000626 loss: 0.177 time:0.70
+=====> epoch[103/200] iter: (8/14) 	cur_lr: 0.000625 loss: 0.206 time:0.64
+=====> epoch[103/200] iter: (9/14) 	cur_lr: 0.000625 loss: 0.191 time:0.61
+=====> epoch[103/200] iter: (10/14) 	cur_lr: 0.000624 loss: 0.185 time:0.61
+=====> epoch[103/200] iter: (11/14) 	cur_lr: 0.000624 loss: 0.214 time:0.61
+=====> epoch[103/200] iter: (12/14) 	cur_lr: 0.000624 loss: 0.205 time:0.61
+=====> epoch[103/200] iter: (13/14) 	cur_lr: 0.000623 loss: 0.201 time:0.61
+=====> epoch[103/200] iter: (14/14) 	cur_lr: 0.000623 loss: 0.226 time:0.61
+Remaining training time = 0 hour 19 minutes 45 seconds
+Epoch : 102 Details
+Epoch No.: 102	Train Loss = 0.1969	 lr= 0.000623
+
+=====> the number of iterations per epoch:  14
+=====> epoch[104/200] iter: (1/14) 	cur_lr: 0.000622 loss: 0.209 time:0.84
+=====> epoch[104/200] iter: (2/14) 	cur_lr: 0.000622 loss: 0.210 time:0.69
+=====> epoch[104/200] iter: (3/14) 	cur_lr: 0.000622 loss: 0.191 time:0.73
+=====> epoch[104/200] iter: (4/14) 	cur_lr: 0.000621 loss: 0.195 time:0.75
+=====> epoch[104/200] iter: (5/14) 	cur_lr: 0.000621 loss: 0.243 time:0.84
+=====> epoch[104/200] iter: (6/14) 	cur_lr: 0.000620 loss: 0.202 time:0.84
+=====> epoch[104/200] iter: (7/14) 	cur_lr: 0.000620 loss: 0.198 time:0.83
+=====> epoch[104/200] iter: (8/14) 	cur_lr: 0.000619 loss: 0.200 time:0.74
+=====> epoch[104/200] iter: (9/14) 	cur_lr: 0.000619 loss: 0.208 time:0.72
+=====> epoch[104/200] iter: (10/14) 	cur_lr: 0.000619 loss: 0.192 time:0.61
+=====> epoch[104/200] iter: (11/14) 	cur_lr: 0.000618 loss: 0.180 time:0.61
+=====> epoch[104/200] iter: (12/14) 	cur_lr: 0.000618 loss: 0.197 time:0.61
+=====> epoch[104/200] iter: (13/14) 	cur_lr: 0.000617 loss: 0.194 time:0.61
+=====> epoch[104/200] iter: (14/14) 	cur_lr: 0.000617 loss: 0.210 time:0.61
+Remaining training time = 0 hour 18 minutes 49 seconds
+Epoch : 103 Details
+Epoch No.: 103	Train Loss = 0.2021	 lr= 0.000617
+
+=====> the number of iterations per epoch:  14
+=====> epoch[105/200] iter: (1/14) 	cur_lr: 0.000617 loss: 0.191 time:0.73
+=====> epoch[105/200] iter: (2/14) 	cur_lr: 0.000616 loss: 0.202 time:0.70
+=====> epoch[105/200] iter: (3/14) 	cur_lr: 0.000616 loss: 0.190 time:0.69
+=====> epoch[105/200] iter: (4/14) 	cur_lr: 0.000615 loss: 0.204 time:0.71
+=====> epoch[105/200] iter: (5/14) 	cur_lr: 0.000615 loss: 0.181 time:0.70
+=====> epoch[105/200] iter: (6/14) 	cur_lr: 0.000615 loss: 0.184 time:0.74
+=====> epoch[105/200] iter: (7/14) 	cur_lr: 0.000614 loss: 0.184 time:0.71
+=====> epoch[105/200] iter: (8/14) 	cur_lr: 0.000614 loss: 0.176 time:0.70
+=====> epoch[105/200] iter: (9/14) 	cur_lr: 0.000613 loss: 0.196 time:0.62
+=====> epoch[105/200] iter: (10/14) 	cur_lr: 0.000613 loss: 0.257 time:0.62
+=====> epoch[105/200] iter: (11/14) 	cur_lr: 0.000612 loss: 0.182 time:0.62
+=====> epoch[105/200] iter: (12/14) 	cur_lr: 0.000612 loss: 0.204 time:0.62
+=====> epoch[105/200] iter: (13/14) 	cur_lr: 0.000612 loss: 0.184 time:0.62
+=====> epoch[105/200] iter: (14/14) 	cur_lr: 0.000611 loss: 0.195 time:0.61
+Remaining training time = 0 hour 17 minutes 41 seconds
+Epoch : 104 Details
+Epoch No.: 104	Train Loss = 0.1951	 lr= 0.000611
+
+=====> the number of iterations per epoch:  14
+=====> epoch[106/200] iter: (1/14) 	cur_lr: 0.000611 loss: 0.194 time:0.77
+=====> epoch[106/200] iter: (2/14) 	cur_lr: 0.000610 loss: 0.179 time:0.75
+=====> epoch[106/200] iter: (3/14) 	cur_lr: 0.000610 loss: 0.198 time:0.79
+=====> epoch[106/200] iter: (4/14) 	cur_lr: 0.000610 loss: 0.208 time:0.71
+=====> epoch[106/200] iter: (5/14) 	cur_lr: 0.000609 loss: 0.166 time:0.70
+=====> epoch[106/200] iter: (6/14) 	cur_lr: 0.000609 loss: 0.178 time:0.73
+=====> epoch[106/200] iter: (7/14) 	cur_lr: 0.000608 loss: 0.187 time:0.64
+=====> epoch[106/200] iter: (8/14) 	cur_lr: 0.000608 loss: 0.178 time:0.60
+=====> epoch[106/200] iter: (9/14) 	cur_lr: 0.000608 loss: 0.185 time:0.60
+=====> epoch[106/200] iter: (10/14) 	cur_lr: 0.000607 loss: 0.197 time:0.60
+=====> epoch[106/200] iter: (11/14) 	cur_lr: 0.000607 loss: 0.201 time:0.60
+=====> epoch[106/200] iter: (12/14) 	cur_lr: 0.000606 loss: 0.207 time:0.61
+=====> epoch[106/200] iter: (13/14) 	cur_lr: 0.000606 loss: 0.220 time:0.62
+=====> epoch[106/200] iter: (14/14) 	cur_lr: 0.000605 loss: 0.199 time:0.61
+Remaining training time = 0 hour 17 minutes 18 seconds
+Epoch : 105 Details
+Epoch No.: 105	Train Loss = 0.1926	 lr= 0.000605
+
+=====> the number of iterations per epoch:  14
+=====> epoch[107/200] iter: (1/14) 	cur_lr: 0.000605 loss: 0.213 time:0.81
+=====> epoch[107/200] iter: (2/14) 	cur_lr: 0.000605 loss: 0.194 time:0.71
+=====> epoch[107/200] iter: (3/14) 	cur_lr: 0.000604 loss: 0.195 time:0.73
+=====> epoch[107/200] iter: (4/14) 	cur_lr: 0.000604 loss: 0.207 time:0.77
+=====> epoch[107/200] iter: (5/14) 	cur_lr: 0.000603 loss: 0.173 time:0.70
+=====> epoch[107/200] iter: (6/14) 	cur_lr: 0.000603 loss: 0.193 time:0.64
+=====> epoch[107/200] iter: (7/14) 	cur_lr: 0.000603 loss: 0.184 time:0.68
+=====> epoch[107/200] iter: (8/14) 	cur_lr: 0.000602 loss: 0.204 time:0.60
+=====> epoch[107/200] iter: (9/14) 	cur_lr: 0.000602 loss: 0.180 time:0.60
+=====> epoch[107/200] iter: (10/14) 	cur_lr: 0.000601 loss: 0.208 time:0.60
+=====> epoch[107/200] iter: (11/14) 	cur_lr: 0.000601 loss: 0.221 time:0.60
+=====> epoch[107/200] iter: (12/14) 	cur_lr: 0.000600 loss: 0.177 time:0.60
+=====> epoch[107/200] iter: (13/14) 	cur_lr: 0.000600 loss: 0.222 time:0.60
+=====> epoch[107/200] iter: (14/14) 	cur_lr: 0.000600 loss: 0.197 time:0.60
+Remaining training time = 0 hour 17 minutes 53 seconds
+Epoch : 106 Details
+Epoch No.: 106	Train Loss = 0.1976	 lr= 0.000600
+
+=====> the number of iterations per epoch:  14
+=====> epoch[108/200] iter: (1/14) 	cur_lr: 0.000599 loss: 0.207 time:0.92
+=====> epoch[108/200] iter: (2/14) 	cur_lr: 0.000599 loss: 0.196 time:0.72
+=====> epoch[108/200] iter: (3/14) 	cur_lr: 0.000598 loss: 0.202 time:0.68
+=====> epoch[108/200] iter: (4/14) 	cur_lr: 0.000598 loss: 0.179 time:0.73
+=====> epoch[108/200] iter: (5/14) 	cur_lr: 0.000598 loss: 0.198 time:0.66
+=====> epoch[108/200] iter: (6/14) 	cur_lr: 0.000597 loss: 0.187 time:0.68
+=====> epoch[108/200] iter: (7/14) 	cur_lr: 0.000597 loss: 0.220 time:0.65
+=====> epoch[108/200] iter: (8/14) 	cur_lr: 0.000596 loss: 0.185 time:0.61
+=====> epoch[108/200] iter: (9/14) 	cur_lr: 0.000596 loss: 0.202 time:0.60
+=====> epoch[108/200] iter: (10/14) 	cur_lr: 0.000596 loss: 0.159 time:0.60
+=====> epoch[108/200] iter: (11/14) 	cur_lr: 0.000595 loss: 0.175 time:0.60
+=====> epoch[108/200] iter: (12/14) 	cur_lr: 0.000595 loss: 0.191 time:0.60
+=====> epoch[108/200] iter: (13/14) 	cur_lr: 0.000594 loss: 0.199 time:0.60
+=====> epoch[108/200] iter: (14/14) 	cur_lr: 0.000594 loss: 0.217 time:0.60
+Remaining training time = 0 hour 18 minutes 34 seconds
+Epoch : 107 Details
+Epoch No.: 107	Train Loss = 0.1940	 lr= 0.000594
+
+=====> the number of iterations per epoch:  14
+=====> epoch[109/200] iter: (1/14) 	cur_lr: 0.000593 loss: 0.201 time:0.85
+=====> epoch[109/200] iter: (2/14) 	cur_lr: 0.000593 loss: 0.181 time:0.86
+=====> epoch[109/200] iter: (3/14) 	cur_lr: 0.000593 loss: 0.193 time:0.84
+=====> epoch[109/200] iter: (4/14) 	cur_lr: 0.000592 loss: 0.178 time:0.83
+=====> epoch[109/200] iter: (5/14) 	cur_lr: 0.000592 loss: 0.213 time:0.80
+=====> epoch[109/200] iter: (6/14) 	cur_lr: 0.000591 loss: 0.196 time:0.74
+=====> epoch[109/200] iter: (7/14) 	cur_lr: 0.000591 loss: 0.241 time:0.72
+=====> epoch[109/200] iter: (8/14) 	cur_lr: 0.000591 loss: 0.204 time:0.70
+=====> epoch[109/200] iter: (9/14) 	cur_lr: 0.000590 loss: 0.196 time:0.63
+=====> epoch[109/200] iter: (10/14) 	cur_lr: 0.000590 loss: 0.202 time:0.61
+=====> epoch[109/200] iter: (11/14) 	cur_lr: 0.000589 loss: 0.204 time:0.60
+=====> epoch[109/200] iter: (12/14) 	cur_lr: 0.000589 loss: 0.190 time:0.61
+=====> epoch[109/200] iter: (13/14) 	cur_lr: 0.000588 loss: 0.182 time:0.60
+=====> epoch[109/200] iter: (14/14) 	cur_lr: 0.000588 loss: 0.197 time:0.60
+Remaining training time = 0 hour 17 minutes 52 seconds
+Epoch : 108 Details
+Epoch No.: 108	Train Loss = 0.1983	 lr= 0.000588
+
+=====> the number of iterations per epoch:  14
+=====> epoch[110/200] iter: (1/14) 	cur_lr: 0.000588 loss: 0.195 time:0.83
+=====> epoch[110/200] iter: (2/14) 	cur_lr: 0.000587 loss: 0.200 time:0.77
+=====> epoch[110/200] iter: (3/14) 	cur_lr: 0.000587 loss: 0.200 time:0.71
+=====> epoch[110/200] iter: (4/14) 	cur_lr: 0.000586 loss: 0.203 time:0.79
+=====> epoch[110/200] iter: (5/14) 	cur_lr: 0.000586 loss: 0.172 time:0.80
+=====> epoch[110/200] iter: (6/14) 	cur_lr: 0.000586 loss: 0.202 time:0.80
+=====> epoch[110/200] iter: (7/14) 	cur_lr: 0.000585 loss: 0.193 time:0.87
+=====> epoch[110/200] iter: (8/14) 	cur_lr: 0.000585 loss: 0.234 time:0.73
+=====> epoch[110/200] iter: (9/14) 	cur_lr: 0.000584 loss: 0.203 time:0.63
+=====> epoch[110/200] iter: (10/14) 	cur_lr: 0.000584 loss: 0.192 time:0.61
+=====> epoch[110/200] iter: (11/14) 	cur_lr: 0.000583 loss: 0.191 time:0.60
+=====> epoch[110/200] iter: (12/14) 	cur_lr: 0.000583 loss: 0.214 time:0.61
+=====> epoch[110/200] iter: (13/14) 	cur_lr: 0.000583 loss: 0.205 time:0.61
+=====> epoch[110/200] iter: (14/14) 	cur_lr: 0.000582 loss: 0.157 time:0.61
+Remaining training time = 0 hour 17 minutes 46 seconds
+Epoch : 109 Details
+Epoch No.: 109	Train Loss = 0.1972	 lr= 0.000582
+
+=====> the number of iterations per epoch:  14
+=====> epoch[111/200] iter: (1/14) 	cur_lr: 0.000582 loss: 0.178 time:0.78
+=====> epoch[111/200] iter: (2/14) 	cur_lr: 0.000581 loss: 0.190 time:0.76
+=====> epoch[111/200] iter: (3/14) 	cur_lr: 0.000581 loss: 0.182 time:0.74
+=====> epoch[111/200] iter: (4/14) 	cur_lr: 0.000581 loss: 0.172 time:0.71
+=====> epoch[111/200] iter: (5/14) 	cur_lr: 0.000580 loss: 0.202 time:0.74
+=====> epoch[111/200] iter: (6/14) 	cur_lr: 0.000580 loss: 0.187 time:0.69
+=====> epoch[111/200] iter: (7/14) 	cur_lr: 0.000579 loss: 0.162 time:0.71
+=====> epoch[111/200] iter: (8/14) 	cur_lr: 0.000579 loss: 0.206 time:0.66
+=====> epoch[111/200] iter: (9/14) 	cur_lr: 0.000578 loss: 0.216 time:0.62
+=====> epoch[111/200] iter: (10/14) 	cur_lr: 0.000578 loss: 0.220 time:0.62
+=====> epoch[111/200] iter: (11/14) 	cur_lr: 0.000578 loss: 0.191 time:0.62
+=====> epoch[111/200] iter: (12/14) 	cur_lr: 0.000577 loss: 0.182 time:0.61
+=====> epoch[111/200] iter: (13/14) 	cur_lr: 0.000577 loss: 0.184 time:0.61
+=====> epoch[111/200] iter: (14/14) 	cur_lr: 0.000576 loss: 0.172 time:0.61
+Remaining training time = 0 hour 17 minutes 7 seconds
+Epoch : 110 Details
+Epoch No.: 110	Train Loss = 0.1889	 lr= 0.000576
+
+=====> the number of iterations per epoch:  14
+=====> epoch[112/200] iter: (1/14) 	cur_lr: 0.000576 loss: 0.201 time:0.76
+=====> epoch[112/200] iter: (2/14) 	cur_lr: 0.000576 loss: 0.175 time:0.75
+=====> epoch[112/200] iter: (3/14) 	cur_lr: 0.000575 loss: 0.207 time:0.79
+=====> epoch[112/200] iter: (4/14) 	cur_lr: 0.000575 loss: 0.179 time:0.78
+=====> epoch[112/200] iter: (5/14) 	cur_lr: 0.000574 loss: 0.199 time:0.73
+=====> epoch[112/200] iter: (6/14) 	cur_lr: 0.000574 loss: 0.188 time:0.69
+=====> epoch[112/200] iter: (7/14) 	cur_lr: 0.000573 loss: 0.175 time:0.68
+=====> epoch[112/200] iter: (8/14) 	cur_lr: 0.000573 loss: 0.184 time:0.63
+=====> epoch[112/200] iter: (9/14) 	cur_lr: 0.000573 loss: 0.224 time:0.61
+=====> epoch[112/200] iter: (10/14) 	cur_lr: 0.000572 loss: 0.191 time:0.62
+=====> epoch[112/200] iter: (11/14) 	cur_lr: 0.000572 loss: 0.190 time:0.62
+=====> epoch[112/200] iter: (12/14) 	cur_lr: 0.000571 loss: 0.174 time:0.62
+=====> epoch[112/200] iter: (13/14) 	cur_lr: 0.000571 loss: 0.182 time:0.62
+=====> epoch[112/200] iter: (14/14) 	cur_lr: 0.000571 loss: 0.223 time:0.62
+Remaining training time = 0 hour 16 minutes 12 seconds
+Epoch : 111 Details
+Epoch No.: 111	Train Loss = 0.1923	 lr= 0.000571
+
+=====> the number of iterations per epoch:  14
+=====> epoch[113/200] iter: (1/14) 	cur_lr: 0.000570 loss: 0.186 time:0.83
+=====> epoch[113/200] iter: (2/14) 	cur_lr: 0.000570 loss: 0.193 time:0.73
+=====> epoch[113/200] iter: (3/14) 	cur_lr: 0.000569 loss: 0.188 time:0.72
+=====> epoch[113/200] iter: (4/14) 	cur_lr: 0.000569 loss: 0.214 time:0.73
+=====> epoch[113/200] iter: (5/14) 	cur_lr: 0.000568 loss: 0.193 time:0.70
+=====> epoch[113/200] iter: (6/14) 	cur_lr: 0.000568 loss: 0.185 time:0.70
+=====> epoch[113/200] iter: (7/14) 	cur_lr: 0.000568 loss: 0.190 time:0.62
+=====> epoch[113/200] iter: (8/14) 	cur_lr: 0.000567 loss: 0.163 time:0.64
+=====> epoch[113/200] iter: (9/14) 	cur_lr: 0.000567 loss: 0.202 time:0.61
+=====> epoch[113/200] iter: (10/14) 	cur_lr: 0.000566 loss: 0.175 time:0.61
+=====> epoch[113/200] iter: (11/14) 	cur_lr: 0.000566 loss: 0.174 time:0.61
+=====> epoch[113/200] iter: (12/14) 	cur_lr: 0.000566 loss: 0.179 time:0.61
+=====> epoch[113/200] iter: (13/14) 	cur_lr: 0.000565 loss: 0.176 time:0.61
+=====> epoch[113/200] iter: (14/14) 	cur_lr: 0.000565 loss: 0.204 time:0.62
+Remaining training time = 0 hour 16 minutes 5 seconds
+Epoch : 112 Details
+Epoch No.: 112	Train Loss = 0.1874	 lr= 0.000565
+
+=====> the number of iterations per epoch:  14
+=====> epoch[114/200] iter: (1/14) 	cur_lr: 0.000564 loss: 0.162 time:0.77
+=====> epoch[114/200] iter: (2/14) 	cur_lr: 0.000564 loss: 0.194 time:0.70
+=====> epoch[114/200] iter: (3/14) 	cur_lr: 0.000563 loss: 0.178 time:0.74
+=====> epoch[114/200] iter: (4/14) 	cur_lr: 0.000563 loss: 0.197 time:0.70
+=====> epoch[114/200] iter: (5/14) 	cur_lr: 0.000563 loss: 0.190 time:0.69
+=====> epoch[114/200] iter: (6/14) 	cur_lr: 0.000562 loss: 0.185 time:0.70
+=====> epoch[114/200] iter: (7/14) 	cur_lr: 0.000562 loss: 0.181 time:0.62
+=====> epoch[114/200] iter: (8/14) 	cur_lr: 0.000561 loss: 0.201 time:0.60
+=====> epoch[114/200] iter: (9/14) 	cur_lr: 0.000561 loss: 0.189 time:0.61
+=====> epoch[114/200] iter: (10/14) 	cur_lr: 0.000561 loss: 0.190 time:0.61
+=====> epoch[114/200] iter: (11/14) 	cur_lr: 0.000560 loss: 0.190 time:0.60
+=====> epoch[114/200] iter: (12/14) 	cur_lr: 0.000560 loss: 0.199 time:0.61
+=====> epoch[114/200] iter: (13/14) 	cur_lr: 0.000559 loss: 0.184 time:0.60
+=====> epoch[114/200] iter: (14/14) 	cur_lr: 0.000559 loss: 0.177 time:0.61
+Remaining training time = 0 hour 17 minutes 38 seconds
+Epoch : 113 Details
+Epoch No.: 113	Train Loss = 0.1870	 lr= 0.000559
+
+=====> the number of iterations per epoch:  14
+=====> epoch[115/200] iter: (1/14) 	cur_lr: 0.000558 loss: 0.181 time:0.82
+=====> epoch[115/200] iter: (2/14) 	cur_lr: 0.000558 loss: 0.171 time:0.69
+=====> epoch[115/200] iter: (3/14) 	cur_lr: 0.000558 loss: 0.191 time:0.68
+=====> epoch[115/200] iter: (4/14) 	cur_lr: 0.000557 loss: 0.175 time:0.71
+=====> epoch[115/200] iter: (5/14) 	cur_lr: 0.000557 loss: 0.162 time:0.71
+=====> epoch[115/200] iter: (6/14) 	cur_lr: 0.000556 loss: 0.180 time:0.73
+=====> epoch[115/200] iter: (7/14) 	cur_lr: 0.000556 loss: 0.184 time:0.69
+=====> epoch[115/200] iter: (8/14) 	cur_lr: 0.000556 loss: 0.172 time:0.60
+=====> epoch[115/200] iter: (9/14) 	cur_lr: 0.000555 loss: 0.187 time:0.60
+=====> epoch[115/200] iter: (10/14) 	cur_lr: 0.000555 loss: 0.191 time:0.60
+=====> epoch[115/200] iter: (11/14) 	cur_lr: 0.000554 loss: 0.210 time:0.60
+=====> epoch[115/200] iter: (12/14) 	cur_lr: 0.000554 loss: 0.194 time:0.60
+=====> epoch[115/200] iter: (13/14) 	cur_lr: 0.000553 loss: 0.184 time:0.60
+=====> epoch[115/200] iter: (14/14) 	cur_lr: 0.000553 loss: 0.181 time:0.61
+Remaining training time = 0 hour 18 minutes 27 seconds
+Epoch : 114 Details
+Epoch No.: 114	Train Loss = 0.1830	 lr= 0.000553
+
+=====> the number of iterations per epoch:  14
+=====> epoch[116/200] iter: (1/14) 	cur_lr: 0.000553 loss: 0.198 time:0.96
+=====> epoch[116/200] iter: (2/14) 	cur_lr: 0.000552 loss: 0.195 time:0.81
+=====> epoch[116/200] iter: (3/14) 	cur_lr: 0.000552 loss: 0.201 time:0.81
+=====> epoch[116/200] iter: (4/14) 	cur_lr: 0.000551 loss: 0.191 time:0.75
+=====> epoch[116/200] iter: (5/14) 	cur_lr: 0.000551 loss: 0.210 time:0.75
+=====> epoch[116/200] iter: (6/14) 	cur_lr: 0.000551 loss: 0.205 time:0.75
+=====> epoch[116/200] iter: (7/14) 	cur_lr: 0.000550 loss: 0.203 time:0.68
+=====> epoch[116/200] iter: (8/14) 	cur_lr: 0.000550 loss: 0.169 time:0.64
+=====> epoch[116/200] iter: (9/14) 	cur_lr: 0.000549 loss: 0.192 time:0.60
+=====> epoch[116/200] iter: (10/14) 	cur_lr: 0.000549 loss: 0.195 time:0.60
+=====> epoch[116/200] iter: (11/14) 	cur_lr: 0.000548 loss: 0.204 time:0.60
+=====> epoch[116/200] iter: (12/14) 	cur_lr: 0.000548 loss: 0.181 time:0.60
+=====> epoch[116/200] iter: (13/14) 	cur_lr: 0.000548 loss: 0.184 time:0.60
+=====> epoch[116/200] iter: (14/14) 	cur_lr: 0.000547 loss: 0.203 time:0.60
+Remaining training time = 0 hour 16 minutes 50 seconds
+Epoch : 115 Details
+Epoch No.: 115	Train Loss = 0.1950	 lr= 0.000547
+
+=====> the number of iterations per epoch:  14
+=====> epoch[117/200] iter: (1/14) 	cur_lr: 0.000547 loss: 0.184 time:0.76
+=====> epoch[117/200] iter: (2/14) 	cur_lr: 0.000546 loss: 0.186 time:0.79
+=====> epoch[117/200] iter: (3/14) 	cur_lr: 0.000546 loss: 0.223 time:0.92
+=====> epoch[117/200] iter: (4/14) 	cur_lr: 0.000546 loss: 0.210 time:0.83
+=====> epoch[117/200] iter: (5/14) 	cur_lr: 0.000545 loss: 0.172 time:0.86
+=====> epoch[117/200] iter: (6/14) 	cur_lr: 0.000545 loss: 0.211 time:0.83
+=====> epoch[117/200] iter: (7/14) 	cur_lr: 0.000544 loss: 0.179 time:0.73
+=====> epoch[117/200] iter: (8/14) 	cur_lr: 0.000544 loss: 0.167 time:0.69
+=====> epoch[117/200] iter: (9/14) 	cur_lr: 0.000543 loss: 0.203 time:0.61
+=====> epoch[117/200] iter: (10/14) 	cur_lr: 0.000543 loss: 0.187 time:0.61
+=====> epoch[117/200] iter: (11/14) 	cur_lr: 0.000543 loss: 0.185 time:0.60
+=====> epoch[117/200] iter: (12/14) 	cur_lr: 0.000542 loss: 0.173 time:0.61
+=====> epoch[117/200] iter: (13/14) 	cur_lr: 0.000542 loss: 0.185 time:0.60
+=====> epoch[117/200] iter: (14/14) 	cur_lr: 0.000541 loss: 0.214 time:0.61
+Remaining training time = 0 hour 16 minutes 56 seconds
+Epoch : 116 Details
+Epoch No.: 116	Train Loss = 0.1913	 lr= 0.000541
+
+=====> the number of iterations per epoch:  14
+=====> epoch[118/200] iter: (1/14) 	cur_lr: 0.000541 loss: 0.203 time:0.80
+=====> epoch[118/200] iter: (2/14) 	cur_lr: 0.000540 loss: 0.174 time:0.74
+=====> epoch[118/200] iter: (3/14) 	cur_lr: 0.000540 loss: 0.193 time:0.72
+=====> epoch[118/200] iter: (4/14) 	cur_lr: 0.000540 loss: 0.193 time:0.76
+=====> epoch[118/200] iter: (5/14) 	cur_lr: 0.000539 loss: 0.202 time:0.84
+=====> epoch[118/200] iter: (6/14) 	cur_lr: 0.000539 loss: 0.222 time:0.88
+=====> epoch[118/200] iter: (7/14) 	cur_lr: 0.000538 loss: 0.178 time:0.75
+=====> epoch[118/200] iter: (8/14) 	cur_lr: 0.000538 loss: 0.190 time:0.71
+=====> epoch[118/200] iter: (9/14) 	cur_lr: 0.000538 loss: 0.186 time:0.62
+=====> epoch[118/200] iter: (10/14) 	cur_lr: 0.000537 loss: 0.211 time:0.61
+=====> epoch[118/200] iter: (11/14) 	cur_lr: 0.000537 loss: 0.178 time:0.61
+=====> epoch[118/200] iter: (12/14) 	cur_lr: 0.000536 loss: 0.197 time:0.61
+=====> epoch[118/200] iter: (13/14) 	cur_lr: 0.000536 loss: 0.213 time:0.61
+=====> epoch[118/200] iter: (14/14) 	cur_lr: 0.000535 loss: 0.181 time:0.61
+Remaining training time = 0 hour 15 minutes 59 seconds
+Epoch : 117 Details
+Epoch No.: 117	Train Loss = 0.1944	 lr= 0.000535
+
+=====> the number of iterations per epoch:  14
+=====> epoch[119/200] iter: (1/14) 	cur_lr: 0.000535 loss: 0.194 time:0.81
+=====> epoch[119/200] iter: (2/14) 	cur_lr: 0.000535 loss: 0.170 time:0.77
+=====> epoch[119/200] iter: (3/14) 	cur_lr: 0.000534 loss: 0.191 time:0.76
+=====> epoch[119/200] iter: (4/14) 	cur_lr: 0.000534 loss: 0.191 time:0.71
+=====> epoch[119/200] iter: (5/14) 	cur_lr: 0.000533 loss: 0.173 time:0.68
+=====> epoch[119/200] iter: (6/14) 	cur_lr: 0.000533 loss: 0.174 time:0.69
+=====> epoch[119/200] iter: (7/14) 	cur_lr: 0.000533 loss: 0.183 time:0.68
+=====> epoch[119/200] iter: (8/14) 	cur_lr: 0.000532 loss: 0.197 time:0.62
+=====> epoch[119/200] iter: (9/14) 	cur_lr: 0.000532 loss: 0.194 time:0.62
+=====> epoch[119/200] iter: (10/14) 	cur_lr: 0.000531 loss: 0.181 time:0.62
+=====> epoch[119/200] iter: (11/14) 	cur_lr: 0.000531 loss: 0.167 time:0.62
+=====> epoch[119/200] iter: (12/14) 	cur_lr: 0.000530 loss: 0.172 time:0.62
+=====> epoch[119/200] iter: (13/14) 	cur_lr: 0.000530 loss: 0.190 time:0.61
+=====> epoch[119/200] iter: (14/14) 	cur_lr: 0.000530 loss: 0.201 time:0.61
+Remaining training time = 0 hour 15 minutes 34 seconds
+Epoch : 118 Details
+Epoch No.: 118	Train Loss = 0.1841	 lr= 0.000530
+
+=====> the number of iterations per epoch:  14
+=====> epoch[120/200] iter: (1/14) 	cur_lr: 0.000529 loss: 0.187 time:0.82
+=====> epoch[120/200] iter: (2/14) 	cur_lr: 0.000529 loss: 0.166 time:0.74
+=====> epoch[120/200] iter: (3/14) 	cur_lr: 0.000528 loss: 0.188 time:0.75
+=====> epoch[120/200] iter: (4/14) 	cur_lr: 0.000528 loss: 0.175 time:0.73
+=====> epoch[120/200] iter: (5/14) 	cur_lr: 0.000527 loss: 0.184 time:0.70
+=====> epoch[120/200] iter: (6/14) 	cur_lr: 0.000527 loss: 0.190 time:0.74
+=====> epoch[120/200] iter: (7/14) 	cur_lr: 0.000527 loss: 0.176 time:0.68
+=====> epoch[120/200] iter: (8/14) 	cur_lr: 0.000526 loss: 0.185 time:0.61
+=====> epoch[120/200] iter: (9/14) 	cur_lr: 0.000526 loss: 0.180 time:0.62
+=====> epoch[120/200] iter: (10/14) 	cur_lr: 0.000525 loss: 0.189 time:0.61
+=====> epoch[120/200] iter: (11/14) 	cur_lr: 0.000525 loss: 0.186 time:0.62
+=====> epoch[120/200] iter: (12/14) 	cur_lr: 0.000525 loss: 0.207 time:0.62
+=====> epoch[120/200] iter: (13/14) 	cur_lr: 0.000524 loss: 0.171 time:0.63
+=====> epoch[120/200] iter: (14/14) 	cur_lr: 0.000524 loss: 0.170 time:0.62
+Remaining training time = 0 hour 15 minutes 3 seconds
+Epoch : 119 Details
+Epoch No.: 119	Train Loss = 0.1823	 lr= 0.000524
+
+=====> the number of iterations per epoch:  14
+=====> epoch[121/200] iter: (1/14) 	cur_lr: 0.000523 loss: 0.183 time:0.80
+=====> epoch[121/200] iter: (2/14) 	cur_lr: 0.000523 loss: 0.192 time:0.71
+=====> epoch[121/200] iter: (3/14) 	cur_lr: 0.000522 loss: 0.199 time:0.77
+=====> epoch[121/200] iter: (4/14) 	cur_lr: 0.000522 loss: 0.191 time:0.71
+=====> epoch[121/200] iter: (5/14) 	cur_lr: 0.000522 loss: 0.160 time:0.70
+=====> epoch[121/200] iter: (6/14) 	cur_lr: 0.000521 loss: 0.158 time:0.70
+=====> epoch[121/200] iter: (7/14) 	cur_lr: 0.000521 loss: 0.204 time:0.62
+=====> epoch[121/200] iter: (8/14) 	cur_lr: 0.000520 loss: 0.177 time:0.61
+=====> epoch[121/200] iter: (9/14) 	cur_lr: 0.000520 loss: 0.187 time:0.60
+=====> epoch[121/200] iter: (10/14) 	cur_lr: 0.000520 loss: 0.198 time:0.60
+=====> epoch[121/200] iter: (11/14) 	cur_lr: 0.000519 loss: 0.188 time:0.61
+=====> epoch[121/200] iter: (12/14) 	cur_lr: 0.000519 loss: 0.193 time:0.61
+=====> epoch[121/200] iter: (13/14) 	cur_lr: 0.000518 loss: 0.172 time:0.60
+=====> epoch[121/200] iter: (14/14) 	cur_lr: 0.000518 loss: 0.185 time:0.62
+Remaining training time = 0 hour 15 minutes 1 seconds
+Epoch : 120 Details
+Epoch No.: 120	Train Loss = 0.1848	 lr= 0.000518
+
+=====> the number of iterations per epoch:  14
+=====> epoch[122/200] iter: (1/14) 	cur_lr: 0.000517 loss: 0.181 time:0.79
+=====> epoch[122/200] iter: (2/14) 	cur_lr: 0.000517 loss: 0.191 time:0.67
+=====> epoch[122/200] iter: (3/14) 	cur_lr: 0.000517 loss: 0.212 time:0.77
+=====> epoch[122/200] iter: (4/14) 	cur_lr: 0.000516 loss: 0.189 time:0.71
+=====> epoch[122/200] iter: (5/14) 	cur_lr: 0.000516 loss: 0.182 time:0.71
+=====> epoch[122/200] iter: (6/14) 	cur_lr: 0.000515 loss: 0.219 time:0.71
+=====> epoch[122/200] iter: (7/14) 	cur_lr: 0.000515 loss: 0.173 time:0.67
+=====> epoch[122/200] iter: (8/14) 	cur_lr: 0.000514 loss: 0.197 time:0.60
+=====> epoch[122/200] iter: (9/14) 	cur_lr: 0.000514 loss: 0.205 time:0.61
+=====> epoch[122/200] iter: (10/14) 	cur_lr: 0.000514 loss: 0.194 time:0.60
+=====> epoch[122/200] iter: (11/14) 	cur_lr: 0.000513 loss: 0.180 time:0.60
+=====> epoch[122/200] iter: (12/14) 	cur_lr: 0.000513 loss: 0.197 time:0.61
+=====> epoch[122/200] iter: (13/14) 	cur_lr: 0.000512 loss: 0.189 time:0.60
+=====> epoch[122/200] iter: (14/14) 	cur_lr: 0.000512 loss: 0.152 time:0.60
+Remaining training time = 0 hour 15 minutes 55 seconds
+Epoch : 121 Details
+Epoch No.: 121	Train Loss = 0.1901	 lr= 0.000512
+
+=====> the number of iterations per epoch:  14
+=====> epoch[123/200] iter: (1/14) 	cur_lr: 0.000511 loss: 0.180 time:0.93
+=====> epoch[123/200] iter: (2/14) 	cur_lr: 0.000511 loss: 0.197 time:0.80
+=====> epoch[123/200] iter: (3/14) 	cur_lr: 0.000511 loss: 0.209 time:0.71
+=====> epoch[123/200] iter: (4/14) 	cur_lr: 0.000510 loss: 0.148 time:0.75
+=====> epoch[123/200] iter: (5/14) 	cur_lr: 0.000510 loss: 0.189 time:0.66
+=====> epoch[123/200] iter: (6/14) 	cur_lr: 0.000509 loss: 0.176 time:0.73
+=====> epoch[123/200] iter: (7/14) 	cur_lr: 0.000509 loss: 0.188 time:0.66
+=====> epoch[123/200] iter: (8/14) 	cur_lr: 0.000509 loss: 0.207 time:0.67
+=====> epoch[123/200] iter: (9/14) 	cur_lr: 0.000508 loss: 0.182 time:0.61
+=====> epoch[123/200] iter: (10/14) 	cur_lr: 0.000508 loss: 0.195 time:0.60
+=====> epoch[123/200] iter: (11/14) 	cur_lr: 0.000507 loss: 0.193 time:0.60
+=====> epoch[123/200] iter: (12/14) 	cur_lr: 0.000507 loss: 0.185 time:0.60
+=====> epoch[123/200] iter: (13/14) 	cur_lr: 0.000506 loss: 0.159 time:0.61
+=====> epoch[123/200] iter: (14/14) 	cur_lr: 0.000506 loss: 0.183 time:0.61
+Remaining training time = 0 hour 15 minutes 59 seconds
+Epoch : 122 Details
+Epoch No.: 122	Train Loss = 0.1850	 lr= 0.000506
+
+=====> the number of iterations per epoch:  14
+=====> epoch[124/200] iter: (1/14) 	cur_lr: 0.000506 loss: 0.183 time:0.81
+=====> epoch[124/200] iter: (2/14) 	cur_lr: 0.000505 loss: 0.196 time:0.85
+=====> epoch[124/200] iter: (3/14) 	cur_lr: 0.000505 loss: 0.192 time:0.85
+=====> epoch[124/200] iter: (4/14) 	cur_lr: 0.000504 loss: 0.179 time:0.87
+=====> epoch[124/200] iter: (5/14) 	cur_lr: 0.000504 loss: 0.185 time:0.83
+=====> epoch[124/200] iter: (6/14) 	cur_lr: 0.000503 loss: 0.196 time:0.71
+=====> epoch[124/200] iter: (7/14) 	cur_lr: 0.000503 loss: 0.198 time:0.69
+=====> epoch[124/200] iter: (8/14) 	cur_lr: 0.000503 loss: 0.196 time:0.64
+=====> epoch[124/200] iter: (9/14) 	cur_lr: 0.000502 loss: 0.175 time:0.64
+=====> epoch[124/200] iter: (10/14) 	cur_lr: 0.000502 loss: 0.209 time:0.61
+=====> epoch[124/200] iter: (11/14) 	cur_lr: 0.000501 loss: 0.168 time:0.61
+=====> epoch[124/200] iter: (12/14) 	cur_lr: 0.000501 loss: 0.154 time:0.61
+=====> epoch[124/200] iter: (13/14) 	cur_lr: 0.000501 loss: 0.179 time:0.61
+=====> epoch[124/200] iter: (14/14) 	cur_lr: 0.000500 loss: 0.176 time:0.60
+Remaining training time = 0 hour 15 minutes 8 seconds
+Epoch : 123 Details
+Epoch No.: 123	Train Loss = 0.1848	 lr= 0.000500
+
+=====> the number of iterations per epoch:  14
+=====> epoch[125/200] iter: (1/14) 	cur_lr: 0.000500 loss: 0.172 time:0.78
+=====> epoch[125/200] iter: (2/14) 	cur_lr: 0.000499 loss: 0.195 time:0.71
+=====> epoch[125/200] iter: (3/14) 	cur_lr: 0.000499 loss: 0.182 time:0.66
+=====> epoch[125/200] iter: (4/14) 	cur_lr: 0.000498 loss: 0.200 time:0.78
+=====> epoch[125/200] iter: (5/14) 	cur_lr: 0.000498 loss: 0.172 time:0.83
+=====> epoch[125/200] iter: (6/14) 	cur_lr: 0.000498 loss: 0.184 time:0.86
+=====> epoch[125/200] iter: (7/14) 	cur_lr: 0.000497 loss: 0.179 time:0.83
+=====> epoch[125/200] iter: (8/14) 	cur_lr: 0.000497 loss: 0.193 time:0.82
+=====> epoch[125/200] iter: (9/14) 	cur_lr: 0.000496 loss: 0.159 time:0.70
+=====> epoch[125/200] iter: (10/14) 	cur_lr: 0.000496 loss: 0.184 time:0.61
+=====> epoch[125/200] iter: (11/14) 	cur_lr: 0.000495 loss: 0.200 time:0.60
+=====> epoch[125/200] iter: (12/14) 	cur_lr: 0.000495 loss: 0.176 time:0.61
+=====> epoch[125/200] iter: (13/14) 	cur_lr: 0.000495 loss: 0.164 time:0.61
+=====> epoch[125/200] iter: (14/14) 	cur_lr: 0.000494 loss: 0.182 time:0.60
+Remaining training time = 0 hour 14 minutes 29 seconds
+Epoch : 124 Details
+Epoch No.: 124	Train Loss = 0.1817	 lr= 0.000494
+
+=====> the number of iterations per epoch:  14
+=====> epoch[126/200] iter: (1/14) 	cur_lr: 0.000494 loss: 0.180 time:0.87
+=====> epoch[126/200] iter: (2/14) 	cur_lr: 0.000493 loss: 0.183 time:0.71
+=====> epoch[126/200] iter: (3/14) 	cur_lr: 0.000493 loss: 0.189 time:0.76
+=====> epoch[126/200] iter: (4/14) 	cur_lr: 0.000492 loss: 0.211 time:0.75
+=====> epoch[126/200] iter: (5/14) 	cur_lr: 0.000492 loss: 0.189 time:0.71
+=====> epoch[126/200] iter: (6/14) 	cur_lr: 0.000492 loss: 0.212 time:0.69
+=====> epoch[126/200] iter: (7/14) 	cur_lr: 0.000491 loss: 0.185 time:0.62
+=====> epoch[126/200] iter: (8/14) 	cur_lr: 0.000491 loss: 0.193 time:0.62
+=====> epoch[126/200] iter: (9/14) 	cur_lr: 0.000490 loss: 0.194 time:0.62
+=====> epoch[126/200] iter: (10/14) 	cur_lr: 0.000490 loss: 0.194 time:0.62
+=====> epoch[126/200] iter: (11/14) 	cur_lr: 0.000490 loss: 0.202 time:0.62
+=====> epoch[126/200] iter: (12/14) 	cur_lr: 0.000489 loss: 0.160 time:0.62
+=====> epoch[126/200] iter: (13/14) 	cur_lr: 0.000489 loss: 0.178 time:0.61
+=====> epoch[126/200] iter: (14/14) 	cur_lr: 0.000488 loss: 0.197 time:0.61
+Remaining training time = 0 hour 13 minutes 58 seconds
+Epoch : 125 Details
+Epoch No.: 125	Train Loss = 0.1905	 lr= 0.000488
+
+=====> the number of iterations per epoch:  14
+=====> epoch[127/200] iter: (1/14) 	cur_lr: 0.000488 loss: 0.167 time:0.75
+=====> epoch[127/200] iter: (2/14) 	cur_lr: 0.000487 loss: 0.171 time:0.75
+=====> epoch[127/200] iter: (3/14) 	cur_lr: 0.000487 loss: 0.173 time:0.76
+=====> epoch[127/200] iter: (4/14) 	cur_lr: 0.000487 loss: 0.174 time:0.72
+=====> epoch[127/200] iter: (5/14) 	cur_lr: 0.000486 loss: 0.202 time:0.75
+=====> epoch[127/200] iter: (6/14) 	cur_lr: 0.000486 loss: 0.165 time:0.71
+=====> epoch[127/200] iter: (7/14) 	cur_lr: 0.000485 loss: 0.191 time:0.68
+=====> epoch[127/200] iter: (8/14) 	cur_lr: 0.000485 loss: 0.189 time:0.66
+=====> epoch[127/200] iter: (9/14) 	cur_lr: 0.000484 loss: 0.193 time:0.61
+=====> epoch[127/200] iter: (10/14) 	cur_lr: 0.000484 loss: 0.198 time:0.61
+=====> epoch[127/200] iter: (11/14) 	cur_lr: 0.000484 loss: 0.179 time:0.62
+=====> epoch[127/200] iter: (12/14) 	cur_lr: 0.000483 loss: 0.204 time:0.62
+=====> epoch[127/200] iter: (13/14) 	cur_lr: 0.000483 loss: 0.206 time:0.62
+=====> epoch[127/200] iter: (14/14) 	cur_lr: 0.000482 loss: 0.172 time:0.62
+Remaining training time = 0 hour 13 minutes 30 seconds
+Epoch : 126 Details
+Epoch No.: 126	Train Loss = 0.1846	 lr= 0.000482
+
+=====> the number of iterations per epoch:  14
+=====> epoch[128/200] iter: (1/14) 	cur_lr: 0.000482 loss: 0.227 time:0.85
+=====> epoch[128/200] iter: (2/14) 	cur_lr: 0.000481 loss: 0.169 time:0.75
+=====> epoch[128/200] iter: (3/14) 	cur_lr: 0.000481 loss: 0.170 time:0.75
+=====> epoch[128/200] iter: (4/14) 	cur_lr: 0.000481 loss: 0.194 time:0.69
+=====> epoch[128/200] iter: (5/14) 	cur_lr: 0.000480 loss: 0.181 time:0.69
+=====> epoch[128/200] iter: (6/14) 	cur_lr: 0.000480 loss: 0.228 time:0.68
+=====> epoch[128/200] iter: (7/14) 	cur_lr: 0.000479 loss: 0.188 time:0.67
+=====> epoch[128/200] iter: (8/14) 	cur_lr: 0.000479 loss: 0.194 time:0.60
+=====> epoch[128/200] iter: (9/14) 	cur_lr: 0.000478 loss: 0.185 time:0.60
+=====> epoch[128/200] iter: (10/14) 	cur_lr: 0.000478 loss: 0.193 time:0.61
+=====> epoch[128/200] iter: (11/14) 	cur_lr: 0.000478 loss: 0.195 time:0.61
+=====> epoch[128/200] iter: (12/14) 	cur_lr: 0.000477 loss: 0.176 time:0.61
+=====> epoch[128/200] iter: (13/14) 	cur_lr: 0.000477 loss: 0.187 time:0.60
+=====> epoch[128/200] iter: (14/14) 	cur_lr: 0.000476 loss: 0.177 time:0.62
+Remaining training time = 0 hour 13 minutes 49 seconds
+Epoch : 127 Details
+Epoch No.: 127	Train Loss = 0.1902	 lr= 0.000476
+
+=====> the number of iterations per epoch:  14
+=====> epoch[129/200] iter: (1/14) 	cur_lr: 0.000476 loss: 0.189 time:0.80
+=====> epoch[129/200] iter: (2/14) 	cur_lr: 0.000476 loss: 0.179 time:0.70
+=====> epoch[129/200] iter: (3/14) 	cur_lr: 0.000475 loss: 0.194 time:0.71
+=====> epoch[129/200] iter: (4/14) 	cur_lr: 0.000475 loss: 0.160 time:0.72
+=====> epoch[129/200] iter: (5/14) 	cur_lr: 0.000474 loss: 0.199 time:0.68
+=====> epoch[129/200] iter: (6/14) 	cur_lr: 0.000474 loss: 0.179 time:0.72
+=====> epoch[129/200] iter: (7/14) 	cur_lr: 0.000473 loss: 0.180 time:0.62
+=====> epoch[129/200] iter: (8/14) 	cur_lr: 0.000473 loss: 0.154 time:0.60
+=====> epoch[129/200] iter: (9/14) 	cur_lr: 0.000473 loss: 0.175 time:0.61
+=====> epoch[129/200] iter: (10/14) 	cur_lr: 0.000472 loss: 0.168 time:0.61
+=====> epoch[129/200] iter: (11/14) 	cur_lr: 0.000472 loss: 0.192 time:0.60
+=====> epoch[129/200] iter: (12/14) 	cur_lr: 0.000471 loss: 0.234 time:0.61
+=====> epoch[129/200] iter: (13/14) 	cur_lr: 0.000471 loss: 0.184 time:0.61
+=====> epoch[129/200] iter: (14/14) 	cur_lr: 0.000470 loss: 0.197 time:0.61
+Remaining training time = 0 hour 14 minutes 48 seconds
+Epoch : 128 Details
+Epoch No.: 128	Train Loss = 0.1847	 lr= 0.000470
+
+=====> the number of iterations per epoch:  14
+=====> epoch[130/200] iter: (1/14) 	cur_lr: 0.000470 loss: 0.179 time:1.00
+=====> epoch[130/200] iter: (2/14) 	cur_lr: 0.000470 loss: 0.192 time:0.80
+=====> epoch[130/200] iter: (3/14) 	cur_lr: 0.000469 loss: 0.184 time:0.71
+=====> epoch[130/200] iter: (4/14) 	cur_lr: 0.000469 loss: 0.173 time:0.74
+=====> epoch[130/200] iter: (5/14) 	cur_lr: 0.000468 loss: 0.175 time:0.72
+=====> epoch[130/200] iter: (6/14) 	cur_lr: 0.000468 loss: 0.178 time:0.73
+=====> epoch[130/200] iter: (7/14) 	cur_lr: 0.000467 loss: 0.182 time:0.68
+=====> epoch[130/200] iter: (8/14) 	cur_lr: 0.000467 loss: 0.190 time:0.62
+=====> epoch[130/200] iter: (9/14) 	cur_lr: 0.000467 loss: 0.173 time:0.61
+=====> epoch[130/200] iter: (10/14) 	cur_lr: 0.000466 loss: 0.182 time:0.60
+=====> epoch[130/200] iter: (11/14) 	cur_lr: 0.000466 loss: 0.188 time:0.60
+=====> epoch[130/200] iter: (12/14) 	cur_lr: 0.000465 loss: 0.188 time:0.61
+=====> epoch[130/200] iter: (13/14) 	cur_lr: 0.000465 loss: 0.180 time:0.61
+=====> epoch[130/200] iter: (14/14) 	cur_lr: 0.000464 loss: 0.160 time:0.60
+Remaining training time = 0 hour 14 minutes 29 seconds
+Epoch : 129 Details
+Epoch No.: 129	Train Loss = 0.1804	 lr= 0.000464
+
+=====> the number of iterations per epoch:  14
+=====> epoch[131/200] iter: (1/14) 	cur_lr: 0.000464 loss: 0.172 time:0.77
+=====> epoch[131/200] iter: (2/14) 	cur_lr: 0.000464 loss: 0.179 time:0.88
+=====> epoch[131/200] iter: (3/14) 	cur_lr: 0.000463 loss: 0.183 time:0.85
+=====> epoch[131/200] iter: (4/14) 	cur_lr: 0.000463 loss: 0.179 time:0.81
+=====> epoch[131/200] iter: (5/14) 	cur_lr: 0.000462 loss: 0.188 time:0.87
+=====> epoch[131/200] iter: (6/14) 	cur_lr: 0.000462 loss: 0.171 time:0.72
+=====> epoch[131/200] iter: (7/14) 	cur_lr: 0.000461 loss: 0.176 time:0.75
+=====> epoch[131/200] iter: (8/14) 	cur_lr: 0.000461 loss: 0.199 time:0.73
+=====> epoch[131/200] iter: (9/14) 	cur_lr: 0.000461 loss: 0.180 time:0.68
+=====> epoch[131/200] iter: (10/14) 	cur_lr: 0.000460 loss: 0.187 time:0.61
+=====> epoch[131/200] iter: (11/14) 	cur_lr: 0.000460 loss: 0.211 time:0.60
+=====> epoch[131/200] iter: (12/14) 	cur_lr: 0.000459 loss: 0.179 time:0.61
+=====> epoch[131/200] iter: (13/14) 	cur_lr: 0.000459 loss: 0.176 time:0.60
+=====> epoch[131/200] iter: (14/14) 	cur_lr: 0.000458 loss: 0.160 time:0.60
+Remaining training time = 0 hour 13 minutes 30 seconds
+Epoch : 130 Details
+Epoch No.: 130	Train Loss = 0.1814	 lr= 0.000458
+
+=====> the number of iterations per epoch:  14
+=====> epoch[132/200] iter: (1/14) 	cur_lr: 0.000458 loss: 0.174 time:0.82
+=====> epoch[132/200] iter: (2/14) 	cur_lr: 0.000458 loss: 0.182 time:0.70
+=====> epoch[132/200] iter: (3/14) 	cur_lr: 0.000457 loss: 0.165 time:0.72
+=====> epoch[132/200] iter: (4/14) 	cur_lr: 0.000457 loss: 0.180 time:0.81
+=====> epoch[132/200] iter: (5/14) 	cur_lr: 0.000456 loss: 0.165 time:0.83
+=====> epoch[132/200] iter: (6/14) 	cur_lr: 0.000456 loss: 0.168 time:0.80
+=====> epoch[132/200] iter: (7/14) 	cur_lr: 0.000456 loss: 0.195 time:0.86
+=====> epoch[132/200] iter: (8/14) 	cur_lr: 0.000455 loss: 0.176 time:0.72
+=====> epoch[132/200] iter: (9/14) 	cur_lr: 0.000455 loss: 0.167 time:0.64
+=====> epoch[132/200] iter: (10/14) 	cur_lr: 0.000454 loss: 0.178 time:0.60
+=====> epoch[132/200] iter: (11/14) 	cur_lr: 0.000454 loss: 0.183 time:0.61
+=====> epoch[132/200] iter: (12/14) 	cur_lr: 0.000453 loss: 0.181 time:0.61
+=====> epoch[132/200] iter: (13/14) 	cur_lr: 0.000453 loss: 0.185 time:0.61
+=====> epoch[132/200] iter: (14/14) 	cur_lr: 0.000453 loss: 0.187 time:0.61
+Remaining training time = 0 hour 13 minutes 13 seconds
+Epoch : 131 Details
+Epoch No.: 131	Train Loss = 0.1776	 lr= 0.000453
+
+=====> the number of iterations per epoch:  14
+=====> epoch[133/200] iter: (1/14) 	cur_lr: 0.000452 loss: 0.188 time:0.76
+=====> epoch[133/200] iter: (2/14) 	cur_lr: 0.000452 loss: 0.168 time:0.73
+=====> epoch[133/200] iter: (3/14) 	cur_lr: 0.000451 loss: 0.183 time:0.76
+=====> epoch[133/200] iter: (4/14) 	cur_lr: 0.000451 loss: 0.166 time:0.69
+=====> epoch[133/200] iter: (5/14) 	cur_lr: 0.000450 loss: 0.190 time:0.69
+=====> epoch[133/200] iter: (6/14) 	cur_lr: 0.000450 loss: 0.166 time:0.74
+=====> epoch[133/200] iter: (7/14) 	cur_lr: 0.000450 loss: 0.188 time:0.69
+=====> epoch[133/200] iter: (8/14) 	cur_lr: 0.000449 loss: 0.165 time:0.62
+=====> epoch[133/200] iter: (9/14) 	cur_lr: 0.000449 loss: 0.201 time:0.62
+=====> epoch[133/200] iter: (10/14) 	cur_lr: 0.000448 loss: 0.175 time:0.62
+=====> epoch[133/200] iter: (11/14) 	cur_lr: 0.000448 loss: 0.192 time:0.62
+=====> epoch[133/200] iter: (12/14) 	cur_lr: 0.000447 loss: 0.185 time:0.60
+=====> epoch[133/200] iter: (13/14) 	cur_lr: 0.000447 loss: 0.162 time:0.61
+=====> epoch[133/200] iter: (14/14) 	cur_lr: 0.000447 loss: 0.184 time:0.61
+Remaining training time = 0 hour 12 minutes 56 seconds
+Epoch : 132 Details
+Epoch No.: 132	Train Loss = 0.1796	 lr= 0.000447
+
+=====> the number of iterations per epoch:  14
+=====> epoch[134/200] iter: (1/14) 	cur_lr: 0.000446 loss: 0.172 time:0.81
+=====> epoch[134/200] iter: (2/14) 	cur_lr: 0.000446 loss: 0.164 time:0.76
+=====> epoch[134/200] iter: (3/14) 	cur_lr: 0.000445 loss: 0.181 time:0.77
+=====> epoch[134/200] iter: (4/14) 	cur_lr: 0.000445 loss: 0.164 time:0.71
+=====> epoch[134/200] iter: (5/14) 	cur_lr: 0.000444 loss: 0.170 time:0.70
+=====> epoch[134/200] iter: (6/14) 	cur_lr: 0.000444 loss: 0.204 time:0.74
+=====> epoch[134/200] iter: (7/14) 	cur_lr: 0.000444 loss: 0.176 time:0.68
+=====> epoch[134/200] iter: (8/14) 	cur_lr: 0.000443 loss: 0.155 time:0.61
+=====> epoch[134/200] iter: (9/14) 	cur_lr: 0.000443 loss: 0.172 time:0.60
+=====> epoch[134/200] iter: (10/14) 	cur_lr: 0.000442 loss: 0.233 time:0.62
+=====> epoch[134/200] iter: (11/14) 	cur_lr: 0.000442 loss: 0.198 time:0.62
+=====> epoch[134/200] iter: (12/14) 	cur_lr: 0.000441 loss: 0.207 time:0.62
+=====> epoch[134/200] iter: (13/14) 	cur_lr: 0.000441 loss: 0.182 time:0.62
+=====> epoch[134/200] iter: (14/14) 	cur_lr: 0.000441 loss: 0.193 time:0.62
+Remaining training time = 0 hour 12 minutes 25 seconds
+Epoch : 133 Details
+Epoch No.: 133	Train Loss = 0.1837	 lr= 0.000441
+
+=====> the number of iterations per epoch:  14
+=====> epoch[135/200] iter: (1/14) 	cur_lr: 0.000440 loss: 0.169 time:0.80
+=====> epoch[135/200] iter: (2/14) 	cur_lr: 0.000440 loss: 0.200 time:0.76
+=====> epoch[135/200] iter: (3/14) 	cur_lr: 0.000439 loss: 0.185 time:0.71
+=====> epoch[135/200] iter: (4/14) 	cur_lr: 0.000439 loss: 0.210 time:0.71
+=====> epoch[135/200] iter: (5/14) 	cur_lr: 0.000438 loss: 0.182 time:0.73
+=====> epoch[135/200] iter: (6/14) 	cur_lr: 0.000438 loss: 0.175 time:0.71
+=====> epoch[135/200] iter: (7/14) 	cur_lr: 0.000438 loss: 0.160 time:0.66
+=====> epoch[135/200] iter: (8/14) 	cur_lr: 0.000437 loss: 0.182 time:0.61
+=====> epoch[135/200] iter: (9/14) 	cur_lr: 0.000437 loss: 0.170 time:0.61
+=====> epoch[135/200] iter: (10/14) 	cur_lr: 0.000436 loss: 0.172 time:0.60
+=====> epoch[135/200] iter: (11/14) 	cur_lr: 0.000436 loss: 0.206 time:0.60
+=====> epoch[135/200] iter: (12/14) 	cur_lr: 0.000435 loss: 0.200 time:0.60
+=====> epoch[135/200] iter: (13/14) 	cur_lr: 0.000435 loss: 0.187 time:0.62
+=====> epoch[135/200] iter: (14/14) 	cur_lr: 0.000435 loss: 0.158 time:0.62
+Remaining training time = 0 hour 12 minutes 21 seconds
+Epoch : 134 Details
+Epoch No.: 134	Train Loss = 0.1825	 lr= 0.000435
+
+=====> the number of iterations per epoch:  14
+=====> epoch[136/200] iter: (1/14) 	cur_lr: 0.000434 loss: 0.176 time:0.83
+=====> epoch[136/200] iter: (2/14) 	cur_lr: 0.000434 loss: 0.174 time:0.76
+=====> epoch[136/200] iter: (3/14) 	cur_lr: 0.000433 loss: 0.195 time:0.71
+=====> epoch[136/200] iter: (4/14) 	cur_lr: 0.000433 loss: 0.186 time:0.71
+=====> epoch[136/200] iter: (5/14) 	cur_lr: 0.000432 loss: 0.171 time:0.73
+=====> epoch[136/200] iter: (6/14) 	cur_lr: 0.000432 loss: 0.167 time:0.76
+=====> epoch[136/200] iter: (7/14) 	cur_lr: 0.000432 loss: 0.190 time:0.68
+=====> epoch[136/200] iter: (8/14) 	cur_lr: 0.000431 loss: 0.200 time:0.61
+=====> epoch[136/200] iter: (9/14) 	cur_lr: 0.000431 loss: 0.165 time:0.60
+=====> epoch[136/200] iter: (10/14) 	cur_lr: 0.000430 loss: 0.176 time:0.61
+=====> epoch[136/200] iter: (11/14) 	cur_lr: 0.000430 loss: 0.159 time:0.60
+=====> epoch[136/200] iter: (12/14) 	cur_lr: 0.000429 loss: 0.172 time:0.61
+=====> epoch[136/200] iter: (13/14) 	cur_lr: 0.000429 loss: 0.210 time:0.61
+=====> epoch[136/200] iter: (14/14) 	cur_lr: 0.000429 loss: 0.191 time:0.60
+Remaining training time = 0 hour 12 minutes 45 seconds
+Epoch : 135 Details
+Epoch No.: 135	Train Loss = 0.1807	 lr= 0.000429
+
+=====> the number of iterations per epoch:  14
+=====> epoch[137/200] iter: (1/14) 	cur_lr: 0.000428 loss: 0.219 time:1.00
+=====> epoch[137/200] iter: (2/14) 	cur_lr: 0.000428 loss: 0.177 time:0.74
+=====> epoch[137/200] iter: (3/14) 	cur_lr: 0.000427 loss: 0.173 time:0.74
+=====> epoch[137/200] iter: (4/14) 	cur_lr: 0.000427 loss: 0.185 time:0.78
+=====> epoch[137/200] iter: (5/14) 	cur_lr: 0.000426 loss: 0.156 time:0.74
+=====> epoch[137/200] iter: (6/14) 	cur_lr: 0.000426 loss: 0.189 time:0.69
+=====> epoch[137/200] iter: (7/14) 	cur_lr: 0.000425 loss: 0.163 time:0.64
+=====> epoch[137/200] iter: (8/14) 	cur_lr: 0.000425 loss: 0.151 time:0.68
+=====> epoch[137/200] iter: (9/14) 	cur_lr: 0.000425 loss: 0.184 time:0.61
+=====> epoch[137/200] iter: (10/14) 	cur_lr: 0.000424 loss: 0.167 time:0.61
+=====> epoch[137/200] iter: (11/14) 	cur_lr: 0.000424 loss: 0.184 time:0.60
+=====> epoch[137/200] iter: (12/14) 	cur_lr: 0.000423 loss: 0.177 time:0.60
+=====> epoch[137/200] iter: (13/14) 	cur_lr: 0.000423 loss: 0.175 time:0.60
+=====> epoch[137/200] iter: (14/14) 	cur_lr: 0.000422 loss: 0.187 time:0.61
+Remaining training time = 0 hour 12 minutes 58 seconds
+Epoch : 136 Details
+Epoch No.: 136	Train Loss = 0.1776	 lr= 0.000422
+
+=====> the number of iterations per epoch:  14
+=====> epoch[138/200] iter: (1/14) 	cur_lr: 0.000422 loss: 0.156 time:0.89
+=====> epoch[138/200] iter: (2/14) 	cur_lr: 0.000422 loss: 0.168 time:0.83
+=====> epoch[138/200] iter: (3/14) 	cur_lr: 0.000421 loss: 0.175 time:0.83
+=====> epoch[138/200] iter: (4/14) 	cur_lr: 0.000421 loss: 0.165 time:0.76
+=====> epoch[138/200] iter: (5/14) 	cur_lr: 0.000420 loss: 0.175 time:0.72
+=====> epoch[138/200] iter: (6/14) 	cur_lr: 0.000420 loss: 0.191 time:0.71
+=====> epoch[138/200] iter: (7/14) 	cur_lr: 0.000419 loss: 0.170 time:0.75
+=====> epoch[138/200] iter: (8/14) 	cur_lr: 0.000419 loss: 0.187 time:0.68
+=====> epoch[138/200] iter: (9/14) 	cur_lr: 0.000419 loss: 0.176 time:0.60
+=====> epoch[138/200] iter: (10/14) 	cur_lr: 0.000418 loss: 0.172 time:0.61
+=====> epoch[138/200] iter: (11/14) 	cur_lr: 0.000418 loss: 0.154 time:0.61
+=====> epoch[138/200] iter: (12/14) 	cur_lr: 0.000417 loss: 0.202 time:0.60
+=====> epoch[138/200] iter: (13/14) 	cur_lr: 0.000417 loss: 0.170 time:0.60
+=====> epoch[138/200] iter: (14/14) 	cur_lr: 0.000416 loss: 0.168 time:0.60
+Remaining training time = 0 hour 12 minutes 59 seconds
+Epoch : 137 Details
+Epoch No.: 137	Train Loss = 0.1736	 lr= 0.000416
+
+=====> the number of iterations per epoch:  14
+=====> epoch[139/200] iter: (1/14) 	cur_lr: 0.000416 loss: 0.177 time:0.78
+=====> epoch[139/200] iter: (2/14) 	cur_lr: 0.000416 loss: 0.173 time:0.74
+=====> epoch[139/200] iter: (3/14) 	cur_lr: 0.000415 loss: 0.164 time:0.87
+=====> epoch[139/200] iter: (4/14) 	cur_lr: 0.000415 loss: 0.199 time:0.85
+=====> epoch[139/200] iter: (5/14) 	cur_lr: 0.000414 loss: 0.158 time:0.87
+=====> epoch[139/200] iter: (6/14) 	cur_lr: 0.000414 loss: 0.163 time:0.87
+=====> epoch[139/200] iter: (7/14) 	cur_lr: 0.000413 loss: 0.180 time:0.74
+=====> epoch[139/200] iter: (8/14) 	cur_lr: 0.000413 loss: 0.176 time:0.69
+=====> epoch[139/200] iter: (9/14) 	cur_lr: 0.000413 loss: 0.162 time:0.61
+=====> epoch[139/200] iter: (10/14) 	cur_lr: 0.000412 loss: 0.169 time:0.60
+=====> epoch[139/200] iter: (11/14) 	cur_lr: 0.000412 loss: 0.195 time:0.61
+=====> epoch[139/200] iter: (12/14) 	cur_lr: 0.000411 loss: 0.184 time:0.60
+=====> epoch[139/200] iter: (13/14) 	cur_lr: 0.000411 loss: 0.182 time:0.61
+=====> epoch[139/200] iter: (14/14) 	cur_lr: 0.000410 loss: 0.177 time:0.61
+Remaining training time = 0 hour 12 minutes 15 seconds
+Epoch : 138 Details
+Epoch No.: 138	Train Loss = 0.1756	 lr= 0.000410
+
+=====> the number of iterations per epoch:  14
+=====> epoch[140/200] iter: (1/14) 	cur_lr: 0.000410 loss: 0.161 time:0.76
+=====> epoch[140/200] iter: (2/14) 	cur_lr: 0.000410 loss: 0.191 time:0.72
+=====> epoch[140/200] iter: (3/14) 	cur_lr: 0.000409 loss: 0.189 time:0.73
+=====> epoch[140/200] iter: (4/14) 	cur_lr: 0.000409 loss: 0.165 time:0.74
+=====> epoch[140/200] iter: (5/14) 	cur_lr: 0.000408 loss: 0.169 time:0.85
+=====> epoch[140/200] iter: (6/14) 	cur_lr: 0.000408 loss: 0.169 time:0.79
+=====> epoch[140/200] iter: (7/14) 	cur_lr: 0.000407 loss: 0.191 time:0.77
+=====> epoch[140/200] iter: (8/14) 	cur_lr: 0.000407 loss: 0.162 time:0.70
+=====> epoch[140/200] iter: (9/14) 	cur_lr: 0.000407 loss: 0.189 time:0.67
+=====> epoch[140/200] iter: (10/14) 	cur_lr: 0.000406 loss: 0.170 time:0.61
+=====> epoch[140/200] iter: (11/14) 	cur_lr: 0.000406 loss: 0.181 time:0.61
+=====> epoch[140/200] iter: (12/14) 	cur_lr: 0.000405 loss: 0.211 time:0.61
+=====> epoch[140/200] iter: (13/14) 	cur_lr: 0.000405 loss: 0.185 time:0.61
+=====> epoch[140/200] iter: (14/14) 	cur_lr: 0.000404 loss: 0.184 time:0.61
+Remaining training time = 0 hour 11 minutes 55 seconds
+Epoch : 139 Details
+Epoch No.: 139	Train Loss = 0.1798	 lr= 0.000404
+
+=====> the number of iterations per epoch:  14
+=====> epoch[141/200] iter: (1/14) 	cur_lr: 0.000404 loss: 0.206 time:0.84
+=====> epoch[141/200] iter: (2/14) 	cur_lr: 0.000403 loss: 0.178 time:0.71
+=====> epoch[141/200] iter: (3/14) 	cur_lr: 0.000403 loss: 0.203 time:0.71
+=====> epoch[141/200] iter: (4/14) 	cur_lr: 0.000403 loss: 0.164 time:0.69
+=====> epoch[141/200] iter: (5/14) 	cur_lr: 0.000402 loss: 0.179 time:0.75
+=====> epoch[141/200] iter: (6/14) 	cur_lr: 0.000402 loss: 0.169 time:0.76
+=====> epoch[141/200] iter: (7/14) 	cur_lr: 0.000401 loss: 0.187 time:0.69
+=====> epoch[141/200] iter: (8/14) 	cur_lr: 0.000401 loss: 0.166 time:0.73
+=====> epoch[141/200] iter: (9/14) 	cur_lr: 0.000400 loss: 0.175 time:0.62
+=====> epoch[141/200] iter: (10/14) 	cur_lr: 0.000400 loss: 0.180 time:0.62
+=====> epoch[141/200] iter: (11/14) 	cur_lr: 0.000400 loss: 0.182 time:0.62
+=====> epoch[141/200] iter: (12/14) 	cur_lr: 0.000399 loss: 0.164 time:0.62
+=====> epoch[141/200] iter: (13/14) 	cur_lr: 0.000399 loss: 0.193 time:0.60
+=====> epoch[141/200] iter: (14/14) 	cur_lr: 0.000398 loss: 0.204 time:0.60
+Remaining training time = 0 hour 11 minutes 11 seconds
+Epoch : 140 Details
+Epoch No.: 140	Train Loss = 0.1822	 lr= 0.000398
+
+=====> the number of iterations per epoch:  14
+=====> epoch[142/200] iter: (1/14) 	cur_lr: 0.000398 loss: 0.157 time:0.81
+=====> epoch[142/200] iter: (2/14) 	cur_lr: 0.000397 loss: 0.189 time:0.75
+=====> epoch[142/200] iter: (3/14) 	cur_lr: 0.000397 loss: 0.173 time:0.73
+=====> epoch[142/200] iter: (4/14) 	cur_lr: 0.000397 loss: 0.173 time:0.70
+=====> epoch[142/200] iter: (5/14) 	cur_lr: 0.000396 loss: 0.157 time:0.69
+=====> epoch[142/200] iter: (6/14) 	cur_lr: 0.000396 loss: 0.186 time:0.69
+=====> epoch[142/200] iter: (7/14) 	cur_lr: 0.000395 loss: 0.169 time:0.66
+=====> epoch[142/200] iter: (8/14) 	cur_lr: 0.000395 loss: 0.175 time:0.61
+=====> epoch[142/200] iter: (9/14) 	cur_lr: 0.000394 loss: 0.173 time:0.61
+=====> epoch[142/200] iter: (10/14) 	cur_lr: 0.000394 loss: 0.174 time:0.61
+=====> epoch[142/200] iter: (11/14) 	cur_lr: 0.000394 loss: 0.164 time:0.62
+=====> epoch[142/200] iter: (12/14) 	cur_lr: 0.000393 loss: 0.199 time:0.62
+=====> epoch[142/200] iter: (13/14) 	cur_lr: 0.000393 loss: 0.182 time:0.62
+=====> epoch[142/200] iter: (14/14) 	cur_lr: 0.000392 loss: 0.158 time:0.62
+Remaining training time = 0 hour 11 minutes 1 seconds
+Epoch : 141 Details
+Epoch No.: 141	Train Loss = 0.1736	 lr= 0.000392
+
+=====> the number of iterations per epoch:  14
+=====> epoch[143/200] iter: (1/14) 	cur_lr: 0.000392 loss: 0.173 time:0.81
+=====> epoch[143/200] iter: (2/14) 	cur_lr: 0.000391 loss: 0.162 time:0.71
+=====> epoch[143/200] iter: (3/14) 	cur_lr: 0.000391 loss: 0.177 time:0.71
+=====> epoch[143/200] iter: (4/14) 	cur_lr: 0.000390 loss: 0.185 time:0.71
+=====> epoch[143/200] iter: (5/14) 	cur_lr: 0.000390 loss: 0.195 time:0.69
+=====> epoch[143/200] iter: (6/14) 	cur_lr: 0.000390 loss: 0.156 time:0.68
+=====> epoch[143/200] iter: (7/14) 	cur_lr: 0.000389 loss: 0.160 time:0.67
+=====> epoch[143/200] iter: (8/14) 	cur_lr: 0.000389 loss: 0.171 time:0.60
+=====> epoch[143/200] iter: (9/14) 	cur_lr: 0.000388 loss: 0.173 time:0.60
+=====> epoch[143/200] iter: (10/14) 	cur_lr: 0.000388 loss: 0.164 time:0.60
+=====> epoch[143/200] iter: (11/14) 	cur_lr: 0.000387 loss: 0.172 time:0.62
+=====> epoch[143/200] iter: (12/14) 	cur_lr: 0.000387 loss: 0.159 time:0.60
+=====> epoch[143/200] iter: (13/14) 	cur_lr: 0.000387 loss: 0.172 time:0.60
+=====> epoch[143/200] iter: (14/14) 	cur_lr: 0.000386 loss: 0.183 time:0.62
+Remaining training time = 0 hour 10 minutes 44 seconds
+Epoch : 142 Details
+Epoch No.: 142	Train Loss = 0.1714	 lr= 0.000386
+
+=====> the number of iterations per epoch:  14
+=====> epoch[144/200] iter: (1/14) 	cur_lr: 0.000386 loss: 0.167 time:0.74
+=====> epoch[144/200] iter: (2/14) 	cur_lr: 0.000385 loss: 0.165 time:0.71
+=====> epoch[144/200] iter: (3/14) 	cur_lr: 0.000385 loss: 0.167 time:0.68
+=====> epoch[144/200] iter: (4/14) 	cur_lr: 0.000384 loss: 0.178 time:0.73
+=====> epoch[144/200] iter: (5/14) 	cur_lr: 0.000384 loss: 0.155 time:0.75
+=====> epoch[144/200] iter: (6/14) 	cur_lr: 0.000384 loss: 0.183 time:0.69
+=====> epoch[144/200] iter: (7/14) 	cur_lr: 0.000383 loss: 0.184 time:0.62
+=====> epoch[144/200] iter: (8/14) 	cur_lr: 0.000383 loss: 0.165 time:0.60
+=====> epoch[144/200] iter: (9/14) 	cur_lr: 0.000382 loss: 0.190 time:0.61
+=====> epoch[144/200] iter: (10/14) 	cur_lr: 0.000382 loss: 0.168 time:0.60
+=====> epoch[144/200] iter: (11/14) 	cur_lr: 0.000381 loss: 0.172 time:0.60
+=====> epoch[144/200] iter: (12/14) 	cur_lr: 0.000381 loss: 0.182 time:0.61
+=====> epoch[144/200] iter: (13/14) 	cur_lr: 0.000380 loss: 0.165 time:0.60
+=====> epoch[144/200] iter: (14/14) 	cur_lr: 0.000380 loss: 0.186 time:0.61
+Remaining training time = 0 hour 11 minutes 21 seconds
+Epoch : 143 Details
+Epoch No.: 143	Train Loss = 0.1735	 lr= 0.000380
+
+=====> the number of iterations per epoch:  14
+=====> epoch[145/200] iter: (1/14) 	cur_lr: 0.000380 loss: 0.173 time:0.90
+=====> epoch[145/200] iter: (2/14) 	cur_lr: 0.000379 loss: 0.183 time:0.78
+=====> epoch[145/200] iter: (3/14) 	cur_lr: 0.000379 loss: 0.173 time:0.73
+=====> epoch[145/200] iter: (4/14) 	cur_lr: 0.000378 loss: 0.164 time:0.77
+=====> epoch[145/200] iter: (5/14) 	cur_lr: 0.000378 loss: 0.178 time:0.70
+=====> epoch[145/200] iter: (6/14) 	cur_lr: 0.000377 loss: 0.165 time:0.69
+=====> epoch[145/200] iter: (7/14) 	cur_lr: 0.000377 loss: 0.190 time:0.66
+=====> epoch[145/200] iter: (8/14) 	cur_lr: 0.000377 loss: 0.179 time:0.60
+=====> epoch[145/200] iter: (9/14) 	cur_lr: 0.000376 loss: 0.154 time:0.60
+=====> epoch[145/200] iter: (10/14) 	cur_lr: 0.000376 loss: 0.167 time:0.61
+=====> epoch[145/200] iter: (11/14) 	cur_lr: 0.000375 loss: 0.158 time:0.61
+=====> epoch[145/200] iter: (12/14) 	cur_lr: 0.000375 loss: 0.151 time:0.61
+=====> epoch[145/200] iter: (13/14) 	cur_lr: 0.000374 loss: 0.176 time:0.61
+=====> epoch[145/200] iter: (14/14) 	cur_lr: 0.000374 loss: 0.187 time:0.60
+Remaining training time = 0 hour 11 minutes 34 seconds
+Epoch : 144 Details
+Epoch No.: 144	Train Loss = 0.1713	 lr= 0.000374
+
+=====> the number of iterations per epoch:  14
+=====> epoch[146/200] iter: (1/14) 	cur_lr: 0.000373 loss: 0.174 time:0.96
+=====> epoch[146/200] iter: (2/14) 	cur_lr: 0.000373 loss: 0.169 time:0.75
+=====> epoch[146/200] iter: (3/14) 	cur_lr: 0.000373 loss: 0.177 time:0.83
+=====> epoch[146/200] iter: (4/14) 	cur_lr: 0.000372 loss: 0.156 time:0.88
+=====> epoch[146/200] iter: (5/14) 	cur_lr: 0.000372 loss: 0.160 time:0.78
+=====> epoch[146/200] iter: (6/14) 	cur_lr: 0.000371 loss: 0.168 time:0.70
+=====> epoch[146/200] iter: (7/14) 	cur_lr: 0.000371 loss: 0.179 time:0.73
+=====> epoch[146/200] iter: (8/14) 	cur_lr: 0.000370 loss: 0.196 time:0.67
+=====> epoch[146/200] iter: (9/14) 	cur_lr: 0.000370 loss: 0.167 time:0.61
+=====> epoch[146/200] iter: (10/14) 	cur_lr: 0.000370 loss: 0.172 time:0.60
+=====> epoch[146/200] iter: (11/14) 	cur_lr: 0.000369 loss: 0.189 time:0.61
+=====> epoch[146/200] iter: (12/14) 	cur_lr: 0.000369 loss: 0.158 time:0.60
+=====> epoch[146/200] iter: (13/14) 	cur_lr: 0.000368 loss: 0.188 time:0.61
+=====> epoch[146/200] iter: (14/14) 	cur_lr: 0.000368 loss: 0.157 time:0.61
+Remaining training time = 0 hour 11 minutes 0 seconds
+Epoch : 145 Details
+Epoch No.: 145	Train Loss = 0.1723	 lr= 0.000368
+
+=====> the number of iterations per epoch:  14
+
